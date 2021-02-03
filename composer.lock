@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7ab668f2cce30b85df90684f279b852",
+    "content-hash": "98207caeb7636994aee309ed126a0d7e",
     "packages": [
         {
             "name": "composer/installers",
@@ -651,6 +651,24 @@
             "homepage": "https://wordpress.org/plugins/block-bad-queries/"
         },
         {
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "1.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "tags/1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/"
+        },
+        {
             "name": "wpackagist-plugin/easy-wp-smtp",
             "version": "1.4.5",
             "source": {
@@ -685,6 +703,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/insert-headers-and-footers/"
+        },
+        {
+            "name": "wpackagist-plugin/jetpack",
+            "version": "9.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/jetpack/",
+                "reference": "tags/9.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.9.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/jetpack/"
         },
         {
             "name": "wpackagist-plugin/redis-cache",
@@ -723,6 +759,24 @@
             "homepage": "https://wordpress.org/plugins/secure-db-connection/"
         },
         {
+            "name": "wpackagist-plugin/simple-tags",
+            "version": "2.63",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/simple-tags/",
+                "reference": "tags/2.63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-tags.2.63.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simple-tags/"
+        },
+        {
             "name": "wpackagist-plugin/wp-crontrol",
             "version": "1.9.0",
             "source": {
@@ -739,6 +793,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-crontrol/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-extended-search",
+            "version": "2.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-extended-search/",
+                "reference": "tags/2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-extended-search.2.0.1.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-extended-search/"
         },
         {
             "name": "wpackagist-plugin/xml-sitemap-feed",
