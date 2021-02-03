@@ -34,7 +34,6 @@
         "wpackagist-plugin/all-in-one-wp-security-and-firewall": "*",
         "wpackagist-plugin/advanced-database-cleaner": "*",
         "wpackagist-plugin/jetpack": "*",
-        "wpackagist-plugin/simple-tags": "*",
         "wpackagist-plugin/wp-extended-search": "*",
         "wpackagist-plugin/classic-editor": "*",
 

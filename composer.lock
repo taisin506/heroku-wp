@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98207caeb7636994aee309ed126a0d7e",
+    "content-hash": "ca9336ada1b1c8badf2d2b6d193f6634",
     "packages": [
         {
             "name": "composer/installers",
@@ -757,24 +757,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/secure-db-connection/"
-        },
-        {
-            "name": "wpackagist-plugin/simple-tags",
-            "version": "2.63",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/simple-tags/",
-                "reference": "tags/2.63"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-tags.2.63.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-tags/"
         },
         {
             "name": "wpackagist-plugin/wp-crontrol",
