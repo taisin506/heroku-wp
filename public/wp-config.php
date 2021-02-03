@@ -13,6 +13,8 @@
  *
  * @package WordPress
  */
+//disable autosave
+define('AUTOSAVE_INTERVAL', 864000);
 
 // Setup autoload
 require '/app/vendor/autoload.php';
@@ -216,7 +218,7 @@ if ( isset( $_ENV['DISABLE_WP_CRON'] ) && 'TRUE' == $_ENV['DISABLE_WP_CRON'] ) {
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'exadb_';
 
 /**
  * WordPress Localized Language, defaults to English.
