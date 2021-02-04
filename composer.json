@@ -38,6 +38,7 @@
         "wpackagist-plugin/hide-metadata": "*",
         "wpackagist-plugin/wpforms-lite": "*",
         "wpackagist-plugin/database-for-wpforms": "*",
+        "wpackagist-plugin/insert-headers-and-footers": "*",
         "wpackagist-theme/reblog": "*",
 
 
