@@ -25,17 +25,21 @@
 
         "wpackagist-plugin/secure-db-connection": "*",
         "wpackagist-plugin/redis-cache": "*",
-        "wpackagist-plugin/xml-sitemap-feed": "*",
-        "wpackagist-plugin/amp": "*",
-        "wpackagist-plugin/insert-headers-and-footers": "*",
         "wpackagist-plugin/wp-crontrol": "*",
-        "wpackagist-plugin/easy-wp-smtp": "*",
         "wpackagist-plugin/block-bad-queries": "*",
         "wpackagist-plugin/all-in-one-wp-security-and-firewall": "*",
         "wpackagist-plugin/advanced-database-cleaner": "*",
         "wpackagist-plugin/jetpack": "*",
         "wpackagist-plugin/wp-extended-search": "*",
         "wpackagist-plugin/classic-editor": "*",
+        "wpackagist-plugin/slim-seo": "*",
+        "wpackagist-plugin/ad-inserter": "*",
+        "wpackagist-plugin/disable-comments": "*",
+        "wpackagist-plugin/hide-metadata": "*",
+        "wpackagist-plugin/wpforms-lite": "*",
+        "wpackagist-plugin/database-for-wpforms": "*",
+        "wpackagist-theme/reblog": "*",
+
 
 
 

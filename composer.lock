@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca9336ada1b1c8badf2d2b6d193f6634",
+    "content-hash": "5ee6fa883a20479633e4ee87315ef1c4",
     "packages": [
         {
             "name": "composer/installers",
@@ -579,6 +579,24 @@
             "time": "2020-02-18T08:15:37+00:00"
         },
         {
+            "name": "wpackagist-plugin/ad-inserter",
+            "version": "2.6.21",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ad-inserter/",
+                "reference": "tags/2.6.21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ad-inserter.2.6.21.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ad-inserter/"
+        },
+        {
             "name": "wpackagist-plugin/advanced-database-cleaner",
             "version": "3.0.3",
             "source": {
@@ -613,24 +631,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/"
-        },
-        {
-            "name": "wpackagist-plugin/amp",
-            "version": "2.0.10",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/amp/",
-                "reference": "tags/2.0.10"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amp.2.0.10.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/amp/"
         },
         {
             "name": "wpackagist-plugin/block-bad-queries",
@@ -669,40 +669,58 @@
             "homepage": "https://wordpress.org/plugins/classic-editor/"
         },
         {
-            "name": "wpackagist-plugin/easy-wp-smtp",
-            "version": "1.4.5",
+            "name": "wpackagist-plugin/database-for-wpforms",
+            "version": "1.0.0",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/easy-wp-smtp/",
+                "url": "https://plugins.svn.wordpress.org/database-for-wpforms/",
                 "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/easy-wp-smtp.zip?timestamp=1608359254"
+                "url": "https://downloads.wordpress.org/plugin/database-for-wpforms.zip?timestamp=1612230534"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/easy-wp-smtp/"
+            "homepage": "https://wordpress.org/plugins/database-for-wpforms/"
         },
         {
-            "name": "wpackagist-plugin/insert-headers-and-footers",
-            "version": "1.5.0",
+            "name": "wpackagist-plugin/disable-comments",
+            "version": "2.0.2",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/insert-headers-and-footers/",
-                "reference": "tags/1.5.0"
+                "url": "https://plugins.svn.wordpress.org/disable-comments/",
+                "reference": "tags/2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/insert-headers-and-footers.1.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.0.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/insert-headers-and-footers/"
+            "homepage": "https://wordpress.org/plugins/disable-comments/"
+        },
+        {
+            "name": "wpackagist-plugin/hide-metadata",
+            "version": "1.2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/hide-metadata/",
+                "reference": "tags/1.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/hide-metadata.1.2.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/hide-metadata/"
         },
         {
             "name": "wpackagist-plugin/jetpack",
@@ -759,6 +777,24 @@
             "homepage": "https://wordpress.org/plugins/secure-db-connection/"
         },
         {
+            "name": "wpackagist-plugin/slim-seo",
+            "version": "3.9.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/slim-seo/",
+                "reference": "tags/3.9.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/slim-seo.3.9.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/slim-seo/"
+        },
+        {
             "name": "wpackagist-plugin/wp-crontrol",
             "version": "1.9.0",
             "source": {
@@ -795,22 +831,40 @@
             "homepage": "https://wordpress.org/plugins/wp-extended-search/"
         },
         {
-            "name": "wpackagist-plugin/xml-sitemap-feed",
-            "version": "5.2.7",
+            "name": "wpackagist-plugin/wpforms-lite",
+            "version": "1.6.4.1",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/xml-sitemap-feed/",
-                "reference": "tags/5.2.7"
+                "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
+                "reference": "tags/1.6.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/xml-sitemap-feed.5.2.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.6.4.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/xml-sitemap-feed/"
+            "homepage": "https://wordpress.org/plugins/wpforms-lite/"
+        },
+        {
+            "name": "wpackagist-theme/reblog",
+            "version": "1.1.6",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/reblog/",
+                "reference": "1.1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/reblog.1.1.6.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/reblog/"
         }
     ],
     "packages-dev": [],
