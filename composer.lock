@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b2e1b6a83ceaa2603c7d0db0f4e8583",
+    "content-hash": "887ea3818fcce89aa4ac2ff7b6a073ca",
     "packages": [
         {
             "name": "composer/installers",
@@ -811,6 +811,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/slim-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/w3-total-cache",
+            "version": "2.1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
+                "reference": "tags/2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.2.1.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/w3-total-cache/"
         },
         {
             "name": "wpackagist-plugin/wp-crontrol",
