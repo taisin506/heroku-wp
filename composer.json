@@ -40,6 +40,8 @@
         "wpackagist-plugin/database-for-wpforms": "*",
         "wpackagist-plugin/insert-headers-and-footers": "*",
         "wpackagist-plugin/w3-total-cache": "*",
+        "wpackagist-plugin/age-gate": "*",
+        "wpackagist-plugin/featured-image-from-url": "*",
         "wpackagist-theme/reblog": "*",
 
 
@@ -56,10 +58,10 @@
             "type": "package",
             "package": {
                 "name": "wordpress/wordpress",
-                "version": "5.6",
+                "version": "5.6.1",
                 "dist": {
                     "type": "zip",
-                    "url": "https://wordpress.org/wordpress-5.6.zip"
+                    "url": "https://wordpress.org/wordpress-5.6.1.zip"
                 }
             }
         },
