@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec4dfa12174dd0442f1f50b7094e881e",
+    "content-hash": "36112770b136e889572d165bfeffd15c",
     "packages": [
         {
             "name": "composer/installers",
@@ -831,16 +831,34 @@
             "homepage": "https://wordpress.org/plugins/secure-db-connection/"
         },
         {
-            "name": "wpackagist-plugin/slim-seo",
-            "version": "3.9.0",
+            "name": "wpackagist-plugin/simple-tags",
+            "version": "2.63",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/slim-seo/",
-                "reference": "tags/3.9.0"
+                "url": "https://plugins.svn.wordpress.org/simple-tags/",
+                "reference": "tags/2.63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/slim-seo.3.9.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/simple-tags.2.63.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simple-tags/"
+        },
+        {
+            "name": "wpackagist-plugin/slim-seo",
+            "version": "3.9.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/slim-seo/",
+                "reference": "tags/3.9.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/slim-seo.3.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
