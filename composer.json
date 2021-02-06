@@ -39,7 +39,6 @@
         "wpackagist-plugin/wpforms-lite": "*",
         "wpackagist-plugin/database-for-wpforms": "*",
         "wpackagist-plugin/insert-headers-and-footers": "*",
-        "wpackagist-plugin/simple-tags": "*",
         "wpackagist-plugin/w3-total-cache": "*",
         "wpackagist-plugin/age-gate": "*",
         "wpackagist-plugin/featured-image-from-url": "*",
