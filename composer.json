@@ -17,7 +17,7 @@
 	"ext-apcu": "*",
 	"ext-intl": "*",
 	"ext-exif": "*",
-	"ext-imagick": "*",
+
         "ext-redis": "*",
         "ext-mbstring": "*",
 
@@ -42,6 +42,7 @@
         "wpackagist-plugin/w3-total-cache": "*",
         "wpackagist-plugin/age-gate": "*",
         "wpackagist-plugin/featured-image-from-url": "*",
+        "wpackagist-plugin/wp-migrate-db": "*",
         "wpackagist-theme/reblog": "*",
 
 
