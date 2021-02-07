@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "715ab7b155dd5948f45e576685de9ef9",
+    "content-hash": "155983b6e1c8f69414daea948de245bc",
     "packages": [
         {
             "name": "composer/installers",
@@ -631,6 +631,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/age-gate/"
+        },
+        {
+            "name": "wpackagist-plugin/all-in-one-wp-security-and-firewall",
+            "version": "4.4.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/all-in-one-wp-security-and-firewall/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-wp-security-and-firewall.zip?timestamp=1610338540"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/"
         },
         {
             "name": "wpackagist-plugin/block-bad-queries",

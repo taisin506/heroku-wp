@@ -29,6 +29,7 @@
         "wpackagist-plugin/block-bad-queries": "*",
 
         "wpackagist-plugin/advanced-database-cleaner": "*",
+        "wpackagist-plugin/all-in-one-wp-security-and-firewall": "*",
         "wpackagist-plugin/jetpack": "*",
         "wpackagist-plugin/wp-extended-search": "*",
         "wpackagist-plugin/classic-editor": "*",
