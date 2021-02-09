@@ -42,8 +42,10 @@
         "wpackagist-plugin/insert-headers-and-footers": "*",
         "wpackagist-plugin/w3-total-cache": "*",
         "wpackagist-plugin/age-gate": "*",
-        "wpackagist-plugin/featured-image-from-url": "*",
         "wpackagist-plugin/wp-migrate-db": "*",
+        "wpackagist-plugin/404page": "*",
+        "wpackagist-plugin/pre-party-browser-hints": "*",
+        "wpackagist-plugin/widget-shortcode": "*",
         "wpackagist-theme/reblog": "*",
 
 
