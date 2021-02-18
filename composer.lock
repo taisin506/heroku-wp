@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b3bd0fa77c14f75010f4e430bbd97d9",
+    "content-hash": "2887f89808c19cd9a2694e5b122fe2f9",
     "packages": [
         {
             "name": "composer/installers",
@@ -598,15 +598,15 @@
         },
         {
             "name": "wpackagist-plugin/ad-inserter",
-            "version": "2.6.21",
+            "version": "2.6.22",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ad-inserter/",
-                "reference": "tags/2.6.21"
+                "reference": "tags/2.6.22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ad-inserter.2.6.21.zip"
+                "url": "https://downloads.wordpress.org/plugin/ad-inserter.2.6.22.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -652,7 +652,7 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-wp-security-and-firewall",
-            "version": "4.4.6",
+            "version": "4.4.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/all-in-one-wp-security-and-firewall/",
@@ -660,7 +660,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/all-in-one-wp-security-and-firewall.zip?timestamp=1610338540"
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-wp-security-and-firewall.zip?timestamp=1613536894"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -670,15 +670,15 @@
         },
         {
             "name": "wpackagist-plugin/block-bad-queries",
-            "version": 20201209,
+            "version": 20210211,
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/block-bad-queries/",
-                "reference": "tags/20201209"
+                "reference": "tags/20210211"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/block-bad-queries.20201209.zip"
+                "url": "https://downloads.wordpress.org/plugin/block-bad-queries.20210211.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -775,24 +775,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/insert-headers-and-footers/"
-        },
-        {
-            "name": "wpackagist-plugin/jetpack",
-            "version": "9.4",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/9.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.9.4.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/jetpack/"
         },
         {
             "name": "wpackagist-plugin/pre-party-browser-hints",
@@ -904,15 +886,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-crontrol",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-crontrol/",
-                "reference": "tags/1.9.0"
+                "reference": "tags/1.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.9.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
