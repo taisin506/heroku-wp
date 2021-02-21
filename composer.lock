@@ -850,15 +850,15 @@
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/2.1.0"
+                "reference": "tags/2.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.2.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.2.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -940,15 +940,15 @@
         },
         {
             "name": "wpackagist-plugin/wpforms-lite",
-            "version": "1.6.4.1",
+            "version": "1.6.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
-                "reference": "tags/1.6.4.1"
+                "reference": "tags/1.6.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.6.4.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.6.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"

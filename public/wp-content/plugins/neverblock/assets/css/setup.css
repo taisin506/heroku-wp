@@ -1,0 +1,7 @@
+.neverblock-setup-steps{margin:1em 0 2em;overflow:hidden}
+.neverblock-setup-steps li{width:25%;padding:7px 1em;font-weight:700;margin:0;color:#eee;background:#222;float:left;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+.neverblock-setup-steps li:first-child{margin-left:0}
+.neverblock-setup-steps li.neverblock-setup-active-step{background:#0074a2;color:#eee}
+.neverblock-shortcodes td,.neverblock-shortcodes th{vertical-align:middle}
+.neverblock-shortcodes td p,.neverblock-shortcodes th p{margin:9px 0}
+.neverblock-shortcodes tr:nth-child(even) td,.neverblock-shortcodes tr:nth-child(even) th{background:#f9f9f9}
