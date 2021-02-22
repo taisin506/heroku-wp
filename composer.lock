@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9674d2c5eaf8d6889c832771ac897b73",
+    "content-hash": "e2b2f5affa1bb1c677ea8adac814f9c5",
     "packages": [
         {
             "name": "composer/installers",
@@ -651,24 +651,6 @@
             "homepage": "https://wordpress.org/plugins/age-gate/"
         },
         {
-            "name": "wpackagist-plugin/all-in-one-seo-pack",
-            "version": "4.0.15",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/all-in-one-seo-pack/",
-                "reference": "tags/4.0.15"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.4.0.15.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/all-in-one-seo-pack/"
-        },
-        {
             "name": "wpackagist-plugin/all-in-one-wp-security-and-firewall",
             "version": "4.4.7",
             "source": {
@@ -883,6 +865,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/widget-shortcode/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "15.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/15.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.15.8.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-crontrol",
