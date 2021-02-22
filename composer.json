@@ -32,7 +32,6 @@
         "wpackagist-plugin/all-in-one-wp-security-and-firewall": "*",
         "wpackagist-plugin/wp-extended-search": "*",
         "wpackagist-plugin/classic-editor": "*",
-        "wpackagist-plugin/slim-seo": "*",
         "wpackagist-plugin/ad-inserter": "*",
         "wpackagist-plugin/disable-comments": "*",
         "wpackagist-plugin/hide-metadata": "*",
@@ -45,6 +44,7 @@
         "wpackagist-plugin/404page": "*",
         "wpackagist-plugin/pre-party-browser-hints": "*",
         "wpackagist-plugin/widget-shortcode": "*",
+        "wpackagist-plugin/seo-by-rank-math": "*",
         "wpackagist-theme/reblog": "*",
 
 

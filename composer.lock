@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2887f89808c19cd9a2694e5b122fe2f9",
+    "content-hash": "fbdd517c39931ea59f40a5093d43b749",
     "packages": [
         {
             "name": "composer/installers",
@@ -831,22 +831,22 @@
             "homepage": "https://wordpress.org/plugins/secure-db-connection/"
         },
         {
-            "name": "wpackagist-plugin/slim-seo",
-            "version": "3.9.2",
+            "name": "wpackagist-plugin/seo-by-rank-math",
+            "version": "1.0.58",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/slim-seo/",
-                "reference": "tags/3.9.2"
+                "url": "https://plugins.svn.wordpress.org/seo-by-rank-math/",
+                "reference": "tags/1.0.58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/slim-seo.3.9.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/seo-by-rank-math.1.0.58.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/slim-seo/"
+            "homepage": "https://wordpress.org/plugins/seo-by-rank-math/"
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
@@ -886,15 +886,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-crontrol",
-            "version": "1.9.1",
+            "version": "1.10.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-crontrol/",
-                "reference": "tags/1.9.1"
+                "reference": "tags/1.10.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.10.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
