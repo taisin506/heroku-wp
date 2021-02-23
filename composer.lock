@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f447876a5a8ad6886c82c882f66ad9e",
+    "content-hash": "5cbbd2ee2667d3d12a9f09bdd7ff29a1",
     "packages": [
         {
             "name": "composer/installers",
@@ -775,24 +775,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/insert-headers-and-footers/"
-        },
-        {
-            "name": "wpackagist-plugin/jetpack",
-            "version": "9.4.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/9.4.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.9.4.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/jetpack/"
         },
         {
             "name": "wpackagist-plugin/pre-party-browser-hints",
