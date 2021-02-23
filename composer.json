@@ -41,7 +41,6 @@
         "wpackagist-plugin/w3-total-cache": "*",
         "wpackagist-plugin/age-gate": "*",
         "wpackagist-plugin/wp-migrate-db": "*",
-        "wpackagist-plugin/404page": "*",
         "wpackagist-plugin/pre-party-browser-hints": "*",
         "wpackagist-plugin/widget-shortcode": "*",
         "wpackagist-plugin/all-in-one-seo-pack": "*",
@@ -62,10 +61,10 @@
             "type": "package",
             "package": {
                 "name": "wordpress/wordpress",
-                "version": "5.6.1",
+                "version": "5.6.2",
                 "dist": {
                     "type": "zip",
-                    "url": "https://wordpress.org/wordpress-5.6.1.zip"
+                    "url": "https://wordpress.org/wordpress-5.6.2.zip"
                 }
             }
         },

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62435406ad84b887b1cc9e59ff2df05f",
+    "content-hash": "6f447876a5a8ad6886c82c882f66ad9e",
     "packages": [
         {
             "name": "composer/installers",
@@ -399,10 +399,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "5.6.1",
+            "version": "5.6.2",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-5.6.1.zip"
+                "url": "https://wordpress.org/wordpress-5.6.2.zip"
             },
             "type": "library"
         },
@@ -577,24 +577,6 @@
                 "source": "https://github.com/wp-cli/wp-cli"
             },
             "time": "2020-02-18T08:15:37+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/404page",
-            "version": "11.3.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/404page/",
-                "reference": "tags/11.3.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/404page.11.3.0.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/404page/"
         },
         {
             "name": "wpackagist-plugin/ad-inserter",
