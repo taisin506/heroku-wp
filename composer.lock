@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5cbbd2ee2667d3d12a9f09bdd7ff29a1",
+    "content-hash": "70fd308c79d1f164963fd38f82575d5f",
     "packages": [
         {
             "name": "composer/installers",
@@ -811,6 +811,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/redis-cache/"
+        },
+        {
+            "name": "wpackagist-plugin/search-filter",
+            "version": "1.2.13",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/search-filter/",
+                "reference": "tags/1.2.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/search-filter.1.2.13.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/search-filter/"
         },
         {
             "name": "wpackagist-plugin/secure-db-connection",
