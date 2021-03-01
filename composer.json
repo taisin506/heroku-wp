@@ -23,6 +23,7 @@
 
         "wordpress/wordpress": "*",
 
+        "wpackagist-plugin/rocket-lazy-load": "*",
         "wpackagist-plugin/secure-db-connection": "*",
         "wpackagist-plugin/redis-cache": "*",
         "wpackagist-plugin/wp-crontrol": "*",

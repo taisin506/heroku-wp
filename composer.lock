@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c046244fe8f2cffe012086f5290eb5a",
+    "content-hash": "0a837d91316cbb4c129fccf53a8df702",
     "packages": [
         {
             "name": "composer/installers",
@@ -811,6 +811,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/redis-cache/"
+        },
+        {
+            "name": "wpackagist-plugin/rocket-lazy-load",
+            "version": "2.3.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/rocket-lazy-load/",
+                "reference": "tags/2.3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/rocket-lazy-load.2.3.4.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/rocket-lazy-load/"
         },
         {
             "name": "wpackagist-plugin/search-filter",
