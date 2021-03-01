@@ -27,7 +27,7 @@
         "wpackagist-plugin/redis-cache": "*",
         "wpackagist-plugin/wp-crontrol": "*",
         "wpackagist-plugin/block-bad-queries": "*",
-
+        "wpackagist-plugin/wp-fastest-cache": "*",
         "wpackagist-plugin/advanced-database-cleaner": "*",
         "wpackagist-plugin/all-in-one-wp-security-and-firewall": "*",
         "wpackagist-plugin/wp-extended-search": "*",
