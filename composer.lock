@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a837d91316cbb4c129fccf53a8df702",
+    "content-hash": "2315467720acb6f64b3c0c17a88731d5",
     "packages": [
         {
             "name": "composer/installers",
@@ -395,10 +395,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "5.6.2",
+            "version": "5.7.2",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-5.6.2.zip"
+                "url": "https://wordpress.org/wordpress-5.7.2.zip"
             },
             "type": "library"
         },
@@ -741,6 +741,24 @@
             "homepage": "https://wordpress.org/plugins/disable-comments/"
         },
         {
+            "name": "wpackagist-plugin/fluid-player",
+            "version": "2.4.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/fluid-player/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/fluid-player.zip?timestamp=1541437872"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/fluid-player/"
+        },
+        {
             "name": "wpackagist-plugin/hide-metadata",
             "version": "1.2.3",
             "source": {
@@ -793,6 +811,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/pre-party-browser-hints/"
+        },
+        {
+            "name": "wpackagist-plugin/recent-posts-widget-with-thumbnails",
+            "version": "7.0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/recent-posts-widget-with-thumbnails/",
+                "reference": "tags/7.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/recent-posts-widget-with-thumbnails.7.0.3.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/recent-posts-widget-with-thumbnails/"
         },
         {
             "name": "wpackagist-plugin/redis-cache",
@@ -940,15 +976,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-fastest-cache",
-            "version": "0.9.1.8",
+            "version": "0.9.1.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-fastest-cache/",
-                "reference": "tags/0.9.1.8"
+                "reference": "tags/0.9.1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.9.1.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.9.1.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -976,15 +1012,15 @@
         },
         {
             "name": "wpackagist-plugin/wpforms-lite",
-            "version": "1.6.7",
+            "version": "1.6.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
-                "reference": "tags/1.6.7"
+                "reference": "tags/1.6.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.6.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.6.7.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
