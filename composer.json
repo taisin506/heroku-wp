@@ -48,6 +48,7 @@
         "wpackagist-plugin/search-filter": "*",
         "wpackagist-plugin/recent-posts-widget-with-thumbnails": "*",
         "wpackagist-plugin/fluid-player": "*",
+        "wpackagist-plugin/wp-scraper": "*",
         "wpackagist-theme/reblog": "*",
 
 

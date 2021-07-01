@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2315467720acb6f64b3c0c17a88731d5",
+    "content-hash": "2b59278100e7b5cb344490469338b085",
     "packages": [
         {
             "name": "composer/installers",
@@ -580,15 +580,15 @@
         },
         {
             "name": "wpackagist-plugin/ad-inserter",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ad-inserter/",
-                "reference": "tags/2.7.0"
+                "reference": "tags/2.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ad-inserter.2.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/ad-inserter.2.7.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -616,15 +616,15 @@
         },
         {
             "name": "wpackagist-plugin/age-gate",
-            "version": "2.15.0",
+            "version": "2.16.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/age-gate/",
-                "reference": "trunk"
+                "reference": "tags/2.16.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/age-gate.zip?timestamp=1617216427"
+                "url": "https://downloads.wordpress.org/plugin/age-gate.2.16.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -634,15 +634,15 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-seo-pack",
-            "version": "4.1.1.1",
+            "version": "4.1.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/all-in-one-seo-pack/",
-                "reference": "tags/4.1.1.1"
+                "reference": "tags/4.1.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.4.1.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.4.1.2.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -724,15 +724,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.1.1"
+                "reference": "tags/2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -796,7 +796,7 @@
         },
         {
             "name": "wpackagist-plugin/pre-party-browser-hints",
-            "version": "1.7.6.3",
+            "version": "1.7.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/pre-party-browser-hints/",
@@ -804,7 +804,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/pre-party-browser-hints.zip?timestamp=1619232091"
+                "url": "https://downloads.wordpress.org/plugin/pre-party-browser-hints.zip?timestamp=1624956575"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -904,15 +904,15 @@
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
-            "version": "2.1.3",
+            "version": "2.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/2.1.3"
+                "reference": "tags/2.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.2.1.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.2.1.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -994,15 +994,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-migrate-db",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-migrate-db/",
-                "reference": "tags/2.0.1"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.2.0.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.zip?timestamp=1624298340"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1011,16 +1011,34 @@
             "homepage": "https://wordpress.org/plugins/wp-migrate-db/"
         },
         {
-            "name": "wpackagist-plugin/wpforms-lite",
-            "version": "1.6.7.1",
+            "name": "wpackagist-plugin/wp-scraper",
+            "version": "5.6",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
-                "reference": "tags/1.6.7.1"
+                "url": "https://plugins.svn.wordpress.org/wp-scraper/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.6.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-scraper.zip?timestamp=1623742845"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-scraper/"
+        },
+        {
+            "name": "wpackagist-plugin/wpforms-lite",
+            "version": "1.6.7.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
+                "reference": "tags/1.6.7.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.6.7.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
