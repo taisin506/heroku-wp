@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b59278100e7b5cb344490469338b085",
+    "content-hash": "013c69f2a02909cc5293fb25732eba77",
     "packages": [
         {
             "name": "composer/installers",
@@ -685,6 +685,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/block-bad-queries/"
+        },
+        {
+            "name": "wpackagist-plugin/bulk-editor",
+            "version": "1.0.3.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/bulk-editor/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/bulk-editor.zip?timestamp=1617037177"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/bulk-editor/"
         },
         {
             "name": "wpackagist-plugin/classic-editor",
