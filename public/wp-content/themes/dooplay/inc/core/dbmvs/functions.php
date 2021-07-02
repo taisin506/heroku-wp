@@ -64,12 +64,12 @@ function dbmovies_get_images($data = ''){
                 if(substr($image, 0, 1) == '/'){
                     $out_html .= "<div class='g-item'>";
                     $out_html .= "<a href='https://image.tmdb.org/t/p/original{$image}' title='{$ititle}'>";
-                    $out_html .= "<img data-src='https://image.tmdb.org/t/p/w300{$image}' loading='lazy' class='lazyload' alt='{$ititle}'>";
+                    $out_html .= "<img src='https://image.tmdb.org/t/p/w300{$image}' alt='{$ititle}'>";
                     $out_html .= "</a></div>";
                 }else{
                     $out_html .= "<div class='g-item'>";
                     $out_html .= "<a href='{$image}' title='{$ititle}'>";
-                    $out_html .= "<img data-src='{$image}' loading='lazy' class='lazyload' alt='{$ititle}'>";
+                    $out_html .= "<img src='{$image}' alt='{$ititle}'>";
                     $out_html .= "</a></div>";
                 }
             }

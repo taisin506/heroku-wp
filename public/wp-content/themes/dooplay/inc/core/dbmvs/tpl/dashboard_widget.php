@@ -72,7 +72,7 @@
             <li><a href="https://bit.ly/doothemes-forums" target="_blank"><?php _d('Support Forums'); ?></a></li>
             <li><a href="https://bit.ly/dooplay-docs" target="_blank"><?php _d('Extended documentation'); ?></a></li>
             <li><a href="https://bit.ly/dooplay-changelog" target="_blank"><?php _d('Changelog'); ?></a></li>
-            <li><a href="https://t.me/bescraper" target="_blank"><?php _d('Telegram Group'); ?></a></li>
+            <li><a href="https://bit.ly/doothemes-telegram" target="_blank"><?php _d('Telegram Group'); ?></a></li>
         </ul>
     </div>
 </div>

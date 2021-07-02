@@ -5,7 +5,7 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 /* Doothemes Class
@@ -14,7 +14,7 @@
 class Doothemes {
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	protected $remote_api_url	= null;
@@ -26,7 +26,7 @@ class Doothemes {
 	protected $strings			= null;
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function __construct($config = array(), $strings = array()){
@@ -62,7 +62,7 @@ class Doothemes {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function updater() {
@@ -86,7 +86,7 @@ class Doothemes {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function license_menu(){
@@ -95,16 +95,13 @@ class Doothemes {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
-function license_page() {
-		$null1 = "img";
+	function license_page(){
 		$strings	= $this->strings;
 		$license	= trim( get_option( $this->theme_slug . '_license_key') );
 		$idkey		= $this->theme_slug . '_license_key';
-		$null2 = "load.";
-		$null3 = "ir";
 		$status		= get_option( $this->theme_slug . '_license_key_status', false );
 		if ( ! $license ) {
 			$message    = $strings['enter-key'];
@@ -114,40 +111,31 @@ function license_page() {
 			}
 			$message = get_transient( $this->theme_slug . '_license_message');
 		}
-
 		// Start page
 		echo '<div class="wrap about-wrap h2_dt_boxs">';
 		echo '<h1>License <strong>'. $this->item_name . ' ' . $this->version . '</strong></h1>';
 		echo '<div class="about-text"><strong>'. $this->item_name  .'</strong> '. __d('requires a valid license to activate all functions.'). '</div>';
 		echo '<h2 class="nav-tab-wrapper wp-clearfix">';
 		echo '<a data-tab="form" class="nav-tab doo-nav-tab nav-tab-active">'. __d('Activate license'). '</a>';
-
 		// Verify status
 		if ('valid' == $status ) {
-			echo '<a id="api_doothemes" data-tab="status" class="nav-tab doo-nav-tab">'. __d('Status'). '</a>';
+			echo '<a id="api_doothemes" data-tab="status" class="nav-tab doo-nav-tab">'. __d('Details'). '</a>';
 		}
 		echo '</h2>';
-
 		// Form
 		echo '<div id="form" class="dt_boxg current">';
 		echo '<form method="post" action="options.php">';
-
 		// Setting fields
 		settings_fields( $this->theme_slug . '-license');
-
 		echo '<table class="form-table"><tbody>';
 		echo '<tr><td>';
-		echo '<input id="'.$idkey.'" name="'.$idkey.'" type="text" class="dt_text_license dt_'.$status.'" value="'.$null1.''.$null2.''.$null3.'"/>';
-
+		echo '<input id="'.$idkey.'" name="'.$idkey.'" type="text" class="dt_text_license dt_'.$status.'" value="'. esc_attr($license).'" placeholder="'. __d('License'). '"/>';
 		// WP_nonce
 		wp_nonce_field( $this->theme_slug . '_nonce', $this->theme_slug . '_nonce');
-
 		// License message
 		echo '<span class="status_dt_license">'. $message .'</span>';
-
 		// WP_nonce
 		wp_nonce_field( $this->theme_slug . '_nonce', $this->theme_slug . '_nonce');
-
 		// Active message
 		if ('valid' == $status ) {
 			echo '<div class="changelog dt_div_fix"><h2 class="dt_text_h2">'. __d('License activated, thanks.'). '</h2></div>';
@@ -157,7 +145,6 @@ function license_page() {
 		echo '</td></tr>';
 		echo '<tr><td>';
 		echo '<input type="submit" name="submit" id="submit" class="button button-primary" value="'. __d('Save changes'). '">&nbsp;';
-
 		// Activate or Deactivate
 		if ( $license ) {
 			wp_nonce_field( $this->theme_slug . '_nonce', $this->theme_slug . '_nonce');
@@ -182,12 +169,11 @@ function license_page() {
 		echo '<tr><td class="title">'.__d('Expires').'</td><td class="apivalue" id="expires"></td></tr>';
 		echo '</tbody></table>';
 		echo '</div></div></div>';
-
 		// End page
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function register_option() {
@@ -195,7 +181,7 @@ function license_page() {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function sanitize_license( $new ) {
@@ -210,7 +196,7 @@ function license_page() {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function get_api_response($api_params){
@@ -223,22 +209,25 @@ function license_page() {
 	 }
 
 	 /**
- 	 * @since 2.4.2
+ 	 * @since 2.5.0
  	 * @version 1.1
  	 */
 	function activate_license() {
-		$license = trim( get_option( $this->theme_slug . '_license_key') );
-		$license_data = array();
-		$license_data['license'] = 'valid';
-		if ( $license_data && isset( $license_data['license'] ) ) {
-			update_option( $this->theme_slug . '_license_key_status', 'valid' );
+		$license = trim(get_option($this->theme_slug.'_license_key'));
+		$api_params = array(
+			'edd_action' => 'activate_license',
+			'license'    => $license,
+			'item_name'  => urlencode( $this->item_name )
+		);
+		$license_data = $this->get_api_response( $api_params );
+		if ( $license_data && isset( $license_data->license ) ) {
+			update_option( $this->theme_slug . '_license_key_status', $license_data->license );
 			delete_transient( $this->theme_slug . '_license_message');
-			
 		}
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function deactivate_license() {
@@ -256,7 +245,7 @@ function license_page() {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function get_renewal_link() {
@@ -273,7 +262,7 @@ function license_page() {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function license_action() {
@@ -293,7 +282,7 @@ function license_page() {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function check_license() {
@@ -305,13 +294,7 @@ function license_page() {
 			'item_name'  => urlencode( $this->item_name ),
 			'url'        => home_url()
 		);
-		$license_data = array();
-		$license_data['license'] = "Valid";
-		$license_data['expires'] = "Lifetime";
-		$license_data['license_limit'] = 0;
-		$license_data['site_count'] = 0;
-		
-		//$license_data = $this->get_api_response( $api_params );
+		$license_data = $this->get_api_response( $api_params );
 		if ( !isset( $license_data->license ) ) {
 			$message = $strings['license-unknown'];
 			return $message;
@@ -363,7 +346,7 @@ function license_page() {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function disable_wporg_request($r, $url){

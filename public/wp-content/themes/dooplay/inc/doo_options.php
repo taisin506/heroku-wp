@@ -12,7 +12,7 @@
  */
 CSF::createOptions(DOO_OPTIONS,
     array(
-        'framework_title'    => 'dooplay <small>Framework</small>',
+        'framework_title'    => 'dooplay <small>Options</small>',
         'menu_title'         => sprintf( __d('%s options'), DOO_THEME),
         'menu_slug'          => 'dooplay',
         'menu_type'          => 'submenu',
@@ -20,7 +20,11 @@ CSF::createOptions(DOO_OPTIONS,
         'theme'              => 'light',
         'ajax_save'          => true,
         'show_reset_all'     => false,
-        'show_reset_section' => false
+        'show_reset_section' => false,
+        'show_footer'        => true,
+        'footer_after'       => '',
+        'footer_text'        => '<p><a href="https://bit.ly/2PEvFuN" target="_blank" class="button button-primary button-small">Get info</a> &nbsp&nbspStay up-to-date with the latest information on <strong>COVID-19</strong>, available on the WHO website and through your health authorities.</p>',
+        'footer_credit'      => 'Thank you for creating with <a href="https://bit.ly/3dITGbU" target="_blank"><strong>Doothemes</strong></a> and DooPlay v'.DOO_VERSION,
     )
 );
 

@@ -4,7 +4,7 @@
         <!-- Type content Selector -->
         <nav class="left" id="dbmovies-types">
             <ul>
-                <li><h3 id="dbmvs-logo-status"><a href="https://bescraper.cf/app/" target="_blank">DBMVS</a> <small><?php echo DBMOVIES_VERSION; ?></small></h3></li>
+                <li><h3 id="dbmvs-logo-status"><a href="https://dbmvs.com" target="_blank">DBMVS</a> <small><?php echo DBMOVIES_VERSION; ?></small></h3></li>
                 <li><a id="dbmvstabapp-movie" href="#" class="dbmvs-tab-content button button-primary" data-type="movie"><?php _d('Movies'); ?></a></li>
                 <li><a id="dbmvstabapp-tv" href="#" class="dbmvs-tab-content button" data-type="tv"><?php _d('Shows'); ?></a></li>
             </ul>

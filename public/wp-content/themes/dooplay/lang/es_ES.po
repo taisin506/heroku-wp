@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DooPlay\n"
-"POT-Creation-Date: 2021-03-09 03:16-0500\n"
-"PO-Revision-Date: 2021-03-09 03:20-0500\n"
+"POT-Creation-Date: 2021-04-06 13:59-0500\n"
+"PO-Revision-Date: 2021-04-06 15:27-0500\n"
 "Last-Translator: Brenda Mayuri <brenda@themes.pe>\n"
 "Language-Team: Brendha Mayuri <info@doothemes.com>\n"
 "Language: es\n"
@@ -59,7 +59,12 @@ msgstr "Pónganse en contacto con el soporte de la pagina."
 msgid "Episodes"
 msgstr "Episodios"
 
-#: archive-movies.php:19 archive-requests.php:19 archive.php:17
+#: archive-episodes.php:18 archive-movies.php:21 archive-seasons.php:18
+#: archive-tvshows.php:21 taxonomy.php:24
+msgid "Recently added"
+msgstr "Añadido recientemente"
+
+#: archive-movies.php:18 archive-requests.php:19 archive.php:17
 #: inc/core/dbmvs/classes/postypes.php:31
 #: inc/core/dbmvs/classes/postypes.php:33
 #: inc/core/dbmvs/classes/postypes.php:34
@@ -71,7 +76,7 @@ msgstr "Episodios"
 #: inc/csf/options.module_movies.php:16 inc/includes/slugs.php:26
 #: inc/parts/modules/top-imdb-page.php:86
 #: inc/parts/modules/top-imdb-page.php:108 inc/parts/single/peliculas.php:156
-#: inc/widgets/content_widget.php:77 inc/widgets/content_widget_home.php:118
+#: inc/widgets/content_widget.php:77 inc/widgets/content_widget_home.php:123
 #: pages/rating.php:27 pages/trending.php:28
 msgid "Movies"
 msgstr "Películas"
@@ -94,7 +99,7 @@ msgstr "Regresar"
 msgid "TVShows"
 msgstr "Series"
 
-#: archive-requests.php:23 inc/widgets/content_widget_home.php:117
+#: archive-requests.php:23 inc/widgets/content_widget_home.php:122
 msgid "All"
 msgstr "Todo"
 
@@ -124,7 +129,7 @@ msgstr "Próximamente"
 msgid "Seasons"
 msgstr "Temporadas"
 
-#: archive-tvshows.php:19 inc/core/dbmvs/classes/postypes.php:72
+#: archive-tvshows.php:18 inc/core/dbmvs/classes/postypes.php:72
 #: inc/core/dbmvs/classes/postypes.php:73
 #: inc/core/dbmvs/classes/postypes.php:74
 #: inc/core/dbmvs/classes/postypes.php:75
@@ -132,7 +137,7 @@ msgstr "Temporadas"
 #: inc/core/dbmvs/tpl/form_setting_updater.php:18
 #: inc/csf/options.customize.php:215 inc/csf/options.module_tvshows.php:8
 #: inc/csf/options.module_tvshows.php:16 inc/parts/single/series.php:179
-#: inc/widgets/content_widget.php:78 inc/widgets/content_widget_home.php:119
+#: inc/widgets/content_widget.php:78 inc/widgets/content_widget_home.php:124
 msgid "TV Shows"
 msgstr "Series de TV"
 
@@ -189,7 +194,7 @@ msgid "Server"
 msgstr "Servidor"
 
 #: author.php:85 inc/parts/player_editor.php:6
-#: inc/widgets/content_widget_home.php:111 pages/sections/account.php:104
+#: inc/widgets/content_widget_home.php:116 pages/sections/account.php:104
 #: pages/sections/account.php:128
 msgid "Title"
 msgstr "Título"
@@ -268,7 +273,7 @@ msgid "Please wait, not close this page to complete the upload"
 msgstr "Por favor, espere, no cierre esta página para completar la carga"
 
 #: header.php:65 header.php:102
-#: inc/core/codestar/classes/admin-options.class.php:567
+#: inc/core/codestar/classes/admin-options.class.php:569
 #: inc/core/codestar/fields/icon/icon.php:57
 #: inc/core/codestar/fields/map/map.php:23 pages/search.php:7 searchform.php:2
 msgid "Search..."
@@ -290,74 +295,74 @@ msgstr "Ingresar"
 msgid "Sign Up"
 msgstr "Registrarse"
 
-#: inc/core/codestar/classes/admin-options.class.php:225
+#: inc/core/codestar/classes/admin-options.class.php:226
 msgid "Error while saving the changes."
 msgstr "Error mientras se guardaban los cambios."
 
-#: inc/core/codestar/classes/admin-options.class.php:285
+#: inc/core/codestar/classes/admin-options.class.php:286
 msgid "Settings successfully imported."
 msgstr "Ajustes importados con éxito."
 
-#: inc/core/codestar/classes/admin-options.class.php:297
-#: inc/core/codestar/classes/admin-options.class.php:313
+#: inc/core/codestar/classes/admin-options.class.php:298
+#: inc/core/codestar/classes/admin-options.class.php:314
 msgid "Default settings restored."
 msgstr "Se restauraron las opciones por defecto."
 
-#: inc/core/codestar/classes/admin-options.class.php:384
+#: inc/core/codestar/classes/admin-options.class.php:385
 #: inc/parts/admin/ads_tool.php:4
 msgid "Settings saved."
 msgstr "Ajustes guardados."
 
-#: inc/core/codestar/classes/admin-options.class.php:563
+#: inc/core/codestar/classes/admin-options.class.php:565
 msgid "You have unsaved changes, save your changes!"
 msgstr "¡Tienes cambios sin guardar, guarda tus cambios!"
 
-#: inc/core/codestar/classes/admin-options.class.php:565
+#: inc/core/codestar/classes/admin-options.class.php:567
 msgid "show all settings"
 msgstr "mostrar todos los ajustes"
 
-#: inc/core/codestar/classes/admin-options.class.php:570
-#: inc/core/codestar/classes/admin-options.class.php:693
+#: inc/core/codestar/classes/admin-options.class.php:572
+#: inc/core/codestar/classes/admin-options.class.php:695
 #: inc/core/dbmvs/classes/enqueues.php:61
 msgid "Save"
 msgstr "Guardar"
 
-#: inc/core/codestar/classes/admin-options.class.php:570
-#: inc/core/codestar/classes/admin-options.class.php:693
+#: inc/core/codestar/classes/admin-options.class.php:572
+#: inc/core/codestar/classes/admin-options.class.php:695
 msgid "Saving..."
 msgstr "Guardando…"
 
-#: inc/core/codestar/classes/admin-options.class.php:571
-#: inc/core/codestar/classes/admin-options.class.php:694
+#: inc/core/codestar/classes/admin-options.class.php:573
+#: inc/core/codestar/classes/admin-options.class.php:696
 msgid "Reset Section"
 msgstr "Restablecer sección"
 
-#: inc/core/codestar/classes/admin-options.class.php:571
-#: inc/core/codestar/classes/admin-options.class.php:694
+#: inc/core/codestar/classes/admin-options.class.php:573
+#: inc/core/codestar/classes/admin-options.class.php:696
 msgid "Are you sure to reset this section options?"
 msgstr "¿Está seguro de restablecer las opciones de esta sección?"
 
-#: inc/core/codestar/classes/admin-options.class.php:572
-#: inc/core/codestar/classes/admin-options.class.php:695
+#: inc/core/codestar/classes/admin-options.class.php:574
+#: inc/core/codestar/classes/admin-options.class.php:697
 msgid "Reset All"
 msgstr "Restablecer todo"
 
-#: inc/core/codestar/classes/admin-options.class.php:572
-#: inc/core/codestar/classes/admin-options.class.php:695
+#: inc/core/codestar/classes/admin-options.class.php:574
+#: inc/core/codestar/classes/admin-options.class.php:697
 #: inc/core/codestar/classes/comment-options.class.php:215
 #: inc/core/codestar/classes/metabox-options.class.php:293
 #: inc/core/codestar/fields/backup/backup.php:31
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: inc/core/codestar/classes/admin-options.class.php:572
-#: inc/core/codestar/classes/admin-options.class.php:695
+#: inc/core/codestar/classes/admin-options.class.php:574
+#: inc/core/codestar/classes/admin-options.class.php:697
 msgid "Are you sure you want to reset all settings to default values?"
 msgstr ""
 "¿Estás seguro de que quieres restablecer todos los ajustes a los valores por "
 "defecto?"
 
-#: inc/core/codestar/classes/admin-options.class.php:670
+#: inc/core/codestar/classes/admin-options.class.php:672
 #: inc/core/codestar/classes/comment-options.class.php:198
 #: inc/core/codestar/classes/metabox-options.class.php:276
 #: inc/core/codestar/fields/button_set/button_set.php:56
@@ -380,30 +385,30 @@ msgstr "actualizar la publicación"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: inc/core/codestar/classes/setup.class.php:529
+#: inc/core/codestar/classes/setup.class.php:592
 msgid "Are you sure?"
 msgstr "¿Estás seguro?"
 
-#: inc/core/codestar/classes/setup.class.php:530
+#: inc/core/codestar/classes/setup.class.php:593
 #, php-format
 msgid "Please enter %s or more characters"
 msgstr "Por favor, introduzca %s o más caracteres"
 
-#: inc/core/codestar/classes/setup.class.php:531
+#: inc/core/codestar/classes/setup.class.php:594
 msgid "Searching..."
 msgstr "Buscando..."
 
-#: inc/core/codestar/classes/setup.class.php:532
+#: inc/core/codestar/classes/setup.class.php:595
 #: inc/includes/rating/init.php:598
 msgid "No results found."
 msgstr "No se encontraron resultados."
 
-#: inc/core/codestar/classes/setup.class.php:634
+#: inc/core/codestar/classes/setup.class.php:696
 msgid "Oops! Not allowed."
 msgstr "¡Vaya! No está permitido."
 
-#: inc/core/codestar/classes/setup.class.php:708
-#: inc/core/codestar/classes/setup.class.php:712
+#: inc/core/codestar/classes/setup.class.php:768
+#: inc/core/codestar/classes/setup.class.php:772
 msgid "Field not found!"
 msgstr "¡Campo no encontrado!"
 
@@ -1138,12 +1143,12 @@ msgstr "No ha agregado una clave de API para Dbmovies"
 
 #: inc/core/dbmvs/classes/enqueues.php:58
 #: inc/core/dbmvs/tpl/import_seaepis.php:17 inc/doo_scripts.php:195
-#: inc/doo_scripts.php:226 inc/parts/modules/episodes.php:43
+#: inc/doo_scripts.php:226 inc/parts/modules/episodes.php:45
 #: inc/parts/modules/featured-post-movies.php:44
 #: inc/parts/modules/featured-post-tvshows.php:44
-#: inc/parts/modules/featured-post.php:45 inc/parts/modules/movies.php:44
-#: inc/parts/modules/seasons.php:43 inc/parts/modules/tvshows.php:44
-#: inc/widgets/content_widget_home.php:47
+#: inc/parts/modules/featured-post.php:45 inc/parts/modules/movies.php:46
+#: inc/parts/modules/seasons.php:45 inc/parts/modules/tvshows.php:46
+#: inc/widgets/content_widget_home.php:52
 msgid "Loading.."
 msgstr "Cargando..."
 
@@ -1265,10 +1270,6 @@ msgstr "Año"
 #: inc/core/dbmvs/classes/enqueues.php:89
 msgid "Years"
 msgstr "Años"
-
-#: inc/core/dbmvs/classes/epsemboxes.php:30
-msgid "Quick publisher"
-msgstr "Publicador rapido"
 
 #: inc/core/dbmvs/classes/epsemboxes.php:52
 msgid "Generate new seasons"
@@ -1947,7 +1948,7 @@ msgstr "Reparto"
 #: inc/core/dbmvs/classes/metaboxes.php:188
 #: inc/core/dbmvs/classes/taxonomies.php:103
 #: inc/core/dbmvs/classes/taxonomies.php:104
-#: inc/core/dbmvs/classes/taxonomies.php:105 inc/doo_init.php:525
+#: inc/core/dbmvs/classes/taxonomies.php:105 inc/doo_init.php:527
 #: inc/includes/slugs.php:37 inc/parts/single/peliculas.php:133
 msgid "Director"
 msgstr "Director"
@@ -2003,7 +2004,7 @@ msgstr "Duración de episodios"
 #: inc/core/dbmvs/classes/metaboxes.php:311
 #: inc/core/dbmvs/classes/taxonomies.php:132
 #: inc/core/dbmvs/classes/taxonomies.php:133
-#: inc/core/dbmvs/classes/taxonomies.php:134 inc/doo_init.php:556
+#: inc/core/dbmvs/classes/taxonomies.php:134 inc/doo_init.php:558
 #: inc/includes/slugs.php:36 inc/parts/single/series.php:99
 msgid "Creator"
 msgstr "Creador"
@@ -2143,10 +2144,10 @@ msgid "in"
 msgstr "en"
 
 #: inc/core/dbmvs/classes/requests.php:237
-#: inc/widgets/content_widget_home.php:141
-#: inc/widgets/content_widget_home.php:142
-#: inc/widgets/content_widget_home.php:143
-#: inc/widgets/content_widget_home.php:144
+#: inc/widgets/content_widget_home.php:146
+#: inc/widgets/content_widget_home.php:147
+#: inc/widgets/content_widget_home.php:148
+#: inc/widgets/content_widget_home.php:149
 msgid "seconds"
 msgstr "segundos"
 
@@ -2324,7 +2325,7 @@ msgstr "Iniciar"
 msgid "Expand"
 msgstr "Expandir"
 
-#: inc/core/dbmvs/tpl/admin_app.php:53 inc/doo_init.php:322
+#: inc/core/dbmvs/tpl/admin_app.php:53 inc/doo_init.php:324
 msgid "Page"
 msgstr "Página"
 
@@ -2644,7 +2645,7 @@ msgid "User Requests"
 msgstr "Peticiones de usuarios"
 
 #: inc/core/dbmvs/tpl/form_setting_requests.php:8
-#: inc/csf/options.report_contact.php:29 inc/doo_comments.php:94
+#: inc/csf/options.report_contact.php:29 inc/doo_comments.php:95
 #: pages/contact.php:20 pages/contact.php:29
 msgid "Email"
 msgstr "Correo electrónico"
@@ -2962,7 +2963,7 @@ msgstr "Agregar titulo para mostrar"
 #: inc/csf/options.module_movies.php:22 inc/csf/options.module_seasons.php:22
 #: inc/csf/options.module_tvshows.php:22 inc/csf/options.top_imdb.php:56
 #: inc/widgets/content_related_widget.php:110 inc/widgets/content_widget.php:84
-#: inc/widgets/content_widget_home.php:148
+#: inc/widgets/content_widget_home.php:153
 #: inc/widgets/content_widget_views.php:83
 msgid "Items number"
 msgstr "Numero de articulos"
@@ -2990,7 +2991,7 @@ msgstr "Sistema de comentarios"
 msgid "WordPress"
 msgstr "WordPress"
 
-#: inc/csf/options.comments.php:19 inc/doo_init.php:696
+#: inc/csf/options.comments.php:19 inc/doo_init.php:698
 msgid "Facebook"
 msgstr "Facebook"
 
@@ -3530,6 +3531,118 @@ msgstr "mas información"
 msgid "Discussion Settings"
 msgstr "Ajustes de comentarios"
 
+#: inc/csf/options.cookies.php:9
+msgid "Cookies Law"
+msgstr "Ley de Cookies"
+
+#: inc/csf/options.cookies.php:17
+msgid "Cookie Key"
+msgstr "Clave de cookies"
+
+#: inc/csf/options.cookies.php:22
+msgid "This Website uses cookies to make its website easier to use."
+msgstr "Este sitio web utiliza cookies para facilitar el uso de su sitio web."
+
+#: inc/csf/options.cookies.php:23
+msgid "Text notice"
+msgstr "Aviso de texto"
+
+#: inc/csf/options.cookies.php:28
+msgid "Learn more about cookies."
+msgstr "Obtén más información sobre las cookies."
+
+#: inc/csf/options.cookies.php:29
+msgid "Text Read more"
+msgstr "Texto Leer más"
+
+#: inc/csf/options.cookies.php:34
+msgid "Details page type"
+msgstr "Tipo de página de detalles"
+
+#: inc/csf/options.cookies.php:37
+msgid "Page link"
+msgstr "Enlace de página"
+
+#: inc/csf/options.cookies.php:38 inc/csf/options.cookies.php:51
+msgid "Custom Link"
+msgstr "Enlace personalizado"
+
+#: inc/csf/options.cookies.php:44 inc/csf/options.cookies.php:59
+msgid "Page Link"
+msgstr "Link de la página"
+
+#: inc/csf/options.cookies.php:66
+msgid "none"
+msgstr "ninguno"
+
+#: inc/csf/options.cookies.php:71
+msgid "Opens the linked document in a new window or tab."
+msgstr "Abre el documento vinculado en una nueva ventana o pestaña."
+
+#: inc/csf/options.cookies.php:76
+msgid ""
+"Opens the linked document in the same frame as it was clicked (this is "
+"default)."
+msgstr ""
+"Abre el documento vinculado en el misma ventana en el que se ha hace clic "
+"(esto es el valor predeterminado)."
+
+#: inc/csf/options.cookies.php:81
+msgid "Opens the linked document in the parent frame."
+msgstr "Abre el documento vinculado en la ventana primaria."
+
+#: inc/csf/options.cookies.php:86
+msgid "Opens the linked document in the full body of the window."
+msgstr "Abre el documento vinculado en todo el cuerpo de la ventana."
+
+#: inc/csf/options.cookies.php:92
+msgid "Cookie expiry"
+msgstr "Caducidad de la Cookie"
+
+#: inc/csf/options.cookies.php:95
+msgid "1 week"
+msgstr "1 semana"
+
+#: inc/csf/options.cookies.php:96
+msgid "1 month"
+msgstr "1 mes"
+
+#: inc/csf/options.cookies.php:97
+msgid "3 months"
+msgstr "3 meses"
+
+#: inc/csf/options.cookies.php:98
+msgid "6 months"
+msgstr "6 meses"
+
+#: inc/csf/options.cookies.php:99
+msgid "1 year"
+msgstr "1 año"
+
+#: inc/csf/options.cookies.php:100
+msgid "infinity"
+msgstr "infinidad"
+
+#: inc/csf/options.cookies.php:105
+msgid "Customize Notice"
+msgstr "Personalizar aviso"
+
+#: inc/csf/options.cookies.php:110
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: inc/csf/options.cookies.php:116
+msgid "Text color"
+msgstr "Color del texto"
+
+#: inc/csf/options.cookies.php:122
+msgid "Link color"
+msgstr "Color de los enlaces"
+
+#: inc/csf/options.cookies.php:128
+msgid "Link hover color"
+msgstr "Color de enlace al pasar el cursor"
+
 #: inc/csf/options.customize.php:24
 msgid "Customize"
 msgstr "Personalizar"
@@ -3782,30 +3895,6 @@ msgstr "CSS Personalizado"
 #: inc/csf/options.customize.php:323
 msgid "Add only CSS code"
 msgstr "Añadir solo código CSS"
-
-#: inc/csf/options.customize.php:327
-msgid "Font Awesome"
-msgstr "Font Awesome"
-
-#: inc/csf/options.customize.php:332
-msgid "Inclusion Mode"
-msgstr "Modo de inclusión"
-
-#: inc/csf/options.customize.php:334
-msgid "Local"
-msgstr "Local"
-
-#: inc/csf/options.customize.php:335
-msgid "CDN"
-msgstr "CDN"
-
-#: inc/csf/options.customize.php:342
-msgid "Kit URL"
-msgstr "URL del kit"
-
-#: inc/csf/options.customize.php:343
-msgid "Add Your Kit's Code to this Project"
-msgstr "Agregue el código de su kit a este proyecto"
 
 #: inc/csf/options.featured_titles.php:10
 msgid "Homepage Modules"
@@ -4906,13 +4995,13 @@ msgstr "Correo Electrónico del remitente"
 msgid "SMTP Authentication"
 msgstr "Autenticación SMTP"
 
-#: inc/csf/options.wp_mail.php:89 inc/doo_init.php:1057
+#: inc/csf/options.wp_mail.php:89 inc/doo_init.php:1059
 #: inc/includes/slugs.php:25 inc/parts/login_form.php:6
 #: pages/sections/login-form.php:3 pages/sections/register-form.php:3
 msgid "Username"
 msgstr "Usuario"
 
-#: inc/csf/options.wp_mail.php:95 inc/doo_init.php:1058
+#: inc/csf/options.wp_mail.php:95 inc/doo_init.php:1060
 #: inc/parts/login_form.php:7 pages/sections/account.php:152
 #: pages/sections/login-form.php:7 pages/sections/register-form.php:11
 msgid "Password"
@@ -4935,7 +5024,7 @@ msgid "No more content to show."
 msgstr "No hay mas contenido para mostrar."
 
 #: inc/doo_ajax.php:133 inc/doo_ajax.php:162 inc/doo_ajax.php:189
-#: inc/doo_init.php:988 inc/doo_init.php:1010 inc/doo_init.php:1030
+#: inc/doo_init.php:990 inc/doo_init.php:1012 inc/doo_init.php:1032
 #: inc/parts/modules/widgethome.php:13
 msgid "No content"
 msgstr "Sin contenido"
@@ -5016,12 +5105,12 @@ msgstr "Añadir a favoritos"
 msgid "I saw it"
 msgstr "Ya lo vi"
 
-#: inc/doo_comments.php:43 taxonomy.php:20
+#: inc/doo_comments.php:43 taxonomy.php:19
 #, php-format
 msgid "%s"
 msgstr "%s"
 
-#: inc/doo_comments.php:47 inc/doo_init.php:736
+#: inc/doo_comments.php:47 inc/doo_init.php:738
 #, php-format
 msgid "%1$s"
 msgstr "%1$s"
@@ -5055,13 +5144,9 @@ msgstr "Nombre"
 msgid "Add a display name"
 msgstr "Añadir un nombre para mostrar"
 
-#: inc/doo_comments.php:95
+#: inc/doo_comments.php:96
 msgid "Your email address will not be published"
 msgstr "Tu correo electrónico no será publicado"
-
-#: inc/doo_comments.php:102 pages/sections/account.php:197
-msgid "Website"
-msgstr "Sitio Web"
 
 #: inc/doo_database.php:52 inc/doo_database.php:53
 msgid "DooPlay Database"
@@ -5107,69 +5192,69 @@ msgstr "Pie de página - columna 2"
 msgid "Footer - column 3"
 msgstr "Pie de página - columna 3"
 
-#: inc/doo_init.php:322
+#: inc/doo_init.php:324
 msgid "of"
 msgstr "de"
 
-#: inc/doo_init.php:409
+#: inc/doo_init.php:411
 msgid "Unknown resource"
 msgstr "Desconocido"
 
-#: inc/doo_init.php:413
+#: inc/doo_init.php:415
 msgid "Google Drive"
 msgstr "Google Drive"
 
-#: inc/doo_init.php:629
+#: inc/doo_init.php:631
 msgid "Twitter URL"
 msgstr "Twitter URL"
 
-#: inc/doo_init.php:630
+#: inc/doo_init.php:632
 msgid "Facebook URL"
 msgstr "Facebook URL"
 
-#: inc/doo_init.php:694
+#: inc/doo_init.php:696
 msgid "Shared"
 msgstr "Compartido"
 
-#: inc/doo_init.php:698
+#: inc/doo_init.php:700
 msgid "Twitter"
 msgstr "Twitter"
 
-#: inc/doo_init.php:809
+#: inc/doo_init.php:811
 msgid "This content already exists, we recommend not to publish."
 msgstr ""
 "Este contenido se ha publicado antes, se recomienda no volver a publicar."
 
-#: inc/doo_init.php:811
+#: inc/doo_init.php:813
 msgid "Excellent! this content is unique."
 msgstr "¡Excelente! este contenido es único."
 
-#: inc/doo_init.php:964
+#: inc/doo_init.php:966
 msgid "No content available on your list."
 msgstr "No hay contenido en tu lista."
 
-#: inc/doo_init.php:1055 inc/parts/login_form.php:4
+#: inc/doo_init.php:1057 inc/parts/login_form.php:4
 msgid "Login to your account"
 msgstr "Ingrese a su cuenta"
 
-#: inc/doo_init.php:1059 inc/parts/login_form.php:8
+#: inc/doo_init.php:1061 inc/parts/login_form.php:8
 msgid "Remember Me"
 msgstr "Recuérdame"
 
-#: inc/doo_init.php:1060 inc/parts/login_form.php:9
+#: inc/doo_init.php:1062 inc/parts/login_form.php:9
 #: pages/sections/login-form.php:15 pages/sections/login.php:10
 msgid "Log in"
 msgstr "Iniciar sesión"
 
-#: inc/doo_init.php:1061 inc/parts/login_form.php:10
+#: inc/doo_init.php:1063 inc/parts/login_form.php:10
 msgid "Register a new account"
 msgstr "Registre una nueva cuenta"
 
-#: inc/doo_init.php:1062 inc/parts/login_form.php:11
+#: inc/doo_init.php:1064 inc/parts/login_form.php:11
 msgid "Lost your password?"
 msgstr "¿Perdiste tu contraseña?"
 
-#: inc/doo_init.php:1176
+#: inc/doo_init.php:1178
 msgid "Home"
 msgstr "Inicio"
 
@@ -5577,7 +5662,7 @@ msgstr "Anónimo"
 msgid "Rating:"
 msgstr "Clasificación:"
 
-#: inc/includes/slugs.php:31 inc/widgets/content_widget_home.php:123
+#: inc/includes/slugs.php:31 inc/widgets/content_widget_home.php:128
 msgid "Genre"
 msgstr "Genero"
 
@@ -5861,11 +5946,11 @@ msgstr "Guardar datos"
 msgid "URL Link"
 msgstr "URL"
 
-#: inc/parts/modules/blog.php:30 inc/parts/modules/episodes.php:41
-#: inc/parts/modules/movies.php:42 inc/parts/modules/seasons.php:41
+#: inc/parts/modules/blog.php:30 inc/parts/modules/episodes.php:43
+#: inc/parts/modules/movies.php:44 inc/parts/modules/seasons.php:43
 #: inc/parts/modules/top-imdb.php:86 inc/parts/modules/top-imdb.php:95
 #: inc/parts/modules/top-imdb.php:108 inc/parts/modules/top-imdb.php:121
-#: inc/parts/modules/tvshows.php:42 inc/widgets/content_widget_home.php:44
+#: inc/parts/modules/tvshows.php:44 inc/widgets/content_widget_home.php:49
 #: pages/rating.php:26 pages/trending.php:27
 msgid "See all"
 msgstr "Ver todo"
@@ -6086,7 +6171,7 @@ msgid "Content order"
 msgstr "Orden del contenido"
 
 #: inc/widgets/content_related_widget.php:122 inc/widgets/content_widget.php:96
-#: inc/widgets/content_widget_home.php:153
+#: inc/widgets/content_widget_home.php:158
 msgid "Activate random order"
 msgstr "Activar orden aleatorio"
 
@@ -6098,7 +6183,7 @@ msgstr "Un widget para mostrar el contenido de la barra lateral"
 msgid "DooPlay - Sidebar content"
 msgstr "DooPlay - Sidebar contenido"
 
-#: inc/widgets/content_widget.php:75 inc/widgets/content_widget_home.php:115
+#: inc/widgets/content_widget.php:75 inc/widgets/content_widget_home.php:120
 msgid "Content type"
 msgstr "Tipo de contenido"
 
@@ -6114,19 +6199,19 @@ msgstr "Ordenar contenido por generos"
 msgid "DooPlay - [widgetgenre] Genres"
 msgstr "DooPlay - [widgetgenre] Generos"
 
-#: inc/widgets/content_widget_home.php:87
+#: inc/widgets/content_widget_home.php:92
 msgid "Error: only homepage"
 msgstr "Error: sólo página de inicio"
 
-#: inc/widgets/content_widget_home.php:135
+#: inc/widgets/content_widget_home.php:140
 msgid "Autoplay Carousel"
 msgstr "Autoplay Carousel"
 
-#: inc/widgets/content_widget_home.php:138
+#: inc/widgets/content_widget_home.php:143
 msgid "Speed Carousel"
 msgstr "Velocidad Carousel"
 
-#: inc/widgets/content_widget_home.php:140
+#: inc/widgets/content_widget_home.php:145
 msgid "second"
 msgstr "segundo"
 
@@ -6337,6 +6422,10 @@ msgstr "Apellido"
 msgid "Display name publicly as"
 msgstr "Mostrar nombre públicamente como"
 
+#: pages/sections/account.php:197
+msgid "Website"
+msgstr "Sitio Web"
+
 #: pages/sections/account.php:201
 msgid "Facebook url"
 msgstr "Facebook url"
@@ -6433,6 +6522,27 @@ msgstr "Doothemes"
 #. Author URI of the plugin/theme
 msgid "https://doothemes.com/"
 msgstr "https://doothemes.com/"
+
+#~ msgid "Quick publisher"
+#~ msgstr "Publicador rapido"
+
+#~ msgid "Font Awesome"
+#~ msgstr "Font Awesome"
+
+#~ msgid "Inclusion Mode"
+#~ msgstr "Modo de inclusión"
+
+#~ msgid "Local"
+#~ msgstr "Local"
+
+#~ msgid "CDN"
+#~ msgstr "CDN"
+
+#~ msgid "Kit URL"
+#~ msgstr "URL del kit"
+
+#~ msgid "Add Your Kit's Code to this Project"
+#~ msgstr "Agregue el código de su kit a este proyecto"
 
 #~ msgid "Google+ url"
 #~ msgstr "Google+ url"

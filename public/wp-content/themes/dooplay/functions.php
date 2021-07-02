@@ -5,7 +5,7 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.5.0
+* @since 2.5.2
 */
 
 # Theme options
@@ -19,16 +19,16 @@ define('DOO_THEME_SOCIAL_SHARE', true);
 define('DOO_THEME_CACHE',        true);
 define('DOO_THEME_PLAYERSERNAM', true);
 define('DOO_THEME_JSCOMPRESS',   true);
+define('DOO_THEME_TOTAL_POSTC',  true);
 # Repository data
 define('DOO_COM','Doothemes');
-define('DOO_VERSION','2.5.1');
-define('Bes_VERSION','2.5.1'); // Bescraper version for wp_update 21/03/2021
+define('DOO_VERSION','2.5.2');
 define('DOO_VERSION_DB','2.8');
 define('DOO_ITEM_ID','154');
 define('DOO_PHP_REQUIRE','7.1');
 define('DOO_THEME','Dooplay');
 define('DOO_THEME_SLUG','dooplay');
-define('DOO_SERVER','https://cdn.bescraper.cf/api');
+define('DOO_SERVER','https://dooapp.dongdev.com');
 define('DOO_GICO','https://s2.googleusercontent.com/s2/favicons?domain=');
 
 # Configure Here date format #

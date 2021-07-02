@@ -347,7 +347,7 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
                 if(!$this->VeryTMDb('ids',$tmdb,'tvshows') || $this->repeatd == true){
                     // Dbmvs Parameters
                     $dbmv_args = array(
-                        'check' => $this->dbmvkey
+                        'authkey' => $this->dbmvkey
                     );
                     // Remote Data
                     $json_dbmv = $this->RemoteJson($dbmv_args,DBMOVIES_DBMVAPI);
