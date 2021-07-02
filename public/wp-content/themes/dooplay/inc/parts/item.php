@@ -34,11 +34,12 @@ $viewsco = doo_isset($postmeta, 'dt_views_count');
 $runtime = doo_isset($postmeta, 'runtime');
 $maxwidth = dooplay_get_option('max_width','1200');
 $playicon = dooplay_get_option('play_icon','play1');
+$imdbrat = ($imdbrat) ? $imdbrat : '0';
 // End PHP
 ?>
 <article id="post-<?php the_ID(); ?>" class="item <?php echo $posttype; ?>">
 	<div class="poster">
-		<img data-src="<?php echo dbmovies_get_poster($post->ID); ?>" loading="lazy" class="lazyload" alt="<?php the_title(); ?>">
+		<img src="<?php echo dbmovies_get_poster($post->ID); ?>" alt="<?php the_title(); ?>">
 		<div class="rating"><?php echo ( $urating ) ? $urating : $imdbrat; ?></div>
 		<div class="mepo">
         <?php echo ($quality) ? '<span class="quality">'.strip_tags($quality).'</span>' : false; ?>

@@ -17,7 +17,7 @@ $airdate = ($airdate) ? ' / '.doo_date_compose($airdate, false) : '';
 ?>
 <article class="item se <?php echo get_post_type(); ?>" id="post-<?php the_id(); ?>">
 	<div class="poster">
-		<img data-src="<?php echo dbmovies_get_poster($post->ID,'dt_episode_a','dt_backdrop','w300'); ?>" loading="lazy" class="lazyload" alt="<?php the_title(); ?>">
+		<img src="<?php echo dbmovies_get_poster($post->ID,'dt_episode_a','dt_backdrop','w300'); ?>" alt="<?php the_title(); ?>">
 		<div class="season_m animation-1">
 			<a href="<?php the_permalink() ?>"><div class="see <?php echo $playicon; ?>"></div></a>
 		</div>

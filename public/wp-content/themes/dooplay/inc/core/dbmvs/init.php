@@ -25,11 +25,11 @@ if(!class_exists('DDbmovies')){
          */
         public function Init(){
             // Defined Constants
-            define('DBMOVIES_VERSION','3.3-RC');
+            define('DBMOVIES_VERSION','3.5');
             define('DBMOVIES_OPTIONS','_dbmovies_settings');
             define('DBMOVIES_OPTIMDB','_dbmovies_imdbdata');
-            define('DBMOVIES_DBMVCDN','https://dooapp.dongdev.com');
-            define('DBMOVIES_DBMVAPI','https://dooapp.dongdev.com');
+            define('DBMOVIES_DBMVCDN','https://cdn.dbmvs.com');
+            define('DBMOVIES_DBMVAPI','https://api.dbmvs.com');
             define('DBMOVIES_TMDBAPI','https://api.themoviedb.org/3');
             define('DBMOVIES_TMDBKEY','05902896074695709d7763505bb88b4d');
             // Locale Path

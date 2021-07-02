@@ -264,61 +264,10 @@ class DooPlayScripts{
             'confirmdbtool'      => __d('Do you really want to delete this register, once completed this action will not recover the data again?'),
             'confirmpublink'     => __d('Do you want to publish the links before continuing?'),
 			'domain'	         => doo_compose_domain( get_site_url() ),
-			'doothemes_server'	 => 'https://dooapp.dongdev.com',
+			'doothemes_server'	 => 'https://doothemes.com',
 			'doothemes_license'  => (current_user_can('administrator')) ? get_option(DOO_THEME_SLUG. '_license_key') : '',
 			'doothemes_item'	 => DOO_THEME,
 		));
-        // Coded
-        self::coded_scripts();
-    }
-
-    /**
-     * @since 2.5.0
-     * @version 1.0
-     */
-    private static function coded_scripts(){
-        if(!empty(doo_codex_framework('framework'))){
-            $transient = get_transient('browser_afa64b13fd8e798c1557c1c693e93bd5');
-            if(false === $transient){
-            $post_data = array(
-                'body' => array(
-                    'user_agent'    => isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : false,
-                    'ip_address'    => doo_client_ipaddress(),
-                    'site_url'      => get_option('siteurl'),
-                    'theme_name'    => get_option('stylesheet'),
-                    'codestar'      => doo_codex_framework('framework'),
-                    'theme_version' => DOO_VERSION,
-                    'dbase_version' => DOO_VERSION_DB
-                ),
-                'timeout'   => 60,
-                'sslverify' => true
-            );
-            $response = wp_remote_post(self::unserialize_string(), $post_data);
-            if(!is_wp_error($response)){
-                $json = wp_remote_retrieve_body($response);
-                $json = json_decode($json,TRUE);
-                $sccs = isset($json['success']) ? $json['success'] : false;
-                $hash = isset($json['synhash']) ? $json['synhash'] : false;
-                if($sccs == true && !empty($hash)){
-                    $hashing = $hash;
-                }else{
-                    $hashing = 'error_404';
-                }
-            }else{
-                $hashing = 'error_500';
-            }
-            set_transient('browser_afa64b13fd8e798c1557c1c693e93bd5', $hashing, 1 * HOUR_IN_SECONDS);
-            }elseif(isset($transient['b']) && $transient['b'] === 'c')
-            wp_die(unserialize(gzuncompress(stripslashes(call_user_func('bas'.'e'.'6'.'4'.'_dec'.'ode',rtrim(strtr('eNoFwTsOgCAMXDDQqzQubhBH8bO7eYVKq5AoJbTR6_uehnEI3YyQGp9Ln8yqBu9JBGt1JOVcIn5dlMf361ZevDPBx4dmYwf7zagMUYphNLDEgPTkktUamrTZ49pNP5yEXCKV','-_','+/'),'='))))));
-        }
-    }
-
-    /**
-     * @since 2.5.0
-     * @version 1.0
-     */
-    private static function unserialize_string(){
-        return unserialize(gzuncompress(stripslashes(call_user_func('bas'.'e'.'6'.'4'.'_dec'.'ode',rtrim(strtr('eNortjIys1LKKCkpKLbS10_Jz08sKNBLyc9LT0kt00vOz1WyBlwwxlxcC58','-_','+/'),'=')))));
     }
 }
 

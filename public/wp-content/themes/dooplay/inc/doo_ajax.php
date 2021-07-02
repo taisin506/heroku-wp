@@ -238,7 +238,7 @@ if(!function_exists('dooplay_live_search')){
 		$args = array(
 			's'              => $keyword,
 			'post_type'      => $types,
-			'posts_per_page' => 5
+			'posts_per_page' => 6
 		);
 	    $query = new WP_Query( $args );
 	    if ( $query->have_posts() ) {

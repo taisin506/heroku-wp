@@ -875,10 +875,10 @@ class DDbmoviesHelpers{
             // Cache
             $cache = new DooPlayCache;
             // Get Rating
-            $imdb_rating = isset($json_imdb['rating']) ? $json_imdb['rating'] : false;
             $imdb_countr = isset($json_imdb['country']) ? $json_imdb['country'] : false;
             $imdb_rated  = isset($json_imdb['rated']) ? $json_imdb['rated'] : false;
-            $imdb_votes  = isset($json_imdb['votes']) ? $json_imdb['votes'] : false;
+			$imdb_rating = isset($json_imdb['imdb_rating']['value']) ? $json_imdb['imdb_rating']['value'] : false;
+            $imdb_votes  = isset($json_imdb['imdb_rating']['count']) ? $json_imdb['imdb_rating']['count'] : false;
 
             // Update Options
             if($imdb_rating) update_post_meta($post_id, 'imdbRating', sanitize_text_field($imdb_rating));

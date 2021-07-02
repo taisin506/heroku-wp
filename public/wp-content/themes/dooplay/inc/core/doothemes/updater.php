@@ -30,7 +30,7 @@ class Doothemes_updater {
 	 */
 	function __construct( $args = array(), $strings = array()){
 		$args = wp_parse_args($args, array(
-			'remote_api_url'	=> 'https://dooapp.dongdev.com',
+			'remote_api_url'	=> 'https://doothemes.com',
 			'request_data'		=> array(),
 			'theme_slug'		=> get_template(),
 			'item_name'			=> '',

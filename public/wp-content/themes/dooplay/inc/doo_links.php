@@ -560,7 +560,7 @@ class DooLinks{
                 $out  = "<div id='{$box_id}' class='sbox'>";
                 $out .= "<div class='links_table'><div class='fix-table'>";
                 $out .= "<table><thead><tr>";
-                $out .= "<th>{$typec}</th>";
+                $out .= "<th>".__d('Options')."</th>";
                 if(doo_is_true('linksrowshow','qua') == true) $out .= "<th>".__d('Quality')."</th>";
                 if(doo_is_true('linksrowshow','lan') == true) $out .= "<th>".__d('Language')."</th>";
                 if(doo_is_true('linksrowshow','siz') == true) $out .= "<th>".__d('Size')."</th>";

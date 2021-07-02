@@ -5,7 +5,7 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.5.0
+* @since 3.4
 */
 
 
@@ -274,9 +274,9 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     * @since 2.5.0
     * @version 1.0
     */
-    private function arguments(){
+    private function arguments($sections = ''){
         return array(
-            'append_to_response'     => 'images,trailers',
+            'append_to_response'     => $sections,
             'include_image_language' => $this->tmdb_lng.',null',
             'language'               => $this->tmdb_lng,
             'api_key'                => $this->tmdb_key
@@ -319,7 +319,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
         // Verify the Finder ID
         if(!empty($finder)){
             // TMDb Data
-            $json_tmdb = $this->RemoteJson($this->arguments(),DBMOVIES_TMDBAPI.'/movie/'.$finder);
+            $json_tmdb = $this->RemoteJson($this->arguments('images,trailers,credits'),DBMOVIES_TMDBAPI.'/movie/'.$finder);
             // verificate
             if(!$this->Disset($json_tmdb,'status_code')){
                 // Set TMDb Metada
@@ -337,11 +337,12 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
                 // Set IMDb Data
                 $json_imdb = $this->RemoteJson(array('key'=>$this->dbmvs_key,'imdb'=>$imdb_id), DBMOVIES_DBMVAPI);
                 // Compose IMDb Data
-                $imdb_rating  = $this->Disset($json_imdb,'rating');
+                $imdb_rdata   = $this->Disset($json_imdb,'imdb_rating');
                 $imdb_rated   = $this->Disset($json_imdb,'rated');
                 $imdb_country = $this->Disset($json_imdb,'country');
-                $imdb_votes   = $this->Disset($json_imdb,'votes');
-                $imdb_votes   = str_replace(',','',$imdb_votes);
+                $imdb_votes   = $this->Disset($imdb_rdata,'count');
+                $imdb_rating  = $this->Disset($imdb_rdata,'value');
+
                 // Set Images
                 $images = $this->images($backdrops);
                 // Set Video Traiter
@@ -353,10 +354,10 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
                     }
                 }
                 // TMDb Api Credits
-                $json_credits = $this->RemoteJson($this->arguments(),DBMOVIES_TMDBAPI.'/movie/'.$finder.'/credits');
+                $tmdb_credits = $this->Disset($json_tmdb,'credits');
                 // Cast data
-                $tmdb_cast = $this->Disset($json_credits,'cast');
-                $tmdb_crew = $this->Disset($json_credits,'crew');
+                $tmdb_cast = $this->Disset($tmdb_credits,'cast');
+                $tmdb_crew = $this->Disset($tmdb_credits,'crew');
                 // Compose Shortcode Cast
                 $meta_cast = '';
                 if($tmdb_cast){
@@ -454,11 +455,11 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
         // Verify the Finder ID
         if(!empty($finder)){
             // TMDb Json data
-            $json_tmdb = $this->RemoteJson($this->arguments(),DBMOVIES_TMDBAPI.'/tv/'.$finder);
+            $json_tmdb = $this->RemoteJson($this->arguments('images,videos,credits'),DBMOVIES_TMDBAPI.'/tv/'.$finder);
             // verificate
             if(!$this->Disset($json_tmdb,'status_code')){
                 // Get videos
-                $json_tmdb_videos = $this->RemoteJson($this->arguments(),DBMOVIES_TMDBAPI.'/tv/'.$finder.'/videos');
+                $tmdb_videos = $this->Disset($json_tmdb,'videos');
                 // Set TMDb Metada
                 $orname     = $this->Disset($json_tmdb,'original_name');
                 $firstdate  = $this->Disset($json_tmdb,'first_air_date');
@@ -471,7 +472,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
                 $seasons    = $this->Disset($json_tmdb,'number_of_seasons');
                 $episodes   = $this->Disset($json_tmdb,'number_of_episodes');
                 $creators   = $this->Disset($json_tmdb,'created_by');
-                $trailers   = $this->Disset($json_tmdb_videos,'results');
+                $trailers   = $this->Disset($tmdb_videos,'results');
                 $backdrops  = isset($json_tmdb['images']['backdrops']) ? $json_tmdb['images']['backdrops'] : false;
                 // Set Images
                 $images = $this->images($backdrops);
@@ -504,9 +505,9 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
                     }
                 }
                 // TMDb Api Credits
-                $json_credits = $this->RemoteJson($this->arguments(),DBMOVIES_TMDBAPI.'/tv/'.$finder.'/credits');
+                $tmdb_credits = $this->Disset($json_tmdb,'credits');
                 // Set Cast
-                $tmdb_cast = $this->Disset($json_credits,'cast');
+                $tmdb_cast = $this->Disset($tmdb_credits,'cast');
                 // Shortcode composer cast
                 $meta_cast = '';
                 if($tmdb_cast){
