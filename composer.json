@@ -48,8 +48,11 @@
         "wpackagist-plugin/search-filter": "*",
         "wpackagist-plugin/recent-posts-widget-with-thumbnails": "*",
         "wpackagist-plugin/fluid-player": "*",
+
         "wpackagist-plugin/wp-scraper": "*",
-        "wpackagist-plugin/bulk-editor": "*",
+        "wpackagist-plugin/wp-sheet-editor-bulk-spreadsheet-editor-for-posts-and-pages": "*",
+
+
         "wpackagist-theme/reblog": "*",
 
 
