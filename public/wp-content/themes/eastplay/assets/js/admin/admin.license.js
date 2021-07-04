@@ -1,0 +1,1 @@
+jQuery(document).ready(function(a){a("h2.nav-tab-wrapper span:first").addClass("current");a(".tab-content:first").addClass("current");a("h2.nav-tab-wrapper span").click(function(){var b=a(this).attr("id");a("h2.nav-tab-wrapper span").removeClass("current");a(".tab-content").removeClass("current");a(this).addClass("current");a("."+b).addClass("current")})});

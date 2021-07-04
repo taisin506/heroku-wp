@@ -1,0 +1,639 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-06-01 18:45+0700\n"
+"PO-Revision-Date: 2020-06-01 18:47+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __d;_d\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:23
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+#: 404.php:25
+msgid "404 Not Found"
+msgstr "404 No Encontrado"
+
+#: functions.php:113
+msgid "0 View"
+msgstr "0 Vistas"
+
+#: functions.php:115
+msgid " Views"
+msgstr " Visitas"
+
+#: functions.php:211 template/single/player.php:54
+msgid "Turn on Light"
+msgstr "Enciende la luz"
+
+#: functions.php:211
+msgid "Turn off Light"
+msgstr "Apaga la luz"
+
+#: functions.php:211
+msgid "Shrink"
+msgstr "Reducir"
+
+#: functions.php:211 template/single/player.php:53
+msgid "Expand"
+msgstr "Expandir"
+
+#: header.php:80 template/page/page-list.php:93
+msgid "Search"
+msgstr "Buscar"
+
+#: inc/east_core.php:142
+msgid "Loading.."
+msgstr "Cargando.."
+
+#: inc/east_core.php:157
+msgid "View all results"
+msgstr "Ver todos los resultados"
+
+#: inc/east_core.php:170
+msgid "Please Wait..."
+msgstr "Por favor espera..."
+
+#: inc/east_core.php:171 inc/east_core.php:926 template/page/page_footer.php:23
+msgid "Unknown error"
+msgstr ""
+
+#: inc/east_core.php:172 template/page/page_footer.php:24
+msgid "Loading..."
+msgstr "Cargando..."
+
+#: inc/east_core.php:458
+#, php-format
+msgid "Page %d of %s"
+msgstr "Página %d de %s"
+
+#: inc/east_core.php:484
+msgid "No data nonce"
+msgstr ""
+
+#: inc/east_core.php:516 inc/east_core.php:1790
+msgid "No results"
+msgstr "No hay resultados"
+
+#: inc/east_core.php:818
+msgid "Welcome back"
+msgstr "Dar una buena acogida"
+
+#: inc/east_core.php:823
+msgid "Wrong username or password"
+msgstr "Nombre de usuario o contraseña incorrectos"
+
+#: inc/east_core.php:842
+msgid "There is no user registered with that email address."
+msgstr ""
+"No hay ningún usuario registrado con esa dirección de correo electrónico."
+
+#: inc/east_core.php:851
+msgid "There is no user registered with that username."
+msgstr "No hay ningún usuario registrado con ese nombre de usuario."
+
+#: inc/east_core.php:858
+msgid "Enter a username or e-mail address.."
+msgstr "Ingrese un nombre de usuario o dirección de correo electrónico."
+
+#: inc/east_core.php:878
+msgid "Your new password"
+msgstr "Tu nueva contraseña"
+
+#: inc/east_core.php:881
+#, php-format
+msgid "Your new password is: %s"
+msgstr "Su nueva contraseña es: %s"
+
+#: inc/east_core.php:885
+msgid "Check your email address for you new password."
+msgstr "Verifique su dirección de correo electrónico para su nueva contraseña."
+
+#: inc/east_core.php:887 inc/east_core.php:891
+msgid "Oops something went wrong updating your account."
+msgstr "Vaya, algo salió mal al actualizar su cuenta."
+
+#: inc/east_core.php:918
+msgid "A username is required for registration"
+msgstr "Se requiere un nombre de usuario para registrarse"
+
+#: inc/east_core.php:920
+msgid "Sorry, that username already exists"
+msgstr "Lo sentimos, ese nombre de usuario ya existe"
+
+#: inc/east_core.php:922
+msgid "You must enter a valid email address"
+msgstr "Debes introducir un email válido"
+
+#: inc/east_core.php:924
+msgid "Sorry, that email address is already used"
+msgstr "Lo sentimos, el correo electrónico ya esta en uso"
+
+#: inc/east_core.php:929
+msgid "Registration completed successfully"
+msgstr "Registro completado con éxito"
+
+#: inc/east_core.php:932
+msgid "Google reCAPTCHA Error"
+msgstr "Error de Google reCAPTCHA"
+
+#: inc/east_core.php:1564 inc/east_core.php:1566
+msgid "Previous Episode"
+msgstr "Episodio Anterior"
+
+#: inc/east_core.php:1568
+msgid "All Episode"
+msgstr "Todo el episodio"
+
+#: inc/east_core.php:1570 inc/east_core.php:1572
+msgid "Next Episode"
+msgstr "Siguiente Episodio"
+
+#: inc/east_core.php:1998 inc/east_core.php:2085
+msgid "No schedule"
+msgstr "Sin horario"
+
+#: inc/east_core.php:2148 inc/east_core.php:2150
+msgid "There are no anime available on your list."
+msgstr "No hay anime disponible en tu lista."
+
+#: inc/east_core.php:2164
+msgid "Server"
+msgstr "Servidor"
+
+#: inc/east_core.php:2165
+msgid "Quality"
+msgstr "Calidad"
+
+#: inc/east_core.php:2166
+msgid "Link"
+msgstr "Enlace"
+
+#: inc/east_core.php:2175
+msgid "Download"
+msgstr "Descargar"
+
+#: inc/east_core.php:2246
+msgid "Sorry there are no episodes"
+msgstr "Lo siento, no hay episodios"
+
+#: inc/east_core.php:2307 inc/east_core.php:2310 inc/east_core.php:2320
+msgid "There are no results to display with the alphabet "
+msgstr "No hay resultados para mostrar con el alfabeto "
+
+#: inc/east_core.php:2481 inc/east_core.php:2599
+msgid "Remove favorites"
+msgstr "Eliminar favoritos"
+
+#: inc/east_core.php:2491 inc/east_core.php:2599
+msgid "Add to favorites"
+msgstr "Agregar a los favoritos"
+
+#: inc/east_core.php:2540
+msgid "The passwords you entered do not match."
+msgstr "Las contraseñas introducidas no coinciden."
+
+#: inc/east_core.php:2550
+msgid "Your profile has been updated."
+msgstr "Profiliniz güncellendi."
+
+#: inc/east_core.php:2568 template/page/account.php:40
+msgid "Watch Later"
+msgstr "Ver Despues"
+
+#: inc/east_core.php:2605
+msgid "Followed by"
+msgstr "Seguido por"
+
+#: inc/east_core.php:2605
+msgid "people"
+msgstr "personas"
+
+#: inc/east_core.php:3497 inc/east_core.php:3505
+msgid ""
+"Invalid license, it is possible that some of the options may not work "
+"correctly"
+msgstr ""
+
+#: inc/east_core.php:3497 inc/east_core.php:3505
+msgid "here"
+msgstr ""
+
+#: inc/east_init.php:84
+msgid "Completed"
+msgstr ""
+
+#: inc/east_init.php:86
+msgid "Ongoing"
+msgstr ""
+
+#: inc/east_init.php:120
+msgid "A-Z LIST"
+msgstr "LISTA A-Z"
+
+#: inc/east_init.php:121
+msgid "Searching anime order by alphabet name A to Z."
+msgstr "Buscando orden de anime por nombre del alfabeto de la A a la Z."
+
+#: inc/east_init.php:188
+#, php-format
+msgid ""
+"Warning, the series is titled \"%s\" there may be violent, bloody or sexual "
+"content that is not appropriate for underage audiences."
+msgstr ""
+"Advertencia, la serie se titula \"%s\" puede haber contenido violento, "
+"sangriento o sexual que no es apropiado para el público menor de edad."
+
+#: inc/east_init.php:389 template/page/login.php:21
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: inc/east_init.php:398 template/page/login.php:32
+msgid "Remember Me"
+msgstr "Recuérdame"
+
+#: inc/east_init.php:401 template/page/login.php:35
+#: template/page/lostpassword.php:29
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: inc/east_init.php:402 template/page/login.php:36
+msgid "Don't you have an account yet?"
+msgstr "¿Aún no tienes una cuenta?"
+
+#: inc/east_init.php:402 template/page/login.php:36
+msgid "Sign up here"
+msgstr "Registrate aquí"
+
+#: inc/east_init.php:403 template/page/login.php:37
+msgid "I forgot my password"
+msgstr "Olvidé mi contraseña"
+
+#: inc/east_meta.php:27
+msgid "Generate data from myanimelist.net"
+msgstr ""
+
+#: inc/east_meta.php:33
+msgid "Input cover"
+msgstr ""
+
+#: inc/east_meta.php:39
+msgid "Input thumbnail"
+msgstr ""
+
+#: inc/east_meta.php:45
+msgid "Input japanese title"
+msgstr ""
+
+#: inc/east_meta.php:51
+msgid "Input synonyms title"
+msgstr ""
+
+#: inc/east_meta.php:57
+msgid "Input english title"
+msgstr ""
+
+#: inc/east_meta.php:63
+msgid "Input trailer"
+msgstr ""
+
+#: inc/east_meta.php:69
+msgid "Select status"
+msgstr ""
+
+#: inc/east_meta.php:79
+msgid "Select type"
+msgstr ""
+
+#: inc/east_meta.php:92
+msgid "Input source"
+msgstr ""
+
+#: inc/east_meta.php:99
+msgid "Averages / votes"
+msgstr ""
+
+#: inc/east_meta.php:105
+msgid "Input duration"
+msgstr ""
+
+#: inc/east_meta.php:111
+msgid "Input release date"
+msgstr ""
+
+#: inc/east_meta.php:117
+msgid "Input total episode"
+msgstr ""
+
+#: inc/east_meta.php:123
+msgid "Select day"
+msgstr ""
+
+#: inc/east_meta.php:139
+msgid "Input time update"
+msgstr ""
+
+#: inc/east_meta.php:163
+msgid "Input episode"
+msgstr ""
+
+#: inc/east_meta.php:169
+msgid "Input type"
+msgstr ""
+
+#: inc/east_meta.php:179
+msgid "Select anime series"
+msgstr ""
+
+#: inc/east_shortcode.php:35
+#, php-format
+msgid "View all series in %s %s"
+msgstr "Ver todas las series en la temporada %s %s"
+
+#: inc/widget/widget_ads.php:22
+msgid "Display Ads"
+msgstr ""
+
+#: inc/widget/widget_ads.php:24
+msgid "EasTheme - Ads"
+msgstr ""
+
+#: inc/widget/widget_blog.php:22
+msgid "Display Post Blog"
+msgstr ""
+
+#: inc/widget/widget_blog.php:24
+msgid "EasTheme - Get Post Blog"
+msgstr ""
+
+#: inc/widget/widget_blog.php:31 inc/widget/widget_getpost_anime.php:31
+#: inc/widget/widget_latestepisode.php:31 inc/widget/widget_ongoing.php:31
+#: inc/widget/widget_popular.php:32
+msgid "View All"
+msgstr "Ver Todo"
+
+#: inc/widget/widget_blog_category.php:22
+msgid "Display Blog Category"
+msgstr ""
+
+#: inc/widget/widget_blog_category.php:24
+msgid "EasTheme - Blog Category"
+msgstr ""
+
+#: inc/widget/widget_blog_category.php:42
+#, php-format
+msgid "View all blog in category %s"
+msgstr "Ver todos los blogs en la categoría %s"
+
+#: inc/widget/widget_blog_category.php:68 inc/widget/widget_genre.php:68
+#: inc/widget/widget_ongoing.php:112 inc/widget/widget_season.php:70
+msgid "Enable scrolling"
+msgstr ""
+
+#: inc/widget/widget_featuredanime.php:22
+msgid "Display Featured Anime"
+msgstr ""
+
+#: inc/widget/widget_featuredanime.php:24
+msgid "EasTheme - Featured Anime"
+msgstr ""
+
+#: inc/widget/widget_filter.php:22
+msgid "Display Filter"
+msgstr ""
+
+#: inc/widget/widget_filter.php:24
+msgid "EasTheme - Filter Search"
+msgstr ""
+
+#: inc/widget/widget_filter.php:94
+msgid "Search..."
+msgstr "Buscar..."
+
+#: inc/widget/widget_genre.php:22
+msgid "Display Genre"
+msgstr ""
+
+#: inc/widget/widget_genre.php:24
+msgid "EasTheme - Genre"
+msgstr ""
+
+#: inc/widget/widget_genre.php:42
+#, php-format
+msgid "View all series in genre %s"
+msgstr "Ver todas las series en el género %s"
+
+#: inc/widget/widget_getpost_anime.php:22 inc/widget/widget_slider.php:21
+msgid "Display Anime With Slider"
+msgstr ""
+
+#: inc/widget/widget_getpost_anime.php:24
+msgid "EasTheme - Get Post Anime"
+msgstr ""
+
+#: inc/widget/widget_latestepisode.php:22
+msgid "Display Latest Episode"
+msgstr ""
+
+#: inc/widget/widget_latestepisode.php:24
+msgid "EasTheme - Latest Episode"
+msgstr ""
+
+#: inc/widget/widget_ongoing.php:22
+msgid "Display Ongoing Anime"
+msgstr ""
+
+#: inc/widget/widget_ongoing.php:24
+msgid "EasTheme - Ongoing Anime"
+msgstr ""
+
+#: inc/widget/widget_popular.php:22
+msgid "Display Popular Anime"
+msgstr ""
+
+#: inc/widget/widget_popular.php:24
+msgid "EasTheme - Popular Anime"
+msgstr ""
+
+#: inc/widget/widget_recent_blog.php:22
+msgid "Display Recent Blog"
+msgstr ""
+
+#: inc/widget/widget_recent_blog.php:24
+msgid "EasTheme - Recent Blog"
+msgstr ""
+
+#: inc/widget/widget_season.php:22
+msgid "Display Season"
+msgstr ""
+
+#: inc/widget/widget_season.php:24
+msgid "EasTheme - Season"
+msgstr ""
+
+#: inc/widget/widget_season.php:43
+#, php-format
+msgid "View all series in season %s"
+msgstr "Ver todas las series en la temporada %s"
+
+#: inc/widget/widget_slider.php:23
+msgid "EasTheme - Slider Anime"
+msgstr ""
+
+#: inc/widget/widget_slider.php:88
+msgid "Watch Now"
+msgstr "Ver ahora"
+
+#: pages/page-list.php:20
+msgid "Filter"
+msgstr "Filtrar"
+
+#: pages/page-list.php:23
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: search.php:22
+msgid "Results found:"
+msgstr "Resultados encontrados:"
+
+#: search.php:29
+msgid "No results to show with"
+msgstr "Não há resultados para"
+
+#: single-anime.php:64 template/single/info.php:49
+msgid "Synopsis"
+msgstr "Sinopsis"
+
+#: single-anime.php:77 single-blog.php:68 template/single/player.php:69
+#: template/single/player.php:77
+msgid "Share to your friends!"
+msgstr "¡Comparte con tus amigos!"
+
+#: single-anime.php:89
+msgid "Japanese"
+msgstr ""
+
+#: single-anime.php:90
+msgid "Synonyms"
+msgstr "Sinónimos"
+
+#: single-anime.php:91
+msgid "English"
+msgstr ""
+
+#: single-anime.php:94
+msgid "Released"
+msgstr ""
+
+#: single-anime.php:108
+msgid "List Episode"
+msgstr "Episodio de lista"
+
+#: template/content/category.php:43
+msgid "Latest Episode"
+msgstr "Todo el episodio"
+
+#: template/content/favorites.php:28 template/content/watch.php:26
+msgid "View"
+msgstr "Ver"
+
+#: template/content/favorites.php:29 template/content/watch.php:26
+msgid "Remove"
+msgstr "Eliminar"
+
+#: template/content/latest.php:68 template/page/latest.php:70
+#: template/single/player.php:32
+msgid " ago"
+msgstr " hace"
+
+#: template/page/account.php:36
+msgid "Favorites"
+msgstr "Favoritos"
+
+#: template/page/account.php:45
+msgid "Account Settings"
+msgstr "Configuraciones de la cuenta"
+
+#: template/page/account.php:49
+msgid "E-mail"
+msgstr "Correo electrónico"
+
+#: template/page/account.php:53
+msgid "First name"
+msgstr "Nombre de pila"
+
+#: template/page/account.php:57
+msgid "Last name"
+msgstr "Apellido"
+
+#: template/page/account.php:63
+msgid "New password *"
+msgstr "Nueva contraseña *"
+
+#: template/page/account.php:67
+msgid "Repeat password *"
+msgstr "Repetir contraseña *"
+
+#: template/page/account.php:72
+msgid "Update account"
+msgstr "Actualizar cuenta"
+
+#: template/page/lostpassword.php:21
+msgid "Lost your password?"
+msgstr "¿Perdiste tu contraseña?"
+
+#: template/page/lostpassword.php:29 template/page/page_footer.php:21
+msgid "Get new password"
+msgstr "Obtener nueva contraseña"
+
+#: template/page/lostpassword.php:30 template/page/register.php:50
+msgid "Do you already have an account?"
+msgstr "Ya tienes una cuenta?"
+
+#: template/page/lostpassword.php:30 template/page/register.php:50
+msgid "Login here"
+msgstr "Entre aquí"
+
+#: template/page/page_footer.php:20
+msgid "please wait..."
+msgstr "por favor espera..."
+
+#: template/page/page_footer.php:22
+msgid "Succes"
+msgstr "Éxito"
+
+#: template/page/register.php:21 template/page/register.php:49
+msgid "Sign up"
+msgstr "Regístrate"
+
+#: template/single/comments.php:19 template/single/player.php:56
+msgid "Comments"
+msgstr "Comentarios"
+
+#: template/single/player.php:32
+msgid "Posted by"
+msgstr "Publicado por"
+
+#: template/single/player.php:55
+msgid "Share"
+msgstr "Compartir"
+
+#: template/single/recom_anime.php:26 template/single/related.php:26
+msgid "Recommend Anime"
+msgstr "Recomendar Anime"
+
+#: template/single/related_blog.php:27
+msgid "Related Blog"
+msgstr "Blog Relacionado"
+
+#~ msgid "Account Setting"
+#~ msgstr "Configuración de cuenta"
