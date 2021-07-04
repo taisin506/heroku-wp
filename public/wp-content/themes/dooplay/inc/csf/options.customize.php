@@ -16,7 +16,7 @@ switch(dooplay_get_option('style','default')) {
 }
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 2.0
  */
 CSF::createSection(DOO_OPTIONS,
@@ -137,6 +137,22 @@ CSF::createSection(DOO_OPTIONS,
                 'subtitle'    => __d('Choose a color'),
                 'default' => '#408bea',
                 'dependency' => array('style', '==', 'fusion')
+            ),
+            array(
+                'type' => 'subheading',
+                'content' => __d('Poster Play icon')
+            ),
+            array(
+                'id'      => 'play_icon',
+                'type'    => 'image_select',
+                'title'   => __d('Hover Play Icon'),
+                'options' => array(
+                    'play1' => DOO_URI.'/assets/img/play1.png',
+                    'play2' => DOO_URI.'/assets/img/play2.png',
+                    'play3' => DOO_URI.'/assets/img/play3.png',
+                    'play4' => DOO_URI.'/assets/img/play4.png',
+                ),
+                'default'   => 'play1'
             ),
             array(
                 'type' => 'subheading',

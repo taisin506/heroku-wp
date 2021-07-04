@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -73,7 +73,7 @@ if(!function_exists('dt_list_button')){
     		$count =  ($meta != null) ? count($meta, COUNT_RECURSIVE) : 0;
     		$process = (is_user_logged_in()) ? 'process_list' : 'clicklogin';
 
-    		echo '<a class="'.$process.$class.' tooltip" data-post-id="'. $post_id.'" data-nonce="'.$nonce.'"><i class="ucico icon-thumb_up"></i> <span class="list-count-'.$post_id.'">'.$count.'</span>'.$tooltiphtml.'</a>';
+    		echo '<a class="'.$process.$class.' tooltip" data-post-id="'. $post_id.'" data-nonce="'.$nonce.'"><i class="ucico fas fa-plus-circle"></i> <span class="list-count-'.$post_id.'">'.$count.'</span>'.$tooltiphtml.'</a>';
         }
     }
 }
@@ -180,7 +180,7 @@ if(!function_exists('dt_views_button')){
     		$meta = get_post_meta( $post_id, "_dt_views_users", TRUE);
     		$count =  ($meta != null) ? count($meta, COUNT_RECURSIVE) : 0;
     		$process = (is_user_logged_in()) ? 'process_views' : 'clicklogin';
-    		echo '<a class="'.$process.$class.' tooltip" data-post-id="'. $post_id.'" data-nonce="'.$nonce.'"><i class="uvcico icon-eye"></i> <span class="views-count-'.$post_id.'">'.$count.'</span>'.$tooltiphtml.'</a>';
+    		echo '<a class="'.$process.$class.' tooltip" data-post-id="'. $post_id.'" data-nonce="'.$nonce.'"><i class="uvcico fas fa-stream"></i> <span class="views-count-'.$post_id.'">'.$count.'</span>'.$tooltiphtml.'</a>';
     	}
     }
 }

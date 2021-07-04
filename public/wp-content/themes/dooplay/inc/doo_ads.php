@@ -6,14 +6,14 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 **************
-* @since 2.4.2
+* @since 2.5.0
 */
 
 if(!class_exists('DooAds')){
     class DooAds{
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.0
          */
         public function __construct(){
@@ -21,9 +21,8 @@ if(!class_exists('DooAds')){
             add_action('wp_ajax_dooadmanage', array($this,'save_option'));
         }
 
-
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.0
          */
         public function admin_menu(){
@@ -37,9 +36,8 @@ if(!class_exists('DooAds')){
             );
         }
 
-
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.0
          */
         public function admin_page(){
@@ -61,9 +59,8 @@ if(!class_exists('DooAds')){
             require_once(DOO_DIR.'/inc/parts/admin/ads_tool.php');
         }
 
-
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.0
          */
         public function save_option(){
@@ -101,7 +98,7 @@ if(!class_exists('DooAds')){
         }
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.0
          */
         private function textarea($id, $value, $placeholder = false){

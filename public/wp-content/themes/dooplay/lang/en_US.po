@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: DooPlay\n"
-"POT-Creation-Date: 2020-12-27 03:26-0500\n"
-"PO-Revision-Date: 2020-12-27 03:26-0500\n"
+"POT-Creation-Date: 2021-04-06 13:59-0500\n"
+"PO-Revision-Date: 2021-04-06 13:59-0500\n"
 "Last-Translator: Brenda Mayuri <brenda@themes.pe>\n"
 "Language-Team: Brendha Mayuri <info@doothemes.com>\n"
 "Language: en\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Contact support page."
 msgstr ""
 
-#: archive-episodes.php:15 inc/core/dbmvs/classes/epsemboxes.php:31
+#: archive-episodes.php:17 inc/core/dbmvs/classes/epsemboxes.php:32
 #: inc/core/dbmvs/classes/postypes.php:154
 #: inc/core/dbmvs/classes/postypes.php:155
 #: inc/core/dbmvs/classes/postypes.php:156
@@ -59,7 +59,12 @@ msgstr ""
 msgid "Episodes"
 msgstr ""
 
-#: archive-movies.php:17 archive-requests.php:19 archive.php:17
+#: archive-episodes.php:18 archive-movies.php:21 archive-seasons.php:18
+#: archive-tvshows.php:21 taxonomy.php:24
+msgid "Recently added"
+msgstr ""
+
+#: archive-movies.php:18 archive-requests.php:19 archive.php:17
 #: inc/core/dbmvs/classes/postypes.php:31
 #: inc/core/dbmvs/classes/postypes.php:33
 #: inc/core/dbmvs/classes/postypes.php:34
@@ -67,12 +72,12 @@ msgstr ""
 #: inc/core/dbmvs/classes/postypes.php:43 inc/core/dbmvs/tpl/admin_app.php:8
 #: inc/core/dbmvs/tpl/form_setting_titles.php:8
 #: inc/core/dbmvs/tpl/form_setting_updater.php:17
-#: inc/csf/options.customize.php:197 inc/csf/options.module_movies.php:8
+#: inc/csf/options.customize.php:213 inc/csf/options.module_movies.php:8
 #: inc/csf/options.module_movies.php:16 inc/includes/slugs.php:26
 #: inc/parts/modules/top-imdb-page.php:86
 #: inc/parts/modules/top-imdb-page.php:108 inc/parts/single/peliculas.php:156
-#: inc/widgets/content_widget.php:77 inc/widgets/content_widget_home.php:118
-#: pages/rating.php:24 pages/trending.php:25
+#: inc/widgets/content_widget.php:77 inc/widgets/content_widget_home.php:123
+#: pages/rating.php:27 pages/trending.php:28
 msgid "Movies"
 msgstr ""
 
@@ -94,7 +99,7 @@ msgstr ""
 msgid "TVShows"
 msgstr ""
 
-#: archive-requests.php:23 inc/widgets/content_widget_home.php:117
+#: archive-requests.php:23 inc/widgets/content_widget_home.php:122
 msgid "All"
 msgstr ""
 
@@ -110,7 +115,7 @@ msgstr ""
 msgid "Soon"
 msgstr ""
 
-#: archive-seasons.php:15 inc/core/dbmvs/classes/epsemboxes.php:30
+#: archive-seasons.php:17 inc/core/dbmvs/classes/epsemboxes.php:31
 #: inc/core/dbmvs/classes/postypes.php:113
 #: inc/core/dbmvs/classes/postypes.php:114
 #: inc/core/dbmvs/classes/postypes.php:115
@@ -124,15 +129,15 @@ msgstr ""
 msgid "Seasons"
 msgstr ""
 
-#: archive-tvshows.php:17 inc/core/dbmvs/classes/postypes.php:72
+#: archive-tvshows.php:18 inc/core/dbmvs/classes/postypes.php:72
 #: inc/core/dbmvs/classes/postypes.php:73
 #: inc/core/dbmvs/classes/postypes.php:74
 #: inc/core/dbmvs/classes/postypes.php:75
 #: inc/core/dbmvs/classes/postypes.php:76
 #: inc/core/dbmvs/tpl/form_setting_updater.php:18
-#: inc/csf/options.customize.php:199 inc/csf/options.module_tvshows.php:8
+#: inc/csf/options.customize.php:215 inc/csf/options.module_tvshows.php:8
 #: inc/csf/options.module_tvshows.php:16 inc/parts/single/series.php:179
-#: inc/widgets/content_widget.php:78 inc/widgets/content_widget_home.php:119
+#: inc/widgets/content_widget.php:78 inc/widgets/content_widget_home.php:124
 msgid "TV Shows"
 msgstr ""
 
@@ -147,7 +152,7 @@ msgstr ""
 
 #: author.php:44 author.php:86 inc/core/dbmvs/classes/tables.php:70
 #: inc/core/dbmvs/classes/tables.php:129 inc/core/dbmvs/classes/tables.php:177
-#: inc/core/dbmvs/classes/tables.php:215 inc/doo_scripts.php:196
+#: inc/core/dbmvs/classes/tables.php:215 inc/doo_scripts.php:198
 #: inc/includes/metabox.php:37 inc/parts/single/post.php:26
 #: pages/sections/account.php:41
 msgid "Views"
@@ -170,8 +175,8 @@ msgstr ""
 msgid "Edit Profile"
 msgstr ""
 
-#: author.php:74 author.php:97 inc/core/dbmvs/tpl/dashboard_widget.php:23
-#: inc/core/dbmvs/tpl/dashboard_widget.php:40 pages/sections/account.php:72
+#: author.php:74 author.php:97 inc/core/dbmvs/tpl/dashboard_widget.php:24
+#: inc/core/dbmvs/tpl/dashboard_widget.php:42 pages/sections/account.php:72
 #: pages/sections/account.php:84 pages/sections/account.php:118
 #: pages/sections/account.php:140
 msgid "Load more"
@@ -189,7 +194,7 @@ msgid "Server"
 msgstr ""
 
 #: author.php:85 inc/parts/player_editor.php:6
-#: inc/widgets/content_widget_home.php:111 pages/sections/account.php:104
+#: inc/widgets/content_widget_home.php:116 pages/sections/account.php:104
 #: pages/sections/account.php:128
 msgid "Title"
 msgstr ""
@@ -242,405 +247,391 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:22
+#: footer.php:23
 #, php-format
 msgid "%s %s by %s. All Rights Reserved. Powered by %s"
 msgstr ""
 
-#: footer.php:67
+#: footer.php:68
 msgid "&lsaquo;"
 msgstr ""
 
-#: footer.php:68
+#: footer.php:69
 msgid "&rsaquo;"
 msgstr ""
 
-#: footer.php:69
+#: footer.php:70
 msgid "&times;"
 msgstr ""
 
-#: header.php:45
+#: header.php:48
 msgid "Generating data.."
 msgstr ""
 
-#: header.php:46
+#: header.php:49
 msgid "Please wait, not close this page to complete the upload"
 msgstr ""
 
-#: header.php:62 header.php:99 pages/search.php:7 searchform.php:2
+#: header.php:65 header.php:102
+#: inc/core/codestar/classes/admin-options.class.php:569
+#: inc/core/codestar/fields/icon/icon.php:57
+#: inc/core/codestar/fields/map/map.php:23 pages/search.php:7 searchform.php:2
 msgid "Search..."
 msgstr ""
 
-#: header.php:74 header.php:115
+#: header.php:77 header.php:118
 msgid "Sign out"
 msgstr ""
 
-#: header.php:111
+#: header.php:114
 msgid "My account"
 msgstr ""
 
-#: header.php:120
+#: header.php:123
 msgid "Login"
 msgstr ""
 
-#: header.php:121
+#: header.php:124
 msgid "Sign Up"
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:224
-msgid "Error while saving."
+#: inc/core/codestar/classes/admin-options.class.php:226
+msgid "Error while saving the changes."
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:284
-msgid "Success. Imported backup options."
+#: inc/core/codestar/classes/admin-options.class.php:286
+msgid "Settings successfully imported."
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:296
-msgid "Default options restored."
+#: inc/core/codestar/classes/admin-options.class.php:298
+#: inc/core/codestar/classes/admin-options.class.php:314
+msgid "Default settings restored."
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:312
-msgid "Default options restored for only this section."
-msgstr ""
-
-#: inc/core/codestar/classes/admin-options.class.php:383
+#: inc/core/codestar/classes/admin-options.class.php:385
 #: inc/parts/admin/ads_tool.php:4
 msgid "Settings saved."
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:561
-msgid "Settings have changed, you should save them!"
-msgstr ""
-
-#: inc/core/codestar/classes/admin-options.class.php:563
-msgid "show all options"
-msgstr ""
-
 #: inc/core/codestar/classes/admin-options.class.php:565
-msgid "Search option(s)"
+msgid "You have unsaved changes, save your changes!"
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:568
-#: inc/core/codestar/classes/admin-options.class.php:691
-#: inc/core/dbmvs/classes/enqueues.php:59
+#: inc/core/codestar/classes/admin-options.class.php:567
+msgid "show all settings"
+msgstr ""
+
+#: inc/core/codestar/classes/admin-options.class.php:572
+#: inc/core/codestar/classes/admin-options.class.php:695
+#: inc/core/dbmvs/classes/enqueues.php:61
 msgid "Save"
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:568
-#: inc/core/codestar/classes/admin-options.class.php:691
+#: inc/core/codestar/classes/admin-options.class.php:572
+#: inc/core/codestar/classes/admin-options.class.php:695
 msgid "Saving..."
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:569
-#: inc/core/codestar/classes/admin-options.class.php:692
+#: inc/core/codestar/classes/admin-options.class.php:573
+#: inc/core/codestar/classes/admin-options.class.php:696
 msgid "Reset Section"
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:569
-#: inc/core/codestar/classes/admin-options.class.php:692
+#: inc/core/codestar/classes/admin-options.class.php:573
+#: inc/core/codestar/classes/admin-options.class.php:696
 msgid "Are you sure to reset this section options?"
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:570
-#: inc/core/codestar/classes/admin-options.class.php:693
-#: inc/core/codestar/fields/backup/backup.php:34
+#: inc/core/codestar/classes/admin-options.class.php:574
+#: inc/core/codestar/classes/admin-options.class.php:697
 msgid "Reset All"
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:570
-#: inc/core/codestar/classes/admin-options.class.php:693
-msgid "Are you sure to reset all options?"
+#: inc/core/codestar/classes/admin-options.class.php:574
+#: inc/core/codestar/classes/admin-options.class.php:697
+#: inc/core/codestar/classes/comment-options.class.php:215
+#: inc/core/codestar/classes/metabox-options.class.php:293
+#: inc/core/codestar/fields/backup/backup.php:31
+msgid "Reset"
 msgstr ""
 
-#: inc/core/codestar/classes/admin-options.class.php:668
-#: inc/core/codestar/classes/comment-options.class.php:195
-#: inc/core/codestar/classes/metabox-options.class.php:264
-msgid "No option provided by developer."
+#: inc/core/codestar/classes/admin-options.class.php:574
+#: inc/core/codestar/classes/admin-options.class.php:697
+msgid "Are you sure you want to reset all settings to default values?"
 msgstr ""
 
-#: inc/core/codestar/classes/comment-options.class.php:212
-#: inc/core/codestar/classes/metabox-options.class.php:281
-msgid "Restore"
+#: inc/core/codestar/classes/admin-options.class.php:672
+#: inc/core/codestar/classes/comment-options.class.php:198
+#: inc/core/codestar/classes/metabox-options.class.php:276
+#: inc/core/codestar/fields/button_set/button_set.php:56
+#: inc/core/codestar/fields/checkbox/checkbox.php:76
+#: inc/core/codestar/fields/radio/radio.php:75
+#: inc/core/codestar/fields/select/select.php:113
+#: inc/core/codestar/functions/actions.php:41
+msgid "No data available."
 msgstr ""
 
-#: inc/core/codestar/classes/comment-options.class.php:213
-#: inc/core/codestar/classes/metabox-options.class.php:282
-msgid "update post for restore "
+#: inc/core/codestar/classes/comment-options.class.php:216
+#: inc/core/codestar/classes/metabox-options.class.php:294
+msgid "update post"
 msgstr ""
 
-#: inc/core/codestar/classes/comment-options.class.php:213
-#: inc/core/codestar/classes/metabox-options.class.php:282
+#: inc/core/codestar/classes/comment-options.class.php:216
+#: inc/core/codestar/classes/metabox-options.class.php:294
 #: inc/core/dbmvs/tpl/import_seaepis.php:16 inc/doo_links.php:275
 #: inc/parts/links_editor.php:33
 msgid "Cancel"
 msgstr ""
 
-#: inc/core/codestar/classes/setup.class.php:524
+#: inc/core/codestar/classes/setup.class.php:592
 msgid "Are you sure?"
 msgstr ""
 
-#: inc/core/codestar/classes/setup.class.php:525
-msgid "Restoring options."
-msgstr ""
-
-#: inc/core/codestar/classes/setup.class.php:526
-msgid "Importing options."
-msgstr ""
-
-#: inc/core/codestar/classes/setup.class.php:529
+#: inc/core/codestar/classes/setup.class.php:593
 #, php-format
 msgid "Please enter %s or more characters"
 msgstr ""
 
-#: inc/core/codestar/classes/setup.class.php:530
+#: inc/core/codestar/classes/setup.class.php:594
 msgid "Searching..."
 msgstr ""
 
-#: inc/core/codestar/classes/setup.class.php:531
-msgid "No results match"
+#: inc/core/codestar/classes/setup.class.php:595
+#: inc/includes/rating/init.php:598
+msgid "No results found."
 msgstr ""
 
-#: inc/core/codestar/classes/setup.class.php:603
-#, php-format
-msgid "Ooops! This field type (%s) can not be used here, yet."
+#: inc/core/codestar/classes/setup.class.php:696
+msgid "Oops! Not allowed."
 msgstr ""
 
-#: inc/core/codestar/classes/setup.class.php:677
-msgid "This field class is not available!"
+#: inc/core/codestar/classes/setup.class.php:768
+#: inc/core/codestar/classes/setup.class.php:772
+msgid "Field not found!"
 msgstr ""
 
-#: inc/core/codestar/classes/setup.class.php:681
-msgid "This type is not found!"
+#: inc/core/codestar/classes/shortcode-options.class.php:251
+#: inc/core/codestar/fields/group/group.php:23
+msgid "Add New"
 msgstr ""
 
-#: inc/core/codestar/classes/shortcode-options.class.php:250
-msgid "Add one more"
-msgstr ""
-
-#: inc/core/codestar/classes/shortcode-options.class.php:287
+#: inc/core/codestar/classes/shortcode-options.class.php:288
 #: inc/core/codestar/functions/actions.php:16
 #: inc/core/codestar/functions/actions.php:68
 #: inc/core/codestar/functions/actions.php:106
 #: inc/core/codestar/functions/actions.php:141
 #: inc/core/codestar/functions/actions.php:170
-msgid "Error: Nonce verification has failed. Please try again."
+msgid "Error: Invalid nonce verification."
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:35
-msgid "No background selected"
+#: inc/core/codestar/fields/background/background.php:36
+#: inc/core/codestar/fields/media/media.php:57
+msgid "Not selected"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:66
+#: inc/core/codestar/fields/background/background.php:72
 #: inc/core/codestar/fields/date/date.php:31
-#: inc/core/dbmvs/classes/dashboard.php:193
-#: inc/core/dbmvs/classes/inboxes.php:107
+#: inc/core/dbmvs/classes/dashboard.php:194
+#: inc/core/dbmvs/classes/inboxes.php:128
 msgid "From"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:84
+#: inc/core/codestar/fields/background/background.php:90
 #: inc/core/codestar/fields/date/date.php:32
 msgid "To"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:102
+#: inc/core/codestar/fields/background/background.php:108
 msgid "Direction"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:108
+#: inc/core/codestar/fields/background/background.php:114
 msgid "Gradient Direction"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:109
+#: inc/core/codestar/fields/background/background.php:115
 msgid "&#8659; top to bottom"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:110
+#: inc/core/codestar/fields/background/background.php:116
 msgid "&#8658; left to right"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:111
+#: inc/core/codestar/fields/background/background.php:117
 msgid "&#8664; corner top to right"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:112
+#: inc/core/codestar/fields/background/background.php:118
 msgid "&#8665; corner top to left"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:155
+#: inc/core/codestar/fields/background/background.php:161
 msgid "Background Position"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:156
+#: inc/core/codestar/fields/background/background.php:162
 msgid "Left Top"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:157
+#: inc/core/codestar/fields/background/background.php:163
 msgid "Left Center"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:158
+#: inc/core/codestar/fields/background/background.php:164
 msgid "Left Bottom"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:159
+#: inc/core/codestar/fields/background/background.php:165
 msgid "Center Top"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:160
+#: inc/core/codestar/fields/background/background.php:166
 msgid "Center Center"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:161
+#: inc/core/codestar/fields/background/background.php:167
 msgid "Center Bottom"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:162
+#: inc/core/codestar/fields/background/background.php:168
 msgid "Right Top"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:163
+#: inc/core/codestar/fields/background/background.php:169
 msgid "Right Center"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:164
+#: inc/core/codestar/fields/background/background.php:170
 msgid "Right Bottom"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:178
+#: inc/core/codestar/fields/background/background.php:184
 msgid "Background Repeat"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:179
+#: inc/core/codestar/fields/background/background.php:185
 msgid "Repeat"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:180
+#: inc/core/codestar/fields/background/background.php:186
 msgid "No Repeat"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:181
+#: inc/core/codestar/fields/background/background.php:187
 msgid "Repeat Horizontally"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:182
+#: inc/core/codestar/fields/background/background.php:188
 msgid "Repeat Vertically"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:196
+#: inc/core/codestar/fields/background/background.php:202
 msgid "Background Attachment"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:197
+#: inc/core/codestar/fields/background/background.php:203
 msgid "Scroll"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:198
+#: inc/core/codestar/fields/background/background.php:204
 msgid "Fixed"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:212
+#: inc/core/codestar/fields/background/background.php:218
 msgid "Background Size"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:213
+#: inc/core/codestar/fields/background/background.php:219
 msgid "Cover"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:214
+#: inc/core/codestar/fields/background/background.php:220
 msgid "Contain"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:215
+#: inc/core/codestar/fields/background/background.php:221
 msgid "Auto"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:229
+#: inc/core/codestar/fields/background/background.php:235
 msgid "Background Origin"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:230
-#: inc/core/codestar/fields/background/background.php:248
+#: inc/core/codestar/fields/background/background.php:236
+#: inc/core/codestar/fields/background/background.php:254
 msgid "Padding Box"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:231
-#: inc/core/codestar/fields/background/background.php:247
+#: inc/core/codestar/fields/background/background.php:237
+#: inc/core/codestar/fields/background/background.php:253
 msgid "Border Box"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:232
-#: inc/core/codestar/fields/background/background.php:249
+#: inc/core/codestar/fields/background/background.php:238
+#: inc/core/codestar/fields/background/background.php:255
 msgid "Content Box"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:246
+#: inc/core/codestar/fields/background/background.php:252
 msgid "Background Clip"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:263
+#: inc/core/codestar/fields/background/background.php:269
 msgid "Background Blend Mode"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:264
+#: inc/core/codestar/fields/background/background.php:270
 #: inc/core/codestar/fields/link_color/link_color.php:36
-#: inc/core/codestar/fields/typography/typography.php:175
+#: inc/core/codestar/fields/typography/typography.php:186
 msgid "Normal"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:265
+#: inc/core/codestar/fields/background/background.php:271
 msgid "Multiply"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:266
+#: inc/core/codestar/fields/background/background.php:272
 msgid "Screen"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:267
+#: inc/core/codestar/fields/background/background.php:273
 msgid "Overlay"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:268
+#: inc/core/codestar/fields/background/background.php:274
 msgid "Darken"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:269
+#: inc/core/codestar/fields/background/background.php:275
 msgid "Lighten"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:270
+#: inc/core/codestar/fields/background/background.php:276
 msgid "Color Dodge"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:271
+#: inc/core/codestar/fields/background/background.php:277
 msgid "Saturation"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:272
+#: inc/core/codestar/fields/background/background.php:278
 msgid "Color"
 msgstr ""
 
-#: inc/core/codestar/fields/background/background.php:273
+#: inc/core/codestar/fields/background/background.php:279
 msgid "Luminosity"
 msgstr ""
 
 #: inc/core/codestar/fields/backup/backup.php:26
-#: inc/core/dbmvs/classes/enqueues.php:58
+#: inc/core/dbmvs/classes/enqueues.php:60
 #: inc/core/dbmvs/tpl/import_movies.php:7
 #: inc/core/dbmvs/tpl/import_seaepis.php:15
 #: inc/core/dbmvs/tpl/import_tvshows.php:7
 msgid "Import"
 msgstr ""
 
-#: inc/core/codestar/fields/backup/backup.php:27
-msgid "copy-paste your backup string here"
-msgstr ""
-
-#: inc/core/codestar/fields/backup/backup.php:31
-msgid "Export and Download Backup"
-msgstr ""
-
-#: inc/core/codestar/fields/backup/backup.php:35
-msgid "Please be sure for reset all of options."
+#: inc/core/codestar/fields/backup/backup.php:29
+msgid "Export & Download"
 msgstr ""
 
 #: inc/core/codestar/fields/border/border.php:25
@@ -669,22 +660,22 @@ msgid "all"
 msgstr ""
 
 #: inc/core/codestar/fields/border/border.php:51
-#: inc/core/codestar/fields/typography/typography.php:203
+#: inc/core/codestar/fields/typography/typography.php:214
 msgid "Solid"
 msgstr ""
 
 #: inc/core/codestar/fields/border/border.php:52
-#: inc/core/codestar/fields/typography/typography.php:206
+#: inc/core/codestar/fields/typography/typography.php:217
 msgid "Dashed"
 msgstr ""
 
 #: inc/core/codestar/fields/border/border.php:53
-#: inc/core/codestar/fields/typography/typography.php:205
+#: inc/core/codestar/fields/typography/typography.php:216
 msgid "Dotted"
 msgstr ""
 
 #: inc/core/codestar/fields/border/border.php:54
-#: inc/core/codestar/fields/typography/typography.php:204
+#: inc/core/codestar/fields/typography/typography.php:215
 msgid "Double"
 msgstr ""
 
@@ -705,17 +696,10 @@ msgid "ridge"
 msgstr ""
 
 #: inc/core/codestar/fields/border/border.php:59
-#: inc/core/codestar/fields/typography/typography.php:188
-#: inc/core/codestar/fields/typography/typography.php:202
+#: inc/core/codestar/fields/typography/typography.php:199
+#: inc/core/codestar/fields/typography/typography.php:213
 #: inc/csf/options.comments.php:21
 msgid "None"
-msgstr ""
-
-#: inc/core/codestar/fields/button_set/button_set.php:56
-#: inc/core/codestar/fields/checkbox/checkbox.php:76
-#: inc/core/codestar/fields/radio/radio.php:75
-#: inc/core/codestar/fields/select/select.php:113
-msgid "No data provided for this option type."
 msgstr ""
 
 #: inc/core/codestar/fields/dimensions/dimensions.php:22
@@ -738,30 +722,26 @@ msgstr ""
 msgid "Clear"
 msgstr ""
 
-#: inc/core/codestar/fields/group/group.php:23
-msgid "Add New"
-msgstr ""
-
 #: inc/core/codestar/fields/group/group.php:35
-#: inc/core/codestar/fields/repeater/repeater.php:30
-msgid "Error: Nested field id can not be same with another nested field id."
+#: inc/core/codestar/fields/repeater/repeater.php:27
+msgid "Error: Field ID conflict."
 msgstr ""
 
 #: inc/core/codestar/fields/group/group.php:46
 #: inc/core/codestar/fields/group/group.php:87
-#: inc/core/codestar/fields/repeater/repeater.php:51
-#: inc/core/codestar/fields/repeater/repeater.php:82
+#: inc/core/codestar/fields/repeater/repeater.php:48
+#: inc/core/codestar/fields/repeater/repeater.php:76
 msgid "Are you sure to delete this item?"
 msgstr ""
 
-#: inc/core/codestar/fields/group/group.php:122
-#: inc/core/codestar/fields/repeater/repeater.php:96
-msgid "You can not add more than"
+#: inc/core/codestar/fields/group/group.php:121
+#: inc/core/codestar/fields/repeater/repeater.php:89
+msgid "You cannot add more."
 msgstr ""
 
-#: inc/core/codestar/fields/group/group.php:123
-#: inc/core/codestar/fields/repeater/repeater.php:97
-msgid "You can not remove less than"
+#: inc/core/codestar/fields/group/group.php:122
+#: inc/core/codestar/fields/repeater/repeater.php:90
+msgid "You cannot remove more."
 msgstr ""
 
 #: inc/core/codestar/fields/icon/icon.php:20
@@ -773,8 +753,17 @@ msgstr ""
 msgid "Remove Icon"
 msgstr ""
 
-#: inc/core/codestar/fields/icon/icon.php:57
-msgid "Search a Icon..."
+#: inc/core/codestar/fields/link/link.php:20
+msgid "Add Link"
+msgstr ""
+
+#: inc/core/codestar/fields/link/link.php:21
+#: inc/parts/links_editor_single.php:9
+msgid "Edit Link"
+msgstr ""
+
+#: inc/core/codestar/fields/link/link.php:22
+msgid "Remove Link"
 msgstr ""
 
 #: inc/core/codestar/fields/link_color/link_color.php:37
@@ -791,10 +780,6 @@ msgstr ""
 
 #: inc/core/codestar/fields/link_color/link_color.php:40
 msgid "Focus"
-msgstr ""
-
-#: inc/core/codestar/fields/map/map.php:23
-msgid "Search your address..."
 msgstr ""
 
 #: inc/core/codestar/fields/map/map.php:24
@@ -814,15 +799,11 @@ msgstr ""
 #: inc/core/codestar/fields/media/media.php:24
 #: inc/core/codestar/fields/upload/upload.php:22
 #: inc/core/dbmvs/classes/tables.php:58 inc/core/dbmvs/classes/tables.php:116
-#: inc/doo_collection.php:178 inc/doo_scripts.php:197 inc/doo_scripts.php:253
+#: inc/doo_collection.php:178 inc/doo_scripts.php:199 inc/doo_scripts.php:255
 #: inc/parts/player_editor.php:35 inc/parts/player_editor.php:58
 #: inc/parts/player_editor.php:79 inc/parts/simple_item_favorites.php:6
 #: inc/parts/simple_item_views.php:6
 msgid "Remove"
-msgstr ""
-
-#: inc/core/codestar/fields/media/media.php:57
-msgid "No media selected"
 msgstr ""
 
 #: inc/core/codestar/fields/sorter/sorter.php:21
@@ -841,201 +822,193 @@ msgstr ""
 msgid "Off"
 msgstr ""
 
-#: inc/core/codestar/fields/textarea/textarea.php:37
-msgid "Add Shortcode"
-msgstr ""
-
-#: inc/core/codestar/fields/typography/typography.php:85
+#: inc/core/codestar/fields/typography/typography.php:96
 msgid "Font Family"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:86
+#: inc/core/codestar/fields/typography/typography.php:97
 msgid "Select a font"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:94
+#: inc/core/codestar/fields/typography/typography.php:105
 msgid "Backup Font Family"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:108
-#: inc/core/codestar/fields/typography/typography.php:121
-#: inc/core/codestar/fields/typography/typography.php:134
-#: inc/core/codestar/fields/typography/typography.php:149
-#: inc/core/codestar/fields/typography/typography.php:165
-#: inc/core/codestar/fields/typography/typography.php:178
-#: inc/core/codestar/fields/typography/typography.php:192
-#: inc/core/codestar/fields/typography/typography.php:210
+#: inc/core/codestar/fields/typography/typography.php:119
+#: inc/core/codestar/fields/typography/typography.php:132
+#: inc/core/codestar/fields/typography/typography.php:145
+#: inc/core/codestar/fields/typography/typography.php:160
+#: inc/core/codestar/fields/typography/typography.php:176
+#: inc/core/codestar/fields/typography/typography.php:189
+#: inc/core/codestar/fields/typography/typography.php:203
+#: inc/core/codestar/fields/typography/typography.php:221
 msgid "Default"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:119
+#: inc/core/codestar/fields/typography/typography.php:130
 msgid "Font Style"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:133
-#: inc/core/codestar/fields/typography/typography.php:134
+#: inc/core/codestar/fields/typography/typography.php:144
+#: inc/core/codestar/fields/typography/typography.php:145
 msgid "Load Extra Styles"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:147
+#: inc/core/codestar/fields/typography/typography.php:158
 msgid "Subset"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:157
+#: inc/core/codestar/fields/typography/typography.php:168
 msgid "Text Align"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:159
+#: inc/core/codestar/fields/typography/typography.php:170
 msgid "Inherit"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:160
-#: inc/csf/options.customize.php:152 inc/csf/options.customize.php:162
-#: inc/csf/options.customize.php:172
+#: inc/core/codestar/fields/typography/typography.php:171
+#: inc/csf/options.customize.php:168 inc/csf/options.customize.php:178
+#: inc/csf/options.customize.php:188
 msgid "Left"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:161
+#: inc/core/codestar/fields/typography/typography.php:172
 msgid "Center"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:162
-#: inc/csf/options.customize.php:151 inc/csf/options.customize.php:161
-#: inc/csf/options.customize.php:171
+#: inc/core/codestar/fields/typography/typography.php:173
+#: inc/csf/options.customize.php:167 inc/csf/options.customize.php:177
+#: inc/csf/options.customize.php:187
 msgid "Right"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:163
+#: inc/core/codestar/fields/typography/typography.php:174
 msgid "Justify"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:164
+#: inc/core/codestar/fields/typography/typography.php:175
 msgid "Initial"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:173
+#: inc/core/codestar/fields/typography/typography.php:184
 msgid "Font Variant"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:176
+#: inc/core/codestar/fields/typography/typography.php:187
 msgid "Small Caps"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:177
+#: inc/core/codestar/fields/typography/typography.php:188
 msgid "All Small Caps"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:186
+#: inc/core/codestar/fields/typography/typography.php:197
 msgid "Text Transform"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:189
+#: inc/core/codestar/fields/typography/typography.php:200
 msgid "Capitalize"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:190
+#: inc/core/codestar/fields/typography/typography.php:201
 msgid "Uppercase"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:191
+#: inc/core/codestar/fields/typography/typography.php:202
 msgid "Lowercase"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:200
+#: inc/core/codestar/fields/typography/typography.php:211
 msgid "Text Decoration"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:207
+#: inc/core/codestar/fields/typography/typography.php:218
 msgid "Wavy"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:208
+#: inc/core/codestar/fields/typography/typography.php:219
 msgid "Overline"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:209
+#: inc/core/codestar/fields/typography/typography.php:220
 msgid "Line-through"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:222
+#: inc/core/codestar/fields/typography/typography.php:233
 msgid "Font Size"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:234
+#: inc/core/codestar/fields/typography/typography.php:245
 msgid "Line Height"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:246
+#: inc/core/codestar/fields/typography/typography.php:257
 msgid "Letter Spacing"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:258
+#: inc/core/codestar/fields/typography/typography.php:269
 msgid "Word Spacing"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:273
+#: inc/core/codestar/fields/typography/typography.php:284
 msgid "Font Color"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:284
+#: inc/core/codestar/fields/typography/typography.php:295
 msgid "Custom Style"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:351
+#: inc/core/codestar/fields/typography/typography.php:362
 msgid "Custom Web Fonts"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:357
+#: inc/core/codestar/fields/typography/typography.php:368
 msgid "Safe Web Fonts"
 msgstr ""
 
-#: inc/core/codestar/fields/typography/typography.php:377
+#: inc/core/codestar/fields/typography/typography.php:388
 msgid "Google Web Fonts"
-msgstr ""
-
-#: inc/core/codestar/functions/actions.php:41
-msgid "No data provided by developer"
 msgstr ""
 
 #: inc/core/codestar/functions/actions.php:72
 #: inc/core/codestar/functions/actions.php:110
-msgid "Error: Options unique id could not valid."
+msgid "Error: Invalid key."
 msgstr ""
 
 #: inc/core/codestar/functions/actions.php:114
-msgid "Error: Import data could not valid."
+msgid "Error: The response is not a valid JSON response."
 msgstr ""
 
 #: inc/core/codestar/functions/actions.php:174
-msgid "Error: Missing request arguments."
+msgid "Error: Invalid term ID."
 msgstr ""
 
 #: inc/core/codestar/functions/actions.php:180
-msgid "You do not have required permissions to access."
+msgid "Error: You do not have permission to do that."
 msgstr ""
 
 #: inc/core/codestar/functions/validate.php:14
 #: inc/core/codestar/functions/validate.php:86
-msgid "Please write a valid email address!"
+msgid "Please enter a valid email address."
 msgstr ""
 
 #: inc/core/codestar/functions/validate.php:32
 #: inc/core/codestar/functions/validate.php:106
-msgid "Please write a numeric data!"
+msgid "Please enter a valid number."
 msgstr ""
 
 #: inc/core/codestar/functions/validate.php:50
 #: inc/core/codestar/functions/validate.php:126
-msgid "Error! This field is required!"
+msgid "This field is required."
 msgstr ""
 
 #: inc/core/codestar/functions/validate.php:68
 #: inc/core/codestar/functions/validate.php:146
-msgid "Please write a valid url!"
+msgid "Please enter a valid URL."
 msgstr ""
 
 #: inc/core/dbmvs/classes/adminpage.php:49
-#: inc/core/dbmvs/classes/importers.php:626 inc/parts/single/temporadas.php:29
+#: inc/core/dbmvs/classes/importers.php:636 inc/parts/single/temporadas.php:29
 msgid "{name}: Season {season}"
 msgstr ""
 
@@ -1055,8 +1028,8 @@ msgstr ""
 
 #: inc/core/dbmvs/classes/ajax.php:94 inc/core/dbmvs/classes/ajax.php:180
 #: inc/core/dbmvs/classes/ajax.php:208 inc/core/dbmvs/classes/ajax.php:238
-#: inc/core/dbmvs/classes/importers.php:691
-#: inc/core/dbmvs/classes/importers.php:816
+#: inc/core/dbmvs/classes/importers.php:707
+#: inc/core/dbmvs/classes/importers.php:838
 msgid "Complete required data"
 msgstr ""
 
@@ -1080,208 +1053,208 @@ msgstr ""
 msgid "Dooplay"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:97
-#: inc/core/dbmvs/classes/dashboard.php:124
-#: inc/core/dbmvs/classes/inboxes.php:248
+#: inc/core/dbmvs/classes/dashboard.php:98
+#: inc/core/dbmvs/classes/dashboard.php:125
+#: inc/core/dbmvs/classes/inboxes.php:269
 msgid "Authentication error"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:144
+#: inc/core/dbmvs/classes/dashboard.php:145
 msgid "Guest"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:151
-#: inc/core/dbmvs/classes/inboxes.php:203
+#: inc/core/dbmvs/classes/dashboard.php:152
+#: inc/core/dbmvs/classes/inboxes.php:224
 msgid "Report details"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:160
-#: inc/core/dbmvs/classes/inboxes.php:215
+#: inc/core/dbmvs/classes/dashboard.php:161
+#: inc/core/dbmvs/classes/inboxes.php:236
 msgid "Sender"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:161
-#: inc/core/dbmvs/classes/dashboard.php:198
-#: inc/core/dbmvs/classes/inboxes.php:110
-#: inc/core/dbmvs/classes/inboxes.php:219
+#: inc/core/dbmvs/classes/dashboard.php:162
+#: inc/core/dbmvs/classes/dashboard.php:199
+#: inc/core/dbmvs/classes/inboxes.php:131
+#: inc/core/dbmvs/classes/inboxes.php:240
 msgid "IP Address"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:163
-#: inc/core/dbmvs/classes/enqueues.php:71
-#: inc/core/dbmvs/classes/epsemboxes.php:151
-#: inc/core/dbmvs/classes/epsemboxes.php:185 inc/doo_links.php:590
+#: inc/core/dbmvs/classes/dashboard.php:164
+#: inc/core/dbmvs/classes/enqueues.php:73
+#: inc/core/dbmvs/classes/epsemboxes.php:160
+#: inc/core/dbmvs/classes/epsemboxes.php:194 inc/doo_links.php:590
 #: inc/doo_links.php:644 inc/doo_links.php:685 inc/parts/item_links.php:42
 #: inc/parts/item_links_admin.php:38
 msgid "Edit"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:164
+#: inc/core/dbmvs/classes/dashboard.php:165
 msgid "View Post"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:165
-#: inc/core/dbmvs/classes/dashboard.php:201
+#: inc/core/dbmvs/classes/dashboard.php:166
+#: inc/core/dbmvs/classes/dashboard.php:202
 msgid "Close"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:185
+#: inc/core/dbmvs/classes/dashboard.php:186
 msgid "Reply"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:194
-#: inc/core/dbmvs/classes/inboxes.php:108
+#: inc/core/dbmvs/classes/dashboard.php:195
+#: inc/core/dbmvs/classes/inboxes.php:129
 msgid "Email Address"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:197
-#: inc/core/dbmvs/classes/inboxes.php:112
+#: inc/core/dbmvs/classes/dashboard.php:198
+#: inc/core/dbmvs/classes/inboxes.php:133
 msgid "Reference"
 msgstr ""
 
-#: inc/core/dbmvs/classes/dashboard.php:200
+#: inc/core/dbmvs/classes/dashboard.php:201
 msgid "Answer"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:51
+#: inc/core/dbmvs/classes/enqueues.php:53
 msgid "Processing.."
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:52
+#: inc/core/dbmvs/classes/enqueues.php:54
 msgid "There is no Internet connection"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:53
+#: inc/core/dbmvs/classes/enqueues.php:55
 msgid "Our services are out of line, please try again later"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:54
+#: inc/core/dbmvs/classes/enqueues.php:56
 msgid "The title does not exist or resources are not available at this time"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:55
+#: inc/core/dbmvs/classes/enqueues.php:57
 msgid "You have not added an API key for Dbmovies"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:56
-#: inc/core/dbmvs/tpl/import_seaepis.php:17 inc/doo_scripts.php:193
-#: inc/doo_scripts.php:224 inc/parts/modules/episodes.php:43
-#: inc/parts/modules/featured-post-movies.php:43
-#: inc/parts/modules/featured-post-tvshows.php:43
-#: inc/parts/modules/featured-post.php:44 inc/parts/modules/movies.php:44
-#: inc/parts/modules/seasons.php:43 inc/parts/modules/tvshows.php:44
-#: inc/widgets/content_widget_home.php:47
+#: inc/core/dbmvs/classes/enqueues.php:58
+#: inc/core/dbmvs/tpl/import_seaepis.php:17 inc/doo_scripts.php:195
+#: inc/doo_scripts.php:226 inc/parts/modules/episodes.php:45
+#: inc/parts/modules/featured-post-movies.php:44
+#: inc/parts/modules/featured-post-tvshows.php:44
+#: inc/parts/modules/featured-post.php:45 inc/parts/modules/movies.php:46
+#: inc/parts/modules/seasons.php:45 inc/parts/modules/tvshows.php:46
+#: inc/widgets/content_widget_home.php:52
 msgid "Loading.."
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:57 inc/core/dbmvs/tpl/admin_app.php:119
+#: inc/core/dbmvs/classes/enqueues.php:59 inc/core/dbmvs/tpl/admin_app.php:119
 msgid "Load More"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:60
+#: inc/core/dbmvs/classes/enqueues.php:62
 #: inc/core/dbmvs/tpl/admin_settings.php:50
 msgid "Save Changes"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:61
+#: inc/core/dbmvs/classes/enqueues.php:63
 msgid "Saving.."
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:62
-#: inc/core/dbmvs/classes/updater.php:240 inc/doo_auth.php:110
+#: inc/core/dbmvs/classes/enqueues.php:64
+#: inc/core/dbmvs/classes/updater.php:240 inc/doo_auth.php:105
 #: pages/sections/dt_foot.php:6
 msgid "Unknown error"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:63
+#: inc/core/dbmvs/classes/enqueues.php:65
 msgid "Connection error"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:64
+#: inc/core/dbmvs/classes/enqueues.php:66
 msgid "Api key invalid or blocked"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:65
+#: inc/core/dbmvs/classes/enqueues.php:67
 msgid "There are not enough credits to continue"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:66 inc/core/dbmvs/classes/filters.php:66
+#: inc/core/dbmvs/classes/enqueues.php:68 inc/core/dbmvs/classes/filters.php:66
 msgid "Process Completed"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:67
+#: inc/core/dbmvs/classes/enqueues.php:69
 msgid "Welcome, the service has started successfully"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:68
+#: inc/core/dbmvs/classes/enqueues.php:70
 msgid "Log cleaned"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:69
-#: inc/core/dbmvs/classes/importers.php:287
-#: inc/core/dbmvs/classes/importers.php:550
+#: inc/core/dbmvs/classes/enqueues.php:71
+#: inc/core/dbmvs/classes/importers.php:292
+#: inc/core/dbmvs/classes/importers.php:560
 msgid "Imported"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:70
+#: inc/core/dbmvs/classes/enqueues.php:72
 #: inc/core/dbmvs/classes/updater.php:117
 #: inc/core/dbmvs/classes/updater.php:263
 msgid "Updated"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:72
+#: inc/core/dbmvs/classes/enqueues.php:74
 msgid "No content available"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:74
+#: inc/core/dbmvs/classes/enqueues.php:76
 msgid "Second"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:75
+#: inc/core/dbmvs/classes/enqueues.php:77
 msgid "Seconds"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:76
+#: inc/core/dbmvs/classes/enqueues.php:78
 msgid "Minute"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:77
+#: inc/core/dbmvs/classes/enqueues.php:79
 msgid "Minutes"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:78
+#: inc/core/dbmvs/classes/enqueues.php:80
 msgid "Hour"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:79
+#: inc/core/dbmvs/classes/enqueues.php:81
 msgid "Hours"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:80
+#: inc/core/dbmvs/classes/enqueues.php:82
 msgid "Day"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:81
+#: inc/core/dbmvs/classes/enqueues.php:83
 msgid "Days"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:82
+#: inc/core/dbmvs/classes/enqueues.php:84
 msgid "Week"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:83
+#: inc/core/dbmvs/classes/enqueues.php:85
 msgid "Weeks"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:84
+#: inc/core/dbmvs/classes/enqueues.php:86
 msgid "Month"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:85
+#: inc/core/dbmvs/classes/enqueues.php:87
 msgid "Months"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:86
+#: inc/core/dbmvs/classes/enqueues.php:88
 #: inc/core/dbmvs/classes/taxonomies.php:219
 #: inc/core/dbmvs/classes/taxonomies.php:220
 #: inc/core/dbmvs/classes/taxonomies.php:221
@@ -1289,51 +1262,51 @@ msgstr ""
 msgid "Year"
 msgstr ""
 
-#: inc/core/dbmvs/classes/enqueues.php:87
+#: inc/core/dbmvs/classes/enqueues.php:89
 msgid "Years"
 msgstr ""
 
-#: inc/core/dbmvs/classes/epsemboxes.php:43
+#: inc/core/dbmvs/classes/epsemboxes.php:52
 msgid "Generate new seasons"
 msgstr ""
 
-#: inc/core/dbmvs/classes/epsemboxes.php:43
+#: inc/core/dbmvs/classes/epsemboxes.php:52
 msgid "Generate Seasons"
 msgstr ""
 
-#: inc/core/dbmvs/classes/epsemboxes.php:48
-#: inc/core/dbmvs/classes/epsemboxes.php:67
+#: inc/core/dbmvs/classes/epsemboxes.php:57
+#: inc/core/dbmvs/classes/epsemboxes.php:76
 msgid "There is not yet content to show"
 msgstr ""
 
-#: inc/core/dbmvs/classes/epsemboxes.php:62
+#: inc/core/dbmvs/classes/epsemboxes.php:71
 msgid "Generate new episodes"
 msgstr ""
 
-#: inc/core/dbmvs/classes/epsemboxes.php:62
+#: inc/core/dbmvs/classes/epsemboxes.php:71
 msgid "Generate Episodes"
 msgstr ""
 
-#: inc/core/dbmvs/classes/epsemboxes.php:141
-#: inc/core/dbmvs/classes/epsemboxes.php:178
+#: inc/core/dbmvs/classes/epsemboxes.php:150
+#: inc/core/dbmvs/classes/epsemboxes.php:187
 msgid "date not defined"
 msgstr ""
 
-#: inc/core/dbmvs/classes/epsemboxes.php:145
+#: inc/core/dbmvs/classes/epsemboxes.php:154
 #: inc/core/dbmvs/classes/tables.php:158
 msgid "Get episodes"
 msgstr ""
 
-#: inc/core/dbmvs/classes/epsemboxes.php:152
-#: inc/core/dbmvs/classes/epsemboxes.php:186
+#: inc/core/dbmvs/classes/epsemboxes.php:161
+#: inc/core/dbmvs/classes/epsemboxes.php:195
 #: inc/parts/simple_item_favorites.php:5 inc/parts/simple_item_views.php:5
 msgid "View"
 msgstr ""
 
-#: inc/core/dbmvs/classes/epsemboxes.php:153
-#: inc/core/dbmvs/classes/epsemboxes.php:187 inc/doo_links.php:276
+#: inc/core/dbmvs/classes/epsemboxes.php:162
+#: inc/core/dbmvs/classes/epsemboxes.php:196 inc/doo_links.php:276
 #: inc/doo_links.php:591 inc/doo_links.php:645 inc/doo_links.php:686
-#: inc/doo_scripts.php:207 inc/parts/item_links.php:49
+#: inc/doo_scripts.php:209 inc/parts/item_links.php:49
 #: inc/parts/item_links_admin.php:45
 msgid "Delete"
 msgstr ""
@@ -1342,45 +1315,45 @@ msgstr ""
 msgid "No date"
 msgstr ""
 
-#: inc/core/dbmvs/classes/helpers.php:22 inc/parts/single/report-video.php:12
+#: inc/core/dbmvs/classes/helpers.php:22 inc/parts/single/report-video.php:13
 msgid "Labeling problem"
 msgstr ""
 
-#: inc/core/dbmvs/classes/helpers.php:23 inc/parts/single/report-video.php:13
+#: inc/core/dbmvs/classes/helpers.php:23 inc/parts/single/report-video.php:14
 msgid "Wrong title or summary, or episode out of order"
 msgstr ""
 
-#: inc/core/dbmvs/classes/helpers.php:29 inc/parts/single/report-video.php:17
+#: inc/core/dbmvs/classes/helpers.php:29 inc/parts/single/report-video.php:18
 msgid "Video Problem"
 msgstr ""
 
-#: inc/core/dbmvs/classes/helpers.php:30 inc/parts/single/report-video.php:18
+#: inc/core/dbmvs/classes/helpers.php:30 inc/parts/single/report-video.php:19
 msgid "Blurry, cuts out, or looks strange in some way"
 msgstr ""
 
-#: inc/core/dbmvs/classes/helpers.php:36 inc/parts/single/report-video.php:22
+#: inc/core/dbmvs/classes/helpers.php:36 inc/parts/single/report-video.php:23
 msgid "Sound Problem"
 msgstr ""
 
-#: inc/core/dbmvs/classes/helpers.php:37 inc/parts/single/report-video.php:23
+#: inc/core/dbmvs/classes/helpers.php:37 inc/parts/single/report-video.php:24
 msgid "Hard to hear, not matched with video, or missing in some parts"
 msgstr ""
 
-#: inc/core/dbmvs/classes/helpers.php:43 inc/parts/single/report-video.php:27
+#: inc/core/dbmvs/classes/helpers.php:43 inc/parts/single/report-video.php:28
 msgid "Subtitles or captions problem"
 msgstr ""
 
-#: inc/core/dbmvs/classes/helpers.php:44 inc/parts/single/report-video.php:28
+#: inc/core/dbmvs/classes/helpers.php:44 inc/parts/single/report-video.php:29
 msgid ""
 "Missing, hard to read, not matched with sound, misspellings, or poor "
 "translations"
 msgstr ""
 
-#: inc/core/dbmvs/classes/helpers.php:50 inc/parts/single/report-video.php:32
+#: inc/core/dbmvs/classes/helpers.php:50 inc/parts/single/report-video.php:33
 msgid "Buffering or connection problem"
 msgstr ""
 
-#: inc/core/dbmvs/classes/helpers.php:51 inc/parts/single/report-video.php:33
+#: inc/core/dbmvs/classes/helpers.php:51 inc/parts/single/report-video.php:34
 msgid "Frequent rebuffering, playback won't start, or other problem"
 msgstr ""
 
@@ -1718,94 +1691,94 @@ msgid "Pending process"
 msgstr ""
 
 #: inc/core/dbmvs/classes/importers.php:71
-#: inc/core/dbmvs/classes/inboxes.php:42
+#: inc/core/dbmvs/classes/inboxes.php:63
 msgid "Unknown action"
 msgstr ""
 
-#: inc/core/dbmvs/classes/importers.php:286
+#: inc/core/dbmvs/classes/importers.php:291
 #: inc/core/dbmvs/classes/postypes.php:32
 #: inc/core/dbmvs/classes/requests.php:137
-#: inc/core/dbmvs/classes/requests.php:299 inc/parts/item_b.php:11
+#: inc/core/dbmvs/classes/requests.php:299 inc/parts/item_b.php:13
 #: pages/search.php:30
 msgid "Movie"
 msgstr ""
 
-#: inc/core/dbmvs/classes/importers.php:297
-#: inc/core/dbmvs/classes/importers.php:560
-#: inc/core/dbmvs/classes/importers.php:672
-#: inc/core/dbmvs/classes/importers.php:797
-#: inc/core/dbmvs/classes/inboxes.php:124
-#: inc/core/dbmvs/classes/inboxes.php:230
+#: inc/core/dbmvs/classes/importers.php:302
+#: inc/core/dbmvs/classes/importers.php:570
+#: inc/core/dbmvs/classes/importers.php:688
+#: inc/core/dbmvs/classes/importers.php:819
+#: inc/core/dbmvs/classes/inboxes.php:145
+#: inc/core/dbmvs/classes/inboxes.php:251
 msgid "Error WordPress"
 msgstr ""
 
-#: inc/core/dbmvs/classes/importers.php:303
-#: inc/core/dbmvs/classes/importers.php:566
+#: inc/core/dbmvs/classes/importers.php:308
+#: inc/core/dbmvs/classes/importers.php:576
 msgid "The title is not defined"
 msgstr ""
 
-#: inc/core/dbmvs/classes/importers.php:309
-#: inc/core/dbmvs/classes/importers.php:578
+#: inc/core/dbmvs/classes/importers.php:314
+#: inc/core/dbmvs/classes/importers.php:588
 msgid "This title already exists in the database"
 msgstr ""
 
-#: inc/core/dbmvs/classes/importers.php:315
-#: inc/core/dbmvs/classes/importers.php:584
+#: inc/core/dbmvs/classes/importers.php:320
+#: inc/core/dbmvs/classes/importers.php:594
 msgid "This link is not valid"
 msgstr ""
 
-#: inc/core/dbmvs/classes/importers.php:321
-#: inc/core/dbmvs/classes/importers.php:590
+#: inc/core/dbmvs/classes/importers.php:326
+#: inc/core/dbmvs/classes/importers.php:600
 msgid "TMDb ID is not defined"
 msgstr ""
 
-#: inc/core/dbmvs/classes/importers.php:685
+#: inc/core/dbmvs/classes/importers.php:701
 msgid "This season already exists in database"
 msgstr ""
 
-#: inc/core/dbmvs/classes/importers.php:810
+#: inc/core/dbmvs/classes/importers.php:832
 msgid "This episode already exists in database"
 msgstr ""
 
-#: inc/core/dbmvs/classes/inboxes.php:109
+#: inc/core/dbmvs/classes/inboxes.php:130
 msgid "Contact Key"
 msgstr ""
 
-#: inc/core/dbmvs/classes/inboxes.php:114
+#: inc/core/dbmvs/classes/inboxes.php:135
 msgid "New contact message"
 msgstr ""
 
-#: inc/core/dbmvs/classes/inboxes.php:119
+#: inc/core/dbmvs/classes/inboxes.php:140
 msgid "Your message was sent successfully."
 msgstr ""
 
-#: inc/core/dbmvs/classes/inboxes.php:130
-#: inc/core/dbmvs/classes/inboxes.php:236
+#: inc/core/dbmvs/classes/inboxes.php:151
+#: inc/core/dbmvs/classes/inboxes.php:257
 msgid "Your IP address has been blocked"
 msgstr ""
 
-#: inc/core/dbmvs/classes/inboxes.php:136
-#: inc/core/dbmvs/classes/inboxes.php:242
+#: inc/core/dbmvs/classes/inboxes.php:157
+#: inc/core/dbmvs/classes/inboxes.php:263
 msgid "Logs limit exceeded, please try again later."
 msgstr ""
 
-#: inc/core/dbmvs/classes/inboxes.php:142 inc/doo_auth.php:116
+#: inc/core/dbmvs/classes/inboxes.php:163 inc/doo_auth.php:111
 msgid "Google reCAPTCHA Error"
 msgstr ""
 
-#: inc/core/dbmvs/classes/inboxes.php:202
+#: inc/core/dbmvs/classes/inboxes.php:223
 msgid "New report registered"
 msgstr ""
 
-#: inc/core/dbmvs/classes/inboxes.php:217 inc/doo_ajax.php:49
+#: inc/core/dbmvs/classes/inboxes.php:238
 msgid "Permalink"
 msgstr ""
 
-#: inc/core/dbmvs/classes/inboxes.php:218
+#: inc/core/dbmvs/classes/inboxes.php:239
 msgid "Edit Content"
 msgstr ""
 
-#: inc/core/dbmvs/classes/inboxes.php:225
+#: inc/core/dbmvs/classes/inboxes.php:246
 msgid "Report sent successfully"
 msgstr ""
 
@@ -1826,9 +1799,9 @@ msgid "Episode Info"
 msgstr ""
 
 #: inc/core/dbmvs/classes/metaboxes.php:49
-#: inc/core/dbmvs/classes/metaboxes.php:215
-#: inc/core/dbmvs/classes/metaboxes.php:347
-#: inc/core/dbmvs/classes/metaboxes.php:401
+#: inc/core/dbmvs/classes/metaboxes.php:209
+#: inc/core/dbmvs/classes/metaboxes.php:334
+#: inc/core/dbmvs/classes/metaboxes.php:385
 msgid "Generate data"
 msgstr ""
 
@@ -1841,118 +1814,118 @@ msgid "E.g. http://www.imdb.com/title/<strong>tt2911666</strong>/"
 msgstr ""
 
 #: inc/core/dbmvs/classes/metaboxes.php:58
-#: inc/core/dbmvs/classes/metaboxes.php:230
+#: inc/core/dbmvs/classes/metaboxes.php:224
 msgid "Featured Title"
 msgstr ""
 
 #: inc/core/dbmvs/classes/metaboxes.php:59
-#: inc/core/dbmvs/classes/metaboxes.php:231
+#: inc/core/dbmvs/classes/metaboxes.php:225
 msgid "Do you want to mark this title as a featured item?"
 msgstr ""
 
 #: inc/core/dbmvs/classes/metaboxes.php:64
-#: inc/core/dbmvs/classes/metaboxes.php:236
+#: inc/core/dbmvs/classes/metaboxes.php:230
 msgid "Images and trailer"
 msgstr ""
 
 #: inc/core/dbmvs/classes/metaboxes.php:69
-#: inc/core/dbmvs/classes/metaboxes.php:241
-#: inc/core/dbmvs/classes/metaboxes.php:368
+#: inc/core/dbmvs/classes/metaboxes.php:235
+#: inc/core/dbmvs/classes/metaboxes.php:354
 msgid "Poster"
 msgstr ""
 
 #: inc/core/dbmvs/classes/metaboxes.php:70
-#: inc/core/dbmvs/classes/metaboxes.php:78
+#: inc/core/dbmvs/classes/metaboxes.php:76
+#: inc/core/dbmvs/classes/metaboxes.php:236
 #: inc/core/dbmvs/classes/metaboxes.php:242
-#: inc/core/dbmvs/classes/metaboxes.php:250
-#: inc/core/dbmvs/classes/metaboxes.php:369
-#: inc/core/dbmvs/classes/metaboxes.php:423
+#: inc/core/dbmvs/classes/metaboxes.php:355
+#: inc/core/dbmvs/classes/metaboxes.php:405
 msgid "Add url image"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:77
-#: inc/core/dbmvs/classes/metaboxes.php:249
-#: inc/core/dbmvs/classes/metaboxes.php:422
+#: inc/core/dbmvs/classes/metaboxes.php:75
+#: inc/core/dbmvs/classes/metaboxes.php:241
+#: inc/core/dbmvs/classes/metaboxes.php:404
 msgid "Main Backdrop"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:89
-#: inc/core/dbmvs/classes/metaboxes.php:261
-#: inc/core/dbmvs/classes/metaboxes.php:434
+#: inc/core/dbmvs/classes/metaboxes.php:83
+#: inc/core/dbmvs/classes/metaboxes.php:248
+#: inc/core/dbmvs/classes/metaboxes.php:411
 msgid "Backdrops"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:90
-#: inc/core/dbmvs/classes/metaboxes.php:262
-#: inc/core/dbmvs/classes/metaboxes.php:435
+#: inc/core/dbmvs/classes/metaboxes.php:84
+#: inc/core/dbmvs/classes/metaboxes.php:249
+#: inc/core/dbmvs/classes/metaboxes.php:412
 msgid "Place each image url below another"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:96
-#: inc/core/dbmvs/classes/metaboxes.php:268 inc/parts/single/series.php:112
+#: inc/core/dbmvs/classes/metaboxes.php:90
+#: inc/core/dbmvs/classes/metaboxes.php:255 inc/parts/single/series.php:112
 msgid "Video trailer"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:97
-#: inc/core/dbmvs/classes/metaboxes.php:269
+#: inc/core/dbmvs/classes/metaboxes.php:91
+#: inc/core/dbmvs/classes/metaboxes.php:256
 msgid "Add id Youtube video"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:104
+#: inc/core/dbmvs/classes/metaboxes.php:98
 msgid "IMDb.com data"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:111
+#: inc/core/dbmvs/classes/metaboxes.php:105
 msgid "Rating IMDb"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:112
-#: inc/core/dbmvs/classes/metaboxes.php:176
-#: inc/core/dbmvs/classes/metaboxes.php:307
+#: inc/core/dbmvs/classes/metaboxes.php:106
+#: inc/core/dbmvs/classes/metaboxes.php:170
+#: inc/core/dbmvs/classes/metaboxes.php:294
 msgid "Average / votes"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:120
+#: inc/core/dbmvs/classes/metaboxes.php:114
 msgid "Rated"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:129
+#: inc/core/dbmvs/classes/metaboxes.php:123
 msgid "Country"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:134
+#: inc/core/dbmvs/classes/metaboxes.php:128
 msgid "Themoviedb.org data"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:144
+#: inc/core/dbmvs/classes/metaboxes.php:138
 #: inc/core/dbmvs/classes/tables.php:126
 msgid "ID TMDb"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:154 inc/parts/single/peliculas.php:112
+#: inc/core/dbmvs/classes/metaboxes.php:148 inc/parts/single/peliculas.php:112
 #: inc/parts/single/series.php:131
 msgid "Original title"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:163
+#: inc/core/dbmvs/classes/metaboxes.php:157
 msgid "Tag line"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:168
+#: inc/core/dbmvs/classes/metaboxes.php:162
 msgid "Release Date"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:175
-#: inc/core/dbmvs/classes/metaboxes.php:306
+#: inc/core/dbmvs/classes/metaboxes.php:169
+#: inc/core/dbmvs/classes/metaboxes.php:293
 msgid "Rating TMDb"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:182
+#: inc/core/dbmvs/classes/metaboxes.php:176
 msgid "Runtime"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:189
-#: inc/core/dbmvs/classes/metaboxes.php:319
+#: inc/core/dbmvs/classes/metaboxes.php:183
+#: inc/core/dbmvs/classes/metaboxes.php:306
 #: inc/core/dbmvs/classes/taxonomies.php:74
 #: inc/core/dbmvs/classes/taxonomies.php:75
 #: inc/core/dbmvs/classes/taxonomies.php:76 inc/includes/slugs.php:35
@@ -1961,100 +1934,100 @@ msgstr ""
 msgid "Cast"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:194
+#: inc/core/dbmvs/classes/metaboxes.php:188
 #: inc/core/dbmvs/classes/taxonomies.php:103
 #: inc/core/dbmvs/classes/taxonomies.php:104
-#: inc/core/dbmvs/classes/taxonomies.php:105 inc/doo_init.php:507
+#: inc/core/dbmvs/classes/taxonomies.php:105 inc/doo_init.php:527
 #: inc/includes/slugs.php:37 inc/parts/single/peliculas.php:133
 msgid "Director"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:216
-#: inc/core/dbmvs/classes/metaboxes.php:348
-#: inc/core/dbmvs/classes/metaboxes.php:402
+#: inc/core/dbmvs/classes/metaboxes.php:210
+#: inc/core/dbmvs/classes/metaboxes.php:335
+#: inc/core/dbmvs/classes/metaboxes.php:386
 msgid "Generate data from <strong>themoviedb.org</strong>"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:217
+#: inc/core/dbmvs/classes/metaboxes.php:211
 msgid ""
 "E.g. https://www.themoviedb.org/tv/<strong>1402</strong>-the-walking-dead"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:224
+#: inc/core/dbmvs/classes/metaboxes.php:218
 msgid "Seasons control"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:225
+#: inc/core/dbmvs/classes/metaboxes.php:219
 msgid "I have generated seasons or I will manually"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:275
+#: inc/core/dbmvs/classes/metaboxes.php:262
 msgid "More data"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:281
+#: inc/core/dbmvs/classes/metaboxes.php:268
 msgid "Original Name"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:286
+#: inc/core/dbmvs/classes/metaboxes.php:273
 msgid "Firt air date"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:291 inc/parts/single/series.php:148
+#: inc/core/dbmvs/classes/metaboxes.php:278 inc/parts/single/series.php:148
 msgid "Last air date"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:298
+#: inc/core/dbmvs/classes/metaboxes.php:285
 msgid "Content total posted"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:299
+#: inc/core/dbmvs/classes/metaboxes.php:286
 msgid "Seasons / Episodes"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:313
+#: inc/core/dbmvs/classes/metaboxes.php:300
 msgid "Episode runtime"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:324
+#: inc/core/dbmvs/classes/metaboxes.php:311
 #: inc/core/dbmvs/classes/taxonomies.php:132
 #: inc/core/dbmvs/classes/taxonomies.php:133
-#: inc/core/dbmvs/classes/taxonomies.php:134 inc/doo_init.php:538
+#: inc/core/dbmvs/classes/taxonomies.php:134 inc/doo_init.php:558
 #: inc/includes/slugs.php:36 inc/parts/single/series.php:99
 msgid "Creator"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:349
+#: inc/core/dbmvs/classes/metaboxes.php:336
 msgid ""
 "E.g. https://www.themoviedb.org/tv/<strong>1402</strong>-the-walking-dead/"
 "season/<strong>1</strong>/"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:356
+#: inc/core/dbmvs/classes/metaboxes.php:343
 msgid "Episodes control"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:357
+#: inc/core/dbmvs/classes/metaboxes.php:344
 msgid "I generated episodes or add manually"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:363
-#: inc/core/dbmvs/classes/metaboxes.php:417
+#: inc/core/dbmvs/classes/metaboxes.php:349
+#: inc/core/dbmvs/classes/metaboxes.php:399
 msgid "Serie name"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:376
-#: inc/core/dbmvs/classes/metaboxes.php:440
+#: inc/core/dbmvs/classes/metaboxes.php:360
+#: inc/core/dbmvs/classes/metaboxes.php:417
 msgid "Air date"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:403
+#: inc/core/dbmvs/classes/metaboxes.php:387
 msgid ""
 "E.g. https://www.themoviedb.org/tv/<strong>1402</strong>-the-walking-dead/"
 "season/<strong>1</strong>/episode/<strong>2</strong>"
 msgstr ""
 
-#: inc/core/dbmvs/classes/metaboxes.php:411
+#: inc/core/dbmvs/classes/metaboxes.php:394
 msgid "Episode title"
 msgstr ""
 
@@ -2064,8 +2037,8 @@ msgstr ""
 
 #: inc/core/dbmvs/classes/postypes.php:84
 #: inc/core/dbmvs/classes/requests.php:138
-#: inc/core/dbmvs/classes/tables.php:176 pages/rating.php:25
-#: pages/trending.php:26
+#: inc/core/dbmvs/classes/tables.php:176 pages/rating.php:28
+#: pages/trending.php:29
 msgid "TV Show"
 msgstr ""
 
@@ -2141,8 +2114,8 @@ msgstr ""
 msgid "D"
 msgstr ""
 
-#: inc/core/dbmvs/classes/requests.php:234 inc/doo_ajax.php:320
-#: inc/doo_ajax.php:363
+#: inc/core/dbmvs/classes/requests.php:234 inc/doo_ajax.php:262
+#: inc/doo_ajax.php:305
 msgid "No results"
 msgstr ""
 
@@ -2155,10 +2128,10 @@ msgid "in"
 msgstr ""
 
 #: inc/core/dbmvs/classes/requests.php:237
-#: inc/widgets/content_widget_home.php:141
-#: inc/widgets/content_widget_home.php:142
-#: inc/widgets/content_widget_home.php:143
-#: inc/widgets/content_widget_home.php:144
+#: inc/widgets/content_widget_home.php:146
+#: inc/widgets/content_widget_home.php:147
+#: inc/widgets/content_widget_home.php:148
+#: inc/widgets/content_widget_home.php:149
 msgid "seconds"
 msgstr ""
 
@@ -2200,7 +2173,7 @@ msgid ""
 msgstr ""
 
 #: inc/core/dbmvs/classes/tables.php:57 inc/core/dbmvs/classes/tables.php:115
-#: inc/doo_scripts.php:254
+#: inc/doo_scripts.php:256
 msgid "Add"
 msgstr ""
 
@@ -2213,9 +2186,9 @@ msgid "IMDb ID"
 msgstr ""
 
 #: inc/core/dbmvs/classes/tables.php:71 inc/core/dbmvs/classes/tables.php:130
-#: inc/parts/modules/featured-post-movies.php:57
-#: inc/parts/modules/featured-post-tvshows.php:57
-#: inc/parts/modules/featured-post.php:58
+#: inc/parts/modules/featured-post-movies.php:58
+#: inc/parts/modules/featured-post-tvshows.php:58
+#: inc/parts/modules/featured-post.php:59
 msgid "Featured"
 msgstr ""
 
@@ -2332,7 +2305,7 @@ msgstr ""
 msgid "Expand"
 msgstr ""
 
-#: inc/core/dbmvs/tpl/admin_app.php:53 inc/doo_init.php:304
+#: inc/core/dbmvs/tpl/admin_app.php:53 inc/doo_init.php:324
 msgid "Page"
 msgstr ""
 
@@ -2361,7 +2334,7 @@ msgid "Search"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/admin_settings.php:4
-#: inc/csf/options.main_settings.php:107 pages/sections/account.php:150
+#: inc/csf/options.main_settings.php:119 pages/sections/account.php:150
 msgid "General"
 msgstr ""
 
@@ -2391,78 +2364,92 @@ msgid "Delete cache"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:3
-#: inc/csf/options.report_contact.php:26
+#: inc/core/dbmvs/tpl/dashboard_widget.php:51
+#: inc/csf/options.report_contact.php:40
 msgid "Reports"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:4
-#: inc/csf/options.main_settings.php:189 inc/csf/options.report_contact.php:33
-#: inc/doo_database.php:108
+#: inc/core/dbmvs/tpl/dashboard_widget.php:53
+#: inc/csf/options.main_settings.php:201 inc/csf/options.report_contact.php:47
+#: inc/doo_database.php:104
 msgid "Contact"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:5
-#: inc/core/dbmvs/tpl/dashboard_widget.php:46
-msgid "Quick access"
+msgid "More"
 msgstr ""
 
-#: inc/core/dbmvs/tpl/dashboard_widget.php:12
+#: inc/core/dbmvs/tpl/dashboard_widget.php:13
 msgid "Reported content"
 msgstr ""
 
-#: inc/core/dbmvs/tpl/dashboard_widget.php:29
+#: inc/core/dbmvs/tpl/dashboard_widget.php:31
 msgid "Contact messages"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:49
-msgid "Dbmovies importer"
-msgstr ""
-
-#: inc/core/dbmvs/tpl/dashboard_widget.php:50
-msgid "Dbmovies settings"
+msgid "Delete all messages"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:51
-msgid "Theme options"
+#: inc/core/dbmvs/tpl/dashboard_widget.php:53
+msgid "Do you really want to continue?"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:52
-msgid "Theme license"
+msgid "or"
 msgstr ""
 
-#: inc/core/dbmvs/tpl/dashboard_widget.php:53
-msgid "Database tool"
+#: inc/core/dbmvs/tpl/dashboard_widget.php:57
+msgid "Quick access"
 msgstr ""
 
-#: inc/core/dbmvs/tpl/dashboard_widget.php:54
-msgid "Permalinks"
-msgstr ""
-
-#: inc/core/dbmvs/tpl/dashboard_widget.php:55 inc/parts/admin/ads_tool.php:2
-msgid "Ad code manager"
-msgstr ""
-
-#: inc/core/dbmvs/tpl/dashboard_widget.php:58
-msgid "Support"
+#: inc/core/dbmvs/tpl/dashboard_widget.php:60
+msgid "Dbmovies importer"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:61
-msgid "Support Forums"
+msgid "Dbmovies settings"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:62
-msgid "Extended documentation"
+msgid "Theme options"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:63
-msgid "Changelog"
+msgid "Theme license"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:64
-msgid "WhatsApp"
+msgid "Database tool"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/dashboard_widget.php:65
+msgid "Permalinks"
+msgstr ""
+
+#: inc/core/dbmvs/tpl/dashboard_widget.php:66 inc/parts/admin/ads_tool.php:2
+msgid "Ad code manager"
+msgstr ""
+
+#: inc/core/dbmvs/tpl/dashboard_widget.php:69
+msgid "Support"
+msgstr ""
+
+#: inc/core/dbmvs/tpl/dashboard_widget.php:72
+msgid "Support Forums"
+msgstr ""
+
+#: inc/core/dbmvs/tpl/dashboard_widget.php:73
+msgid "Extended documentation"
+msgstr ""
+
+#: inc/core/dbmvs/tpl/dashboard_widget.php:74
+msgid "Changelog"
+msgstr ""
+
+#: inc/core/dbmvs/tpl/dashboard_widget.php:75
 msgid "Telegram Group"
 msgstr ""
 
@@ -2632,8 +2619,8 @@ msgid "User Requests"
 msgstr ""
 
 #: inc/core/dbmvs/tpl/form_setting_requests.php:8
-#: inc/csf/options.report_contact.php:15 inc/doo_comments.php:94
-#: pages/contact.php:19 pages/contact.php:28
+#: inc/csf/options.report_contact.php:29 inc/doo_comments.php:95
+#: pages/contact.php:20 pages/contact.php:29
 msgid "Email"
 msgstr ""
 
@@ -2913,8 +2900,8 @@ msgid ""
 "a>."
 msgstr ""
 
-#: inc/csf/options.blog_entries.php:8 inc/csf/options.customize.php:203
-#: inc/csf/options.main_settings.php:203
+#: inc/csf/options.blog_entries.php:8 inc/csf/options.customize.php:219
+#: inc/csf/options.main_settings.php:215
 msgid "Blog entries"
 msgstr ""
 
@@ -2941,7 +2928,7 @@ msgstr ""
 #: inc/csf/options.module_movies.php:22 inc/csf/options.module_seasons.php:22
 #: inc/csf/options.module_tvshows.php:22 inc/csf/options.top_imdb.php:56
 #: inc/widgets/content_related_widget.php:110 inc/widgets/content_widget.php:84
-#: inc/widgets/content_widget_home.php:148
+#: inc/widgets/content_widget_home.php:153
 #: inc/widgets/content_widget_views.php:83
 msgid "Items number"
 msgstr ""
@@ -2969,7 +2956,7 @@ msgstr ""
 msgid "WordPress"
 msgstr ""
 
-#: inc/csf/options.comments.php:19 inc/doo_init.php:678
+#: inc/csf/options.comments.php:19 inc/doo_init.php:698
 msgid "Facebook"
 msgstr ""
 
@@ -3507,6 +3494,116 @@ msgstr ""
 msgid "Discussion Settings"
 msgstr ""
 
+#: inc/csf/options.cookies.php:9
+msgid "Cookies Law"
+msgstr ""
+
+#: inc/csf/options.cookies.php:17
+msgid "Cookie Key"
+msgstr ""
+
+#: inc/csf/options.cookies.php:22
+msgid "This Website uses cookies to make its website easier to use."
+msgstr ""
+
+#: inc/csf/options.cookies.php:23
+msgid "Text notice"
+msgstr ""
+
+#: inc/csf/options.cookies.php:28
+msgid "Learn more about cookies."
+msgstr ""
+
+#: inc/csf/options.cookies.php:29
+msgid "Text Read more"
+msgstr ""
+
+#: inc/csf/options.cookies.php:34
+msgid "Details page type"
+msgstr ""
+
+#: inc/csf/options.cookies.php:37
+msgid "Page link"
+msgstr ""
+
+#: inc/csf/options.cookies.php:38 inc/csf/options.cookies.php:51
+msgid "Custom Link"
+msgstr ""
+
+#: inc/csf/options.cookies.php:44 inc/csf/options.cookies.php:59
+msgid "Page Link"
+msgstr ""
+
+#: inc/csf/options.cookies.php:66
+msgid "none"
+msgstr ""
+
+#: inc/csf/options.cookies.php:71
+msgid "Opens the linked document in a new window or tab."
+msgstr ""
+
+#: inc/csf/options.cookies.php:76
+msgid ""
+"Opens the linked document in the same frame as it was clicked (this is "
+"default)."
+msgstr ""
+
+#: inc/csf/options.cookies.php:81
+msgid "Opens the linked document in the parent frame."
+msgstr ""
+
+#: inc/csf/options.cookies.php:86
+msgid "Opens the linked document in the full body of the window."
+msgstr ""
+
+#: inc/csf/options.cookies.php:92
+msgid "Cookie expiry"
+msgstr ""
+
+#: inc/csf/options.cookies.php:95
+msgid "1 week"
+msgstr ""
+
+#: inc/csf/options.cookies.php:96
+msgid "1 month"
+msgstr ""
+
+#: inc/csf/options.cookies.php:97
+msgid "3 months"
+msgstr ""
+
+#: inc/csf/options.cookies.php:98
+msgid "6 months"
+msgstr ""
+
+#: inc/csf/options.cookies.php:99
+msgid "1 year"
+msgstr ""
+
+#: inc/csf/options.cookies.php:100
+msgid "infinity"
+msgstr ""
+
+#: inc/csf/options.cookies.php:105
+msgid "Customize Notice"
+msgstr ""
+
+#: inc/csf/options.cookies.php:110
+msgid "Background color"
+msgstr ""
+
+#: inc/csf/options.cookies.php:116
+msgid "Text color"
+msgstr ""
+
+#: inc/csf/options.cookies.php:122
+msgid "Link color"
+msgstr ""
+
+#: inc/csf/options.cookies.php:128
+msgid "Link hover color"
+msgstr ""
+
 #: inc/csf/options.customize.php:24
 msgid "Customize"
 msgstr ""
@@ -3527,7 +3624,7 @@ msgstr ""
 msgid "Single background"
 msgstr ""
 
-#: inc/csf/options.customize.php:55 inc/csf/options.main_settings.php:108
+#: inc/csf/options.customize.php:55 inc/csf/options.main_settings.php:120
 msgid "Check whether to activate or deactivate"
 msgstr ""
 
@@ -3579,174 +3676,182 @@ msgid "Header link hover color"
 msgstr ""
 
 #: inc/csf/options.customize.php:143
-msgid "Sidebar position"
+msgid "Poster Play icon"
 msgstr ""
 
 #: inc/csf/options.customize.php:148
+msgid "Hover Play Icon"
+msgstr ""
+
+#: inc/csf/options.customize.php:159
+msgid "Sidebar position"
+msgstr ""
+
+#: inc/csf/options.customize.php:164
 msgid "Home page"
 msgstr ""
 
-#: inc/csf/options.customize.php:158
+#: inc/csf/options.customize.php:174
 msgid "Archives"
 msgstr ""
 
-#: inc/csf/options.customize.php:168 inc/parts/admin/ads_tool.php:10
+#: inc/csf/options.customize.php:184 inc/parts/admin/ads_tool.php:10
 msgid "Single Post"
 msgstr ""
 
-#: inc/csf/options.customize.php:177 inc/parts/admin/ads_tool.php:9
+#: inc/csf/options.customize.php:193 inc/parts/admin/ads_tool.php:9
 msgid "Homepage"
 msgstr ""
 
-#: inc/csf/options.customize.php:182
+#: inc/csf/options.customize.php:198
 msgid "Full width"
 msgstr ""
 
-#: inc/csf/options.customize.php:183
+#: inc/csf/options.customize.php:199
 msgid "Enable full width only in homepage"
 msgstr ""
 
-#: inc/csf/options.customize.php:188
+#: inc/csf/options.customize.php:204
 msgid ""
 "<strong>NOTE:</strong> Drag and drop the modules in the order you want them"
 msgstr ""
 
-#: inc/csf/options.customize.php:195
+#: inc/csf/options.customize.php:211
 msgid "Slider"
 msgstr ""
 
-#: inc/csf/options.customize.php:196 inc/csf/options.featured_titles.php:20
+#: inc/csf/options.customize.php:212 inc/csf/options.featured_titles.php:20
 #: inc/csf/options.featured_titles.php:28
 msgid "Featured titles"
 msgstr ""
 
-#: inc/csf/options.customize.php:198 inc/csf/options.more.php:79
+#: inc/csf/options.customize.php:214 inc/csf/options.more.php:79
 msgid "Advertising"
 msgstr ""
 
-#: inc/csf/options.customize.php:200
+#: inc/csf/options.customize.php:216
 msgid "TV Show > Season"
 msgstr ""
 
-#: inc/csf/options.customize.php:201
+#: inc/csf/options.customize.php:217
 msgid "TV Show > Episode"
 msgstr ""
 
-#: inc/csf/options.customize.php:202 inc/csf/options.top_imdb.php:8
-#: inc/csf/options.top_imdb.php:16 inc/doo_database.php:120
+#: inc/csf/options.customize.php:218 inc/csf/options.top_imdb.php:8
+#: inc/csf/options.top_imdb.php:16 inc/doo_database.php:114
 msgid "TOP IMDb"
 msgstr ""
 
-#: inc/csf/options.customize.php:206
+#: inc/csf/options.customize.php:222
 msgid "Genres Widget"
 msgstr ""
 
-#: inc/csf/options.customize.php:207
+#: inc/csf/options.customize.php:223
 msgid "Slider Movies"
 msgstr ""
 
-#: inc/csf/options.customize.php:208
+#: inc/csf/options.customize.php:224
 msgid "Slider TV Shows"
 msgstr ""
 
-#: inc/csf/options.customize.php:211
+#: inc/csf/options.customize.php:227
 msgid "Modules enabled"
 msgstr ""
 
-#: inc/csf/options.customize.php:212
+#: inc/csf/options.customize.php:228
 msgid "Modules disabled"
 msgstr ""
 
-#: inc/csf/options.customize.php:216
+#: inc/csf/options.customize.php:232
 msgid "Customize logos"
 msgstr ""
 
-#: inc/csf/options.customize.php:221
+#: inc/csf/options.customize.php:237
 msgid "Logo header"
 msgstr ""
 
-#: inc/csf/options.customize.php:222 inc/csf/options.customize.php:240
+#: inc/csf/options.customize.php:238 inc/csf/options.customize.php:256
 msgid "Upload your logo using the Upload Button"
 msgstr ""
 
-#: inc/csf/options.customize.php:227
+#: inc/csf/options.customize.php:243
 msgid "Favicon"
 msgstr ""
 
-#: inc/csf/options.customize.php:228
+#: inc/csf/options.customize.php:244
 msgid "Upload a 16 x 16 px image that will represent your website's favicon"
 msgstr ""
 
-#: inc/csf/options.customize.php:233
+#: inc/csf/options.customize.php:249
 msgid "Touch icon APP"
 msgstr ""
 
-#: inc/csf/options.customize.php:234
+#: inc/csf/options.customize.php:250
 msgid "Upload a 152 x 152 px image that will represent your Web APP"
 msgstr ""
 
-#: inc/csf/options.customize.php:239
+#: inc/csf/options.customize.php:255
 msgid "Login / Register / WP-Admin"
 msgstr ""
 
-#: inc/csf/options.customize.php:244
+#: inc/csf/options.customize.php:260
 msgid "Footer settings"
 msgstr ""
 
-#: inc/csf/options.customize.php:249
+#: inc/csf/options.customize.php:265
 msgid "Footer"
 msgstr ""
 
-#: inc/csf/options.customize.php:252
+#: inc/csf/options.customize.php:268
 msgid "Simple"
 msgstr ""
 
-#: inc/csf/options.customize.php:253
+#: inc/csf/options.customize.php:269
 msgid "Complete"
 msgstr ""
 
-#: inc/csf/options.customize.php:259
+#: inc/csf/options.customize.php:275
 msgid "Footer copyright"
 msgstr ""
 
-#: inc/csf/options.customize.php:260
+#: inc/csf/options.customize.php:276
 msgid "Modify or remove copyright text"
 msgstr ""
 
-#: inc/csf/options.customize.php:265
+#: inc/csf/options.customize.php:281
 msgid "Logo footer"
 msgstr ""
 
-#: inc/csf/options.customize.php:271
+#: inc/csf/options.customize.php:287
 msgid "Footer text"
 msgstr ""
 
-#: inc/csf/options.customize.php:272
+#: inc/csf/options.customize.php:288
 msgid "Text under footer logo"
 msgstr ""
 
-#: inc/csf/options.customize.php:278
+#: inc/csf/options.customize.php:294
 msgid "Title column 1"
 msgstr ""
 
-#: inc/csf/options.customize.php:279 inc/csf/options.customize.php:286
-#: inc/csf/options.customize.php:293
+#: inc/csf/options.customize.php:295 inc/csf/options.customize.php:302
+#: inc/csf/options.customize.php:309
 msgid "Footer menu"
 msgstr ""
 
-#: inc/csf/options.customize.php:285
+#: inc/csf/options.customize.php:301
 msgid "Title column 2"
 msgstr ""
 
-#: inc/csf/options.customize.php:292
+#: inc/csf/options.customize.php:308
 msgid "Title column 3"
 msgstr ""
 
-#: inc/csf/options.customize.php:298
+#: inc/csf/options.customize.php:314
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/csf/options.customize.php:307
+#: inc/csf/options.customize.php:323
 msgid "Add only CSS code"
 msgstr ""
 
@@ -3985,200 +4090,212 @@ msgid "Offline mode message here"
 msgstr ""
 
 #: inc/csf/options.main_settings.php:51
-msgid "Google Analytics"
+msgid "Classic Editor"
 msgstr ""
 
 #: inc/csf/options.main_settings.php:52
+msgid "Enable classic editor in content editors"
+msgstr ""
+
+#: inc/csf/options.main_settings.php:57
+msgid "WordPress Gutenberg editor has been disabled"
+msgstr ""
+
+#: inc/csf/options.main_settings.php:63
+msgid "Google Analytics"
+msgstr ""
+
+#: inc/csf/options.main_settings.php:64
 msgid "Insert tracking code to use this function"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:61
+#: inc/csf/options.main_settings.php:73
 msgid "Items per page"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:62 inc/csf/options.main_settings.php:73
+#: inc/csf/options.main_settings.php:74 inc/csf/options.main_settings.php:85
 msgid "Archive pages show at most"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:72
+#: inc/csf/options.main_settings.php:84
 msgid "Post per page in blog"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:83
+#: inc/csf/options.main_settings.php:95
 msgid "TOP IMDb items"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:84
+#: inc/csf/options.main_settings.php:96
 msgid "Select the number of items to the page TOP IMDb"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:94
+#: inc/csf/options.main_settings.php:106
 msgid "Pagination Range"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:95
+#: inc/csf/options.main_settings.php:107
 msgid "Set a range of items to display in the paginator"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:110
-msgid "Live search enable"
-msgstr ""
-
-#: inc/csf/options.main_settings.php:111
-msgid "Show similar titles enable"
-msgstr ""
-
-#: inc/csf/options.main_settings.php:112
+#: inc/csf/options.main_settings.php:122
 msgid "User register enable"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:113
+#: inc/csf/options.main_settings.php:123
+msgid "Live search enable"
+msgstr ""
+
+#: inc/csf/options.main_settings.php:124
+msgid "Show similar titles enable"
+msgstr ""
+
+#: inc/csf/options.main_settings.php:125
 msgid "Emoji disable"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:114
-msgid "Remove <code>?ver=</code> parameters"
-msgstr ""
-
-#: inc/csf/options.main_settings.php:115
+#: inc/csf/options.main_settings.php:126
 msgid "Minify HTML"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:122
-msgid "View count"
-msgstr ""
-
-#: inc/csf/options.main_settings.php:123
-msgid "Methods for counting views in content"
-msgstr ""
-
-#: inc/csf/options.main_settings.php:126
-msgid "Regular"
-msgstr ""
-
 #: inc/csf/options.main_settings.php:127
-msgid "Ajax"
-msgstr ""
-
-#: inc/csf/options.main_settings.php:128
-msgid "Disable view counting"
+msgid "Show Letters glossary"
 msgstr ""
 
 #: inc/csf/options.main_settings.php:134
+msgid "View count"
+msgstr ""
+
+#: inc/csf/options.main_settings.php:135
+msgid "Methods for counting views in content"
+msgstr ""
+
+#: inc/csf/options.main_settings.php:138
+msgid "Regular"
+msgstr ""
+
+#: inc/csf/options.main_settings.php:139
+msgid "Ajax"
+msgstr ""
+
+#: inc/csf/options.main_settings.php:140
+msgid "Disable view counting"
+msgstr ""
+
+#: inc/csf/options.main_settings.php:146
 msgid ""
 "Regular view count may consume resources from your server in a moderate way, "
 "consider disabling it if your server has limited processes."
 msgstr ""
 
-#: inc/csf/options.main_settings.php:140
+#: inc/csf/options.main_settings.php:152
 msgid ""
 "View count by Ajax consumes resources from your server on each user visit, "
 "if your server has limited processes we recommend disabling this function."
 msgstr ""
 
-#: inc/csf/options.main_settings.php:145
+#: inc/csf/options.main_settings.php:157
 msgid "Google reCAPTCHA v3"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:150
+#: inc/csf/options.main_settings.php:162
 msgid "Site key"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:155
+#: inc/csf/options.main_settings.php:167
 msgid "Secret key"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:159
+#: inc/csf/options.main_settings.php:171
 msgid "Get Google reCAPTCHA"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:163
+#: inc/csf/options.main_settings.php:175
 msgid "Pages for DooPlay"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:168 inc/doo_database.php:102
+#: inc/csf/options.main_settings.php:180 inc/doo_database.php:99
 msgid "Account"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:169
+#: inc/csf/options.main_settings.php:181
 msgid "Set User Account page"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:175 inc/doo_database.php:90
-#: pages/trending.php:22
+#: inc/csf/options.main_settings.php:187 inc/doo_database.php:89
+#: pages/trending.php:25
 msgid "Trending"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:176
+#: inc/csf/options.main_settings.php:188
 msgid "Set page to show trend content"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:182 inc/doo_database.php:96
-#: pages/rating.php:21
+#: inc/csf/options.main_settings.php:194 inc/doo_database.php:94
+#: pages/rating.php:24
 msgid "Ratings"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:183
+#: inc/csf/options.main_settings.php:195
 msgid "Set page to show content rated by users"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:190
+#: inc/csf/options.main_settings.php:202
 msgid "Set page to display the contact form"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:196
+#: inc/csf/options.main_settings.php:208
 msgid "Top IMDb"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:197
+#: inc/csf/options.main_settings.php:209
 msgid "Set page to show the best qualified content in IMDb"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:204
+#: inc/csf/options.main_settings.php:216
 msgid "Set page to show the entries in blog"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:209
+#: inc/csf/options.main_settings.php:221
 msgid "Database cache"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:214
+#: inc/csf/options.main_settings.php:226
 msgid "Scheduler"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:215
+#: inc/csf/options.main_settings.php:227
 msgid "Cache cleaning"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:216
+#: inc/csf/options.main_settings.php:228
 msgid "It is important to clean expired cache at least once a day"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:219
+#: inc/csf/options.main_settings.php:231
 msgid "Daily"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:220
+#: inc/csf/options.main_settings.php:232
 msgid "Twice daily"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:221
+#: inc/csf/options.main_settings.php:233
 msgid "Hourly"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:227
+#: inc/csf/options.main_settings.php:239
 msgid "Storing cache as long as possible can be a very good idea"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:233
+#: inc/csf/options.main_settings.php:245
 msgid "Cache Timeout"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:234
+#: inc/csf/options.main_settings.php:246
 msgid "Set the time in seconds"
 msgstr ""
 
-#: inc/csf/options.main_settings.php:236
+#: inc/csf/options.main_settings.php:248
 msgid "We recommend storing this cache for at least 86400 seconds"
 msgstr ""
 
@@ -4359,70 +4476,87 @@ msgstr ""
 msgid "Report and contact"
 msgstr ""
 
+#: inc/csf/options.report_contact.php:15
+msgid "Reports Form"
+msgstr ""
+
 #: inc/csf/options.report_contact.php:16
+msgid "Enable report form"
+msgstr ""
+
+#: inc/csf/options.report_contact.php:22 pages/contact.php:8
+msgid "Contact Form"
+msgstr ""
+
+#: inc/csf/options.report_contact.php:23
+msgid "Enable contact form"
+msgstr ""
+
+#: inc/csf/options.report_contact.php:30
 msgid "Assign an email address if you want to be notified"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:21
+#: inc/csf/options.report_contact.php:35
 msgid "Email notifications"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:27
+#: inc/csf/options.report_contact.php:41
 msgid "Notify new reports by email"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:34
+#: inc/csf/options.report_contact.php:48
 msgid "Notify new contact messages by email"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:39
+#: inc/csf/options.report_contact.php:53
 msgid "Firewall"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:44
+#: inc/csf/options.report_contact.php:58
 msgid ""
 "We recommend not enabling more than 10 unread records per IP address, "
 "consider that this function could be used maliciously and could compromise "
 "the good status of your website."
 msgstr ""
 
-#: inc/csf/options.report_contact.php:49
+#: inc/csf/options.report_contact.php:63
 msgid "Report limit"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:50
+#: inc/csf/options.report_contact.php:64
 msgid "Set limit of unread reports by IP address"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:60 inc/csf/options.report_contact.php:77
+#: inc/csf/options.report_contact.php:74 inc/csf/options.report_contact.php:91
 msgid "Caution, you have enabled more than 50 unread records per IP address."
 msgstr ""
 
-#: inc/csf/options.report_contact.php:66
+#: inc/csf/options.report_contact.php:80
 msgid "Contact messages limit"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:67
+#: inc/csf/options.report_contact.php:81
 msgid "Set limit of unread contact messages by IP address"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:83
+#: inc/csf/options.report_contact.php:97
 msgid "Whitelist"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:84
+#: inc/csf/options.report_contact.php:98
 msgid "Create a safe list of IP addresses that can send reports without limits"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:89 inc/csf/options.report_contact.php:102
+#: inc/csf/options.report_contact.php:103
+#: inc/csf/options.report_contact.php:116
 msgid "IP adress"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:96
+#: inc/csf/options.report_contact.php:110
 msgid "Blacklist"
 msgstr ""
 
-#: inc/csf/options.report_contact.php:97
+#: inc/csf/options.report_contact.php:111
 msgid "Block the sending of reports and contact messages"
 msgstr ""
 
@@ -4646,7 +4780,7 @@ msgstr ""
 msgid "This module does not work if Auto-Load is activated"
 msgstr ""
 
-#: inc/csf/options.video_player.php:191 inc/doo_scripts.php:205
+#: inc/csf/options.video_player.php:191 inc/doo_scripts.php:207
 #: inc/parts/item_links.php:47 inc/parts/item_links_admin.php:43
 msgid "Enable"
 msgstr ""
@@ -4707,7 +4841,7 @@ msgstr ""
 msgid "Welcome message"
 msgstr ""
 
-#: inc/csf/options.wp_mail.php:19 pages/contact.php:33
+#: inc/csf/options.wp_mail.php:19 pages/contact.php:34
 msgid "Subject"
 msgstr ""
 
@@ -4715,7 +4849,7 @@ msgstr ""
 msgid "Welcome to {sitename}"
 msgstr ""
 
-#: inc/csf/options.wp_mail.php:25 inc/doo_ajax.php:43
+#: inc/csf/options.wp_mail.php:25
 msgid "Message"
 msgstr ""
 
@@ -4771,97 +4905,81 @@ msgstr ""
 msgid "SMTP Authentication"
 msgstr ""
 
-#: inc/csf/options.wp_mail.php:89 inc/doo_init.php:1037
+#: inc/csf/options.wp_mail.php:89 inc/doo_init.php:1059
 #: inc/includes/slugs.php:25 inc/parts/login_form.php:6
 #: pages/sections/login-form.php:3 pages/sections/register-form.php:3
 msgid "Username"
 msgstr ""
 
-#: inc/csf/options.wp_mail.php:95 inc/doo_init.php:1038
+#: inc/csf/options.wp_mail.php:95 inc/doo_init.php:1060
 #: inc/parts/login_form.php:7 pages/sections/account.php:152
 #: pages/sections/login-form.php:7 pages/sections/register-form.php:11
 msgid "Password"
 msgstr ""
 
-#: inc/doo_ads.php:32 inc/doo_ads.php:33
+#: inc/doo_ads.php:31 inc/doo_ads.php:32
 msgid "DooPlay Ad banners"
 msgstr ""
 
-#: inc/doo_ajax.php:29
-msgid "BUG REPORT"
-msgstr ""
-
-#: inc/doo_ajax.php:50
-msgid "Edit post"
-msgstr ""
-
-#: inc/doo_ajax.php:54
-msgid "IP"
-msgstr ""
-
-#: inc/doo_ajax.php:61
-msgid "Thank you! Your report was submitted.."
-msgstr ""
-
-#: inc/doo_ajax.php:100
+#: inc/doo_ajax.php:43
 msgid "The passwords you entered do not match.  Your password was not updated."
 msgstr ""
 
-#: inc/doo_ajax.php:118
+#: inc/doo_ajax.php:60
 msgid "Your profile has been updated."
 msgstr ""
 
-#: inc/doo_ajax.php:161
+#: inc/doo_ajax.php:103
 msgid "No more content to show."
 msgstr ""
 
-#: inc/doo_ajax.php:191 inc/doo_ajax.php:220 inc/doo_ajax.php:247
-#: inc/doo_init.php:968 inc/doo_init.php:990 inc/doo_init.php:1010
+#: inc/doo_ajax.php:133 inc/doo_ajax.php:162 inc/doo_ajax.php:189
+#: inc/doo_init.php:990 inc/doo_init.php:1012 inc/doo_init.php:1032
 #: inc/parts/modules/widgethome.php:13
 msgid "No content"
 msgstr ""
 
-#: inc/doo_ajax.php:270
+#: inc/doo_ajax.php:212
 msgid "Link enabled"
 msgstr ""
 
-#: inc/doo_ajax.php:272
+#: inc/doo_ajax.php:214
 msgid "Link disabled"
 msgstr ""
 
-#: inc/doo_ajax.php:274
+#: inc/doo_ajax.php:216
 msgid "Link moved to trash"
 msgstr ""
 
-#: inc/doo_ajax.php:293 inc/doo_ajax.php:335
+#: inc/doo_ajax.php:235 inc/doo_ajax.php:277
 msgid "No data nonce"
 msgstr ""
 
-#: inc/doo_auth.php:75
+#: inc/doo_auth.php:70
 msgid "Welcome, reloading page"
 msgstr ""
 
-#: inc/doo_auth.php:80
+#: inc/doo_auth.php:75
 msgid "Wrong username or password"
 msgstr ""
 
-#: inc/doo_auth.php:102
+#: inc/doo_auth.php:97
 msgid "A username is required for registration"
 msgstr ""
 
-#: inc/doo_auth.php:104
+#: inc/doo_auth.php:99
 msgid "Sorry, that username already exists"
 msgstr ""
 
-#: inc/doo_auth.php:106
+#: inc/doo_auth.php:101
 msgid "You must enter a valid email address"
 msgstr ""
 
-#: inc/doo_auth.php:108
+#: inc/doo_auth.php:103
 msgid "Sorry, that email address is already used"
 msgstr ""
 
-#: inc/doo_auth.php:113
+#: inc/doo_auth.php:108
 msgid "Registration completed successfully"
 msgstr ""
 
@@ -4885,24 +5003,24 @@ msgstr ""
 msgid "Delete all cache"
 msgstr ""
 
-#: inc/doo_collection.php:70 inc/doo_scripts.php:195
+#: inc/doo_collection.php:70 inc/doo_scripts.php:197
 msgid "Remove of favorites"
 msgstr ""
 
-#: inc/doo_collection.php:70 inc/doo_scripts.php:194
+#: inc/doo_collection.php:70 inc/doo_scripts.php:196
 msgid "Add to favorites"
 msgstr ""
 
-#: inc/doo_collection.php:178 inc/doo_scripts.php:198
+#: inc/doo_collection.php:178 inc/doo_scripts.php:200
 msgid "I saw it"
 msgstr ""
 
-#: inc/doo_comments.php:43 taxonomy.php:16
+#: inc/doo_comments.php:43 taxonomy.php:19
 #, php-format
 msgid "%s"
 msgstr ""
 
-#: inc/doo_comments.php:47 inc/doo_init.php:718
+#: inc/doo_comments.php:47 inc/doo_init.php:738
 #, php-format
 msgid "%1$s"
 msgstr ""
@@ -4927,7 +5045,7 @@ msgstr ""
 msgid "Your comment.."
 msgstr ""
 
-#: inc/doo_comments.php:86 pages/contact.php:15 pages/contact.php:24
+#: inc/doo_comments.php:86 pages/contact.php:16 pages/contact.php:25
 #: pages/sections/register-form.php:16
 msgid "Name"
 msgstr ""
@@ -4936,12 +5054,8 @@ msgstr ""
 msgid "Add a display name"
 msgstr ""
 
-#: inc/doo_comments.php:95
+#: inc/doo_comments.php:96
 msgid "Your email address will not be published"
-msgstr ""
-
-#: inc/doo_comments.php:102 pages/sections/account.php:197
-msgid "Website"
 msgstr ""
 
 #: inc/doo_database.php:52 inc/doo_database.php:53
@@ -4952,108 +5066,108 @@ msgstr ""
 msgid "this process was never executed"
 msgstr ""
 
-#: inc/doo_database.php:114
+#: inc/doo_database.php:109
 msgid "Blog"
 msgstr ""
 
-#: inc/doo_database.php:126
+#: inc/doo_database.php:119
 msgid "JW Player"
 msgstr ""
 
-#: inc/doo_database.php:225
+#: inc/doo_database.php:218
 msgid "Just now"
 msgstr ""
 
-#: inc/doo_init.php:78
+#: inc/doo_init.php:96
 msgid "Site offline"
 msgstr ""
 
-#: inc/doo_init.php:107
+#: inc/doo_init.php:125
 msgid "Menu main header"
 msgstr ""
 
-#: inc/doo_init.php:108
+#: inc/doo_init.php:126
 msgid "Menu footer"
 msgstr ""
 
-#: inc/doo_init.php:110
+#: inc/doo_init.php:128
 msgid "Footer - column 1"
 msgstr ""
 
-#: inc/doo_init.php:111
+#: inc/doo_init.php:129
 msgid "Footer - column 2"
 msgstr ""
 
-#: inc/doo_init.php:112
+#: inc/doo_init.php:130
 msgid "Footer - column 3"
 msgstr ""
 
-#: inc/doo_init.php:304
+#: inc/doo_init.php:324
 msgid "of"
 msgstr ""
 
-#: inc/doo_init.php:391
+#: inc/doo_init.php:411
 msgid "Unknown resource"
 msgstr ""
 
-#: inc/doo_init.php:395
+#: inc/doo_init.php:415
 msgid "Google Drive"
 msgstr ""
 
-#: inc/doo_init.php:611
+#: inc/doo_init.php:631
 msgid "Twitter URL"
 msgstr ""
 
-#: inc/doo_init.php:612
+#: inc/doo_init.php:632
 msgid "Facebook URL"
 msgstr ""
 
-#: inc/doo_init.php:676
+#: inc/doo_init.php:696
 msgid "Shared"
 msgstr ""
 
-#: inc/doo_init.php:680
+#: inc/doo_init.php:700
 msgid "Twitter"
 msgstr ""
 
-#: inc/doo_init.php:791
+#: inc/doo_init.php:811
 msgid "This content already exists, we recommend not to publish."
 msgstr ""
 
-#: inc/doo_init.php:793
+#: inc/doo_init.php:813
 msgid "Excellent! this content is unique."
 msgstr ""
 
-#: inc/doo_init.php:944
+#: inc/doo_init.php:966
 msgid "No content available on your list."
 msgstr ""
 
-#: inc/doo_init.php:1035 inc/parts/login_form.php:4
+#: inc/doo_init.php:1057 inc/parts/login_form.php:4
 msgid "Login to your account"
 msgstr ""
 
-#: inc/doo_init.php:1039 inc/parts/login_form.php:8
+#: inc/doo_init.php:1061 inc/parts/login_form.php:8
 msgid "Remember Me"
 msgstr ""
 
-#: inc/doo_init.php:1040 inc/parts/login_form.php:9
+#: inc/doo_init.php:1062 inc/parts/login_form.php:9
 #: pages/sections/login-form.php:15 pages/sections/login.php:10
 msgid "Log in"
 msgstr ""
 
-#: inc/doo_init.php:1041 inc/parts/login_form.php:10
+#: inc/doo_init.php:1063 inc/parts/login_form.php:10
 msgid "Register a new account"
 msgstr ""
 
-#: inc/doo_init.php:1042 inc/parts/login_form.php:11
+#: inc/doo_init.php:1064 inc/parts/login_form.php:11
 msgid "Lost your password?"
 msgstr ""
 
-#: inc/doo_init.php:1156
+#: inc/doo_init.php:1178
 msgid "Home"
 msgstr ""
 
-#: inc/doo_links.php:70 inc/doo_scripts.php:203 inc/parts/single/links.php:7
+#: inc/doo_links.php:70 inc/doo_scripts.php:205 inc/parts/single/links.php:7
 #: inc/parts/single/links.php:16
 msgid "Download"
 msgstr ""
@@ -5276,118 +5390,118 @@ msgstr ""
 msgid "ID or URL Google Drive"
 msgstr ""
 
-#: inc/doo_player.php:275
+#: inc/doo_player.php:277
 msgid "Report Error"
 msgstr ""
 
-#: inc/doo_player.php:280
+#: inc/doo_player.php:282
 msgid "Watch trailer"
 msgstr ""
 
-#: inc/doo_player.php:341
+#: inc/doo_player.php:343
 msgid "Advertisement"
 msgstr ""
 
-#: inc/doo_scripts.php:199
+#: inc/doo_scripts.php:201
 msgid "Data send.."
 msgstr ""
 
-#: inc/doo_scripts.php:200
+#: inc/doo_scripts.php:202
 msgid "Updating data.."
 msgstr ""
 
-#: inc/doo_scripts.php:201
+#: inc/doo_scripts.php:203
 msgid "Error"
 msgstr ""
 
-#: inc/doo_scripts.php:202
+#: inc/doo_scripts.php:204
 msgid "Pending review"
 msgstr ""
 
-#: inc/doo_scripts.php:204
+#: inc/doo_scripts.php:206
 msgid "Sending data"
 msgstr ""
 
-#: inc/doo_scripts.php:206 inc/parts/item_links.php:45
+#: inc/doo_scripts.php:208 inc/parts/item_links.php:45
 #: inc/parts/item_links_admin.php:41
 msgid "Disable"
 msgstr ""
 
-#: inc/doo_scripts.php:208 pages/sections/account.php:92
+#: inc/doo_scripts.php:210 pages/sections/account.php:92
 msgid "Links Shared"
 msgstr ""
 
-#: inc/doo_scripts.php:209
+#: inc/doo_scripts.php:211
 msgid "Manage pending links"
 msgstr ""
 
-#: inc/doo_scripts.php:210
+#: inc/doo_scripts.php:212
 msgid "Please wait, sending data.."
 msgstr ""
 
-#: inc/doo_scripts.php:211
+#: inc/doo_scripts.php:213
 msgid "Ready"
 msgstr ""
 
-#: inc/doo_scripts.php:212
+#: inc/doo_scripts.php:214
 msgid "Do you really want to delete this link?"
 msgstr ""
 
-#: inc/doo_scripts.php:220
+#: inc/doo_scripts.php:222
 msgid "View all results"
 msgstr ""
 
-#: inc/doo_scripts.php:222
+#: inc/doo_scripts.php:224
 msgid "Really you want to restart all data?"
 msgstr ""
 
-#: inc/doo_scripts.php:223
+#: inc/doo_scripts.php:225
 msgid "They sure have added content manually?"
 msgstr ""
 
-#: inc/doo_scripts.php:225
+#: inc/doo_scripts.php:227
 msgid "Loading player.."
 msgstr ""
 
-#: inc/doo_scripts.php:226
+#: inc/doo_scripts.php:228
 msgid "Select a video player"
 msgstr ""
 
-#: inc/doo_scripts.php:255 pages/sections/dt_foot.php:7
+#: inc/doo_scripts.php:257 pages/sections/dt_foot.php:7
 msgid "Loading..."
 msgstr ""
 
-#: inc/doo_scripts.php:256
+#: inc/doo_scripts.php:258
 msgid "Reloading.."
 msgstr ""
 
-#: inc/doo_scripts.php:257
+#: inc/doo_scripts.php:259
 msgid "Domain has already been registered"
 msgstr ""
 
-#: inc/doo_scripts.php:258
+#: inc/doo_scripts.php:260
 msgid "Updating database.."
 msgstr ""
 
-#: inc/doo_scripts.php:259
+#: inc/doo_scripts.php:261
 msgid "Action completed"
 msgstr ""
 
-#: inc/doo_scripts.php:260
+#: inc/doo_scripts.php:262
 msgid "The links field is empty"
 msgstr ""
 
-#: inc/doo_scripts.php:261
+#: inc/doo_scripts.php:263
 msgid "Do you really want to delete this item?"
 msgstr ""
 
-#: inc/doo_scripts.php:262
+#: inc/doo_scripts.php:264
 msgid ""
 "Do you really want to delete this register, once completed this action will "
 "not recover the data again?"
 msgstr ""
 
-#: inc/doo_scripts.php:263
+#: inc/doo_scripts.php:265
 msgid "Do you want to publish the links before continuing?"
 msgstr ""
 
@@ -5407,8 +5521,8 @@ msgstr ""
 msgid "Your rating:"
 msgstr ""
 
-#: inc/includes/rating/content.php:18 inc/includes/rating/init.php:264
-#: inc/includes/rating/init.php:591
+#: inc/includes/rating/content.php:18 inc/includes/rating/init.php:262
+#: inc/includes/rating/init.php:589
 msgid "vote"
 msgid_plural "votes"
 msgstr[0] ""
@@ -5418,43 +5532,39 @@ msgstr[1] ""
 msgid "View Starstruck Settings"
 msgstr ""
 
-#: inc/includes/rating/init.php:160
+#: inc/includes/rating/init.php:158
 msgid "0"
 msgstr ""
 
-#: inc/includes/rating/init.php:261
+#: inc/includes/rating/init.php:259
 msgid "Thanks for your vote!"
 msgstr ""
 
-#: inc/includes/rating/init.php:277
+#: inc/includes/rating/init.php:275
 msgid "HTTP/1.1 400 Nonce is empty and/or invalid"
 msgstr ""
 
-#: inc/includes/rating/init.php:280
+#: inc/includes/rating/init.php:278
 msgid "HTTP/1.1 400 ID is empty"
 msgstr ""
 
-#: inc/includes/rating/init.php:308
+#: inc/includes/rating/init.php:306
 msgid "Busted!"
 msgstr ""
 
-#: inc/includes/rating/init.php:323
+#: inc/includes/rating/init.php:321
 msgid "User vote deleted"
 msgstr ""
 
-#: inc/includes/rating/init.php:403
+#: inc/includes/rating/init.php:401
 msgid "Anonymous"
 msgstr ""
 
-#: inc/includes/rating/init.php:591
+#: inc/includes/rating/init.php:589
 msgid "Rating:"
 msgstr ""
 
-#: inc/includes/rating/init.php:600
-msgid "No results found."
-msgstr ""
-
-#: inc/includes/slugs.php:31 inc/widgets/content_widget_home.php:123
+#: inc/includes/slugs.php:31 inc/widgets/content_widget_home.php:128
 msgid "Genre"
 msgstr ""
 
@@ -5673,15 +5783,15 @@ msgstr ""
 msgid "<strong>Disqus:</strong> add shortname your comunity %s"
 msgstr ""
 
-#: inc/parts/item.php:63
+#: inc/parts/item.php:64
 msgid "min"
 msgstr ""
 
-#: inc/parts/item.php:64
+#: inc/parts/item.php:65
 msgid "views"
 msgstr ""
 
-#: inc/parts/item_b.php:11 pages/search.php:31
+#: inc/parts/item_b.php:13 pages/search.php:31
 msgid "TV"
 msgstr ""
 
@@ -5706,10 +5816,6 @@ msgstr ""
 msgid "Reload List"
 msgstr ""
 
-#: inc/parts/links_editor_single.php:9
-msgid "Edit Link"
-msgstr ""
-
 #: inc/parts/links_editor_single.php:32
 msgid "File size (optional)"
 msgstr ""
@@ -5722,20 +5828,20 @@ msgstr ""
 msgid "URL Link"
 msgstr ""
 
-#: inc/parts/modules/blog.php:30 inc/parts/modules/episodes.php:41
-#: inc/parts/modules/movies.php:42 inc/parts/modules/seasons.php:41
+#: inc/parts/modules/blog.php:30 inc/parts/modules/episodes.php:43
+#: inc/parts/modules/movies.php:44 inc/parts/modules/seasons.php:43
 #: inc/parts/modules/top-imdb.php:86 inc/parts/modules/top-imdb.php:95
 #: inc/parts/modules/top-imdb.php:108 inc/parts/modules/top-imdb.php:121
-#: inc/parts/modules/tvshows.php:42 inc/widgets/content_widget_home.php:44
-#: pages/rating.php:23 pages/trending.php:24
+#: inc/parts/modules/tvshows.php:44 inc/widgets/content_widget_home.php:49
+#: pages/rating.php:26 pages/trending.php:27
 msgid "See all"
 msgstr ""
 
-#: inc/parts/modules/featured-post-movies.php:35
+#: inc/parts/modules/featured-post-movies.php:36
 msgid "Featured Movies"
 msgstr ""
 
-#: inc/parts/modules/featured-post-tvshows.php:35
+#: inc/parts/modules/featured-post-tvshows.php:36
 msgid "Featured TV Shows"
 msgstr ""
 
@@ -5873,19 +5979,19 @@ msgstr ""
 msgid "Similar titles"
 msgstr ""
 
-#: inc/parts/single/report-video.php:5
+#: inc/parts/single/report-video.php:6
 msgid "What's happening?"
 msgstr ""
 
-#: inc/parts/single/report-video.php:37
+#: inc/parts/single/report-video.php:38
 msgid "What is the problem? Please explain.."
 msgstr ""
 
-#: inc/parts/single/report-video.php:40
+#: inc/parts/single/report-video.php:41
 msgid "Email address"
 msgstr ""
 
-#: inc/parts/single/report-video.php:43
+#: inc/parts/single/report-video.php:44
 msgid "Send report"
 msgstr ""
 
@@ -5917,7 +6023,7 @@ msgstr ""
 #: inc/widgets/content_related_widget.php:98 inc/widgets/content_widget.php:63
 #: inc/widgets/content_widget_meta_genres.php:48
 #: inc/widgets/content_widget_meta_releases.php:49
-#: inc/widgets/content_widget_social.php:87
+#: inc/widgets/content_widget_social.php:91
 #: inc/widgets/content_widget_views.php:61
 msgid "Title:"
 msgstr ""
@@ -5947,7 +6053,7 @@ msgid "Content order"
 msgstr ""
 
 #: inc/widgets/content_related_widget.php:122 inc/widgets/content_widget.php:96
-#: inc/widgets/content_widget_home.php:153
+#: inc/widgets/content_widget_home.php:158
 msgid "Activate random order"
 msgstr ""
 
@@ -5959,7 +6065,7 @@ msgstr ""
 msgid "DooPlay - Sidebar content"
 msgstr ""
 
-#: inc/widgets/content_widget.php:75 inc/widgets/content_widget_home.php:115
+#: inc/widgets/content_widget.php:75 inc/widgets/content_widget_home.php:120
 msgid "Content type"
 msgstr ""
 
@@ -5975,19 +6081,19 @@ msgstr ""
 msgid "DooPlay - [widgetgenre] Genres"
 msgstr ""
 
-#: inc/widgets/content_widget_home.php:87
+#: inc/widgets/content_widget_home.php:92
 msgid "Error: only homepage"
 msgstr ""
 
-#: inc/widgets/content_widget_home.php:135
+#: inc/widgets/content_widget_home.php:140
 msgid "Autoplay Carousel"
 msgstr ""
 
-#: inc/widgets/content_widget_home.php:138
+#: inc/widgets/content_widget_home.php:143
 msgid "Speed Carousel"
 msgstr ""
 
-#: inc/widgets/content_widget_home.php:140
+#: inc/widgets/content_widget_home.php:145
 msgid "second"
 msgstr ""
 
@@ -6016,15 +6122,15 @@ msgstr ""
 msgid "Release year"
 msgstr ""
 
-#: inc/widgets/content_widget_social.php:76
+#: inc/widgets/content_widget_social.php:80
 msgid "Dooplay - Socialbox"
 msgstr ""
 
-#: inc/widgets/content_widget_social.php:76
+#: inc/widgets/content_widget_social.php:80
 msgid "Displays links to social networks in a stylish manner"
 msgstr ""
 
-#: inc/widgets/content_widget_social.php:91
+#: inc/widgets/content_widget_social.php:95
 msgid "Insert the URLs to your social networks"
 msgstr ""
 
@@ -6102,34 +6208,34 @@ msgstr ""
 msgid "Module disabled"
 msgstr ""
 
-#: pages/contact.php:8
-msgid "Contact Form"
-msgstr ""
-
 #: pages/contact.php:9
 msgid ""
 "Have something to notify our support team, please do not hesitate to use "
 "this form."
 msgstr ""
 
-#: pages/contact.php:34
+#: pages/contact.php:35
 msgid "How can we help?"
 msgstr ""
 
-#: pages/contact.php:38
+#: pages/contact.php:39
 msgid "Your message"
 msgstr ""
 
-#: pages/contact.php:39
+#: pages/contact.php:40
 msgid "The more descriptive you can be the better we can help."
 msgstr ""
 
-#: pages/contact.php:43
+#: pages/contact.php:44
 msgid "Link Reference (optional)"
 msgstr ""
 
-#: pages/contact.php:48
+#: pages/contact.php:49
 msgid "Send message"
+msgstr ""
+
+#: pages/contact.php:57
+msgid "Contact form disabled"
 msgstr ""
 
 #: pages/letter.php:6 pages/search.php:60
@@ -6196,6 +6302,10 @@ msgstr ""
 msgid "Display name publicly as"
 msgstr ""
 
+#: pages/sections/account.php:197
+msgid "Website"
+msgstr ""
+
 #: pages/sections/account.php:201
 msgid "Facebook url"
 msgstr ""
@@ -6204,23 +6314,19 @@ msgstr ""
 msgid "Twitter url"
 msgstr ""
 
-#: pages/sections/account.php:209
-msgid "Google+ url"
-msgstr ""
-
-#: pages/sections/account.php:215
+#: pages/sections/account.php:211
 msgid "Description"
 msgstr ""
 
-#: pages/sections/account.php:221
+#: pages/sections/account.php:217
 msgid "New password *"
 msgstr ""
 
-#: pages/sections/account.php:226
+#: pages/sections/account.php:222
 msgid "Repeat password *"
 msgstr ""
 
-#: pages/sections/account.php:231
+#: pages/sections/account.php:227
 msgid "Update account"
 msgstr ""
 

@@ -5,14 +5,14 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
 class DDbmoviesSvePosts extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -24,7 +24,7 @@ class DDbmoviesSvePosts extends DDbmoviesHelpers{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function save_movies($post_id){
@@ -48,7 +48,7 @@ class DDbmoviesSvePosts extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function save_tvshows($post_id){
@@ -73,7 +73,7 @@ class DDbmoviesSvePosts extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function save_seasons($post_id){
@@ -95,7 +95,7 @@ class DDbmoviesSvePosts extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function save_episodes($post_id){
@@ -115,7 +115,7 @@ class DDbmoviesSvePosts extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function SetPostMetas($postmetas = array(), $post_id = ''){
@@ -133,7 +133,7 @@ class DDbmoviesSvePosts extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function SetFeaturedImage($image = '', $post_id = ''){
@@ -146,7 +146,7 @@ class DDbmoviesSvePosts extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function DeleteCache($post_id = ''){

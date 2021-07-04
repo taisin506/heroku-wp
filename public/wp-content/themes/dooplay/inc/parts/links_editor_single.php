@@ -1,7 +1,7 @@
 <div class="form_edit">
     <div class="cerrar">
         <a id="cerrar_form_edit_link">
-            <i class="icon-close"></i>
+            <i class="fas fa-times"></i>
         </a>
     </div>
     <form id="doo_link_front_editor">

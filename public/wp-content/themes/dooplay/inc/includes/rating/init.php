@@ -70,7 +70,7 @@ function starstruck_set_cookie() {
 		return;
 	}
 	if(!isset($_COOKIE['starstruck_'.COOKIEHASH])){
-		setcookie('starstruck_'. COOKIEHASH, md5( uniqid(mt_rand(), true)), time() + 31536000, COOKIEPATH, COOKIE_DOMAIN);
+		setcookie('starstruck_'.COOKIEHASH, md5( uniqid(mt_rand(), true)), time() + 31536000, COOKIEPATH, COOKIE_DOMAIN);
 	}
 }
 function starstruck_load_scripts() {
@@ -95,8 +95,6 @@ function starstruck_l18n() {
 function starstruck_dynamic_styles() {
 	global $starstruck_options;
 	ob_start();
-?>
-<?php
 	$output = ob_get_clean();
 	wp_add_inline_style('starstruck', $output );
 }

@@ -5,13 +5,13 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.3
+* @since 2.5.0
 */
 
 class DDbmoviesMetaboxes extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -19,7 +19,7 @@ class DDbmoviesMetaboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function metaboxes(){
@@ -30,7 +30,7 @@ class DDbmoviesMetaboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function meta_movies(){
@@ -192,7 +192,7 @@ class DDbmoviesMetaboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function meta_tvshows(){
@@ -315,7 +315,7 @@ class DDbmoviesMetaboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function meta_seasons(){
@@ -364,7 +364,7 @@ class DDbmoviesMetaboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function meta_episodes(){
@@ -421,7 +421,7 @@ class DDbmoviesMetaboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function ViewMeta($options){

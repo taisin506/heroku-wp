@@ -5,14 +5,14 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
 class DDbmoviesClient extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -25,7 +25,7 @@ class DDbmoviesClient extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function InsertData(){
@@ -41,7 +41,7 @@ class DDbmoviesClient extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function ApiRest(){
@@ -49,7 +49,7 @@ class DDbmoviesClient extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function TMDbActivation(){
@@ -78,7 +78,7 @@ class DDbmoviesClient extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function DBMVSActivation(){
@@ -93,7 +93,7 @@ class DDbmoviesClient extends DDbmoviesHelpers{
                         'process' => 'activate',
                         'domain'   => get_option('siteurl'),
                         'license'  => $apikey,
-                        'ipadress' => $_SERVER['SERVER_ADDR']
+                        'ipadress' => $this->Disset($_SERVER,'SERVER_ADDR')
                     )
                 );
                 $rest = wp_remote_post(DBMOVIES_DBMVAPI,$post);
@@ -113,7 +113,7 @@ class DDbmoviesClient extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function Deactivation(){
@@ -121,7 +121,7 @@ class DDbmoviesClient extends DDbmoviesHelpers{
         $action = $this->Disset($_POST,'dbmvs-action');
         $apikey = $this->Disset($_POST,'dbmvs-apikey');
         // Verify Method and Action
-        if($_SERVER['REQUEST_METHOD'] === 'POST' && $action == 'deactivate'){
+        if($this->Disset($_SERVER,'REQUEST_METHOD') === 'POST' && $action == 'deactivate'){
             // Compose pre-response
             $response = array(
                 'response' => false,

@@ -35,7 +35,7 @@ $sidebar = dooplay_get_option('sidebar_position_archives','right');
 					<div class="information">
 						<h2><?php the_title(); ?></h2>
 						<div class="meta">
-							<span class="autor"><i class="icon-account_circle"></i> <?php the_author(); ?></span>
+							<span class="autor"><i class="fas fa-user-circle"></i> <?php the_author(); ?></span>
 							<span class="date"><?php doo_post_date('F j, Y'); ?></span>
 						</div>
 						<p class="descr"><?php dt_content_alt('180'); ?></p>

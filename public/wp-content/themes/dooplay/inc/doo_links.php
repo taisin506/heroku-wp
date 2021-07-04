@@ -24,7 +24,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -54,7 +54,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __destruct(){
@@ -63,7 +63,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function types(){
@@ -72,7 +72,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function langs(){
@@ -81,7 +81,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public static function resolutions(){
@@ -90,7 +90,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function post_type(){
@@ -134,7 +134,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function database(){
@@ -184,7 +184,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function admin_post_ajax(){
@@ -197,7 +197,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function admin_reload_ajax(){
@@ -209,7 +209,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function admin_delete_ajax(){
@@ -223,7 +223,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function admin_form_editor_ajax(){
@@ -283,7 +283,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function front_form_editor_ajax(){
@@ -296,7 +296,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function front_save_form_editor_ajax(){
@@ -335,7 +335,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function admin_save_form_editor_ajax(){
@@ -369,7 +369,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function add_metabox(){
@@ -384,7 +384,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function view_metabox(){
@@ -394,7 +394,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function view_metabox_post_type(){
@@ -405,7 +405,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function save_data_metabox_post_type($post_id){
@@ -429,7 +429,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function add(){
@@ -460,7 +460,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function add_frontend(){
@@ -502,7 +502,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function insert($data = false){
@@ -546,7 +546,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function tablelist_front($post_id = false, $typec = false, $box_id = false){
@@ -611,7 +611,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function tablelist_admin($post_id = false){
@@ -664,7 +664,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function table_row($post_id){
@@ -701,7 +701,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function table_head($defaults){
@@ -715,7 +715,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function table_content($column_name, $post_id){
@@ -758,14 +758,14 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function counting_pending($safe_text, $text){
         if(substr_count($text, '%%PENDING_COUNT_LINK%%') ) {
 			$text = trim( str_replace('%%PENDING_COUNT_LINK%%', false, $text) );
 			$safe_text = esc_attr($text);
-			$count = (int) wp_count_posts($this->typepost,  'readable')->pending;
+			$count = $this->pending_counter();
 			if( $count > 0 ){
 				$text = esc_attr($text). '<span class="awaiting-mod count-'.$count.'" style="margin-left:7px;"><span class="pending-count">'.$count.'</span></span>';
 				return $text;
@@ -774,9 +774,23 @@ class DooLinks{
 		return $safe_text;
     }
 
+    /**
+     * @since 2.5.0
+     * @version 1.0
+     */
+    public function pending_counter(){
+        $count = get_transient('dooplay_links_pending');
+        if(false === $count){
+            // Get pending data
+            $count = (int) wp_count_posts($this->typepost,'readable')->pending;
+            // Set transient data
+            set_transient('dooplay_links_pending', $count, HOUR_IN_SECONDS);
+        }
+        return $count;
+    }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function add_pending(){
@@ -785,7 +799,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function restore_pending(){
@@ -794,7 +808,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public static function shorteners($source = ''){
@@ -811,7 +825,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function front_publisher_role(){
@@ -841,7 +855,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function database_assume($pag = 1, $perpage = 20){
@@ -865,7 +879,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function database_update(){
@@ -879,7 +893,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function database_cleaner(){
@@ -891,7 +905,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function post_status(){
@@ -921,7 +935,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function key(){
@@ -937,7 +951,7 @@ class DooLinks{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function domain($url){

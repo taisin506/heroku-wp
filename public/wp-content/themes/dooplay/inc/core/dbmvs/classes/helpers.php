@@ -5,14 +5,14 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
 class DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
 	public static function ReportsIssues($issue){
@@ -63,7 +63,7 @@ class DDbmoviesHelpers{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function UpdateTypes(){
@@ -81,7 +81,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function TimeExe($time = ''){
@@ -90,7 +90,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function DBMVStatus(){
@@ -112,7 +112,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function TMDbStatus(){
@@ -134,7 +134,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function InsertGenres($post_id = '', $type = ''){
@@ -156,7 +156,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Compose_Title_ID($string = ''){
@@ -199,7 +199,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function get_option($option_name = '', $default = ''){
@@ -212,7 +212,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function st_get_option($option_name = '', $default = ''){
@@ -225,7 +225,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function set_option($option_name = '', $new_value = ''){
@@ -237,7 +237,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function st_set_option($option_name = '', $new_value = ''){
@@ -249,7 +249,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function field_text($id = '', $default = '', $desc = '', $placeholder = ''){
@@ -260,7 +260,7 @@ class DDbmoviesHelpers{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function field_textarea($id = '', $default = '', $desc = '', $placeholder = ''){
@@ -270,7 +270,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function field_number($id = '', $default = '', $desc = '', $placeholder = ''){
@@ -280,7 +280,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function field_checkbox($id = '', $text = ''){
@@ -292,7 +292,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function field_radio($id = '', $options = '', $default = ''){
@@ -308,7 +308,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function field_select($id = '', $options ='', $default = '', $desc = ''){
@@ -323,7 +323,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function ResponseJson($data = array()){
@@ -333,7 +333,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function SetUserPost($default = '1'){
@@ -341,7 +341,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function RemoteJson($args = array(), $api = ''){
@@ -351,7 +351,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function SRemoteJson($args = array(), $api = ''){
@@ -361,7 +361,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Disset($data ='', $key = ''){
@@ -369,7 +369,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Tags($option ='', $data =''){
@@ -384,7 +384,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function TextCleaner($text = ''){
@@ -392,7 +392,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function VeryTMDb($meta_key = '', $tmdb_id = '', $post_type = ''){
@@ -412,7 +412,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function VeryTMDbSE($tmdb = '', $season =''){
@@ -430,7 +430,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function VeryTMDbEP($tmdb = '', $season = '', $episode = ''){
@@ -449,7 +449,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function UploadImage($url = '', $post = '', $thumbnail = false, $showurl = false){
@@ -494,7 +494,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function UpdaterMethod(){
@@ -505,7 +505,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function UpdaterAuto(){
@@ -518,7 +518,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function PostOrder(){
@@ -529,7 +529,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function PostStatus(){
@@ -541,7 +541,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function Languages(){
@@ -587,12 +587,12 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function GenresMovies(){
         $genres = array(
-			null	=> __d('All genres'),
+			''		=> __d('All genres'),
 			'28'	=> __d('Action'),
 			'12'	=> __d('Adventure'),
 			'16'	=> __d('Animation'),
@@ -621,7 +621,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function GenresTVShows(){
@@ -652,7 +652,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function GetAllSeasons($tmdb = ''){
@@ -685,7 +685,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function GetAllEpisodes($tmdb = '', $season = ''){
@@ -722,7 +722,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function EpisodeNav($tmdb ='', $season ='', $episode =''){
@@ -734,7 +734,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function EpisodeData($tmdb ='', $season ='', $episode =''){
@@ -769,7 +769,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function SeasonData($tmdb ='', $season =''){
@@ -800,7 +800,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function TVShowData($tmdb = ''){
@@ -829,7 +829,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function GetIMDbID($page = 1, $per_page = 5){
@@ -855,7 +855,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function UpdateIMDb($imdb = '', $post_id = ''){
@@ -907,7 +907,7 @@ class DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function UpdateIMDbSett($page = ''){

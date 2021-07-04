@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -15,59 +15,63 @@ class DT_Widget_social extends WP_Widget{
 	public $sites = array(
 		'facebook' => array(
 			'title' => 'Facebook',
-			'icon' => 'facebook',
+			'icon'  => 'facebook',
+			'fa'    => 'fab fa-facebook-f'
 		),
 		'twitter' => array(
 			'title' => 'Twitter',
-			'icon' => 'twitter',
-		),
-		'googleplus' => array(
-			'title' => 'Google+',
-			'icon' => 'google-plus',
+			'icon'  => 'twitter',
+			'fa'    => 'fab fa-twitter'
 		),
 		'linkedin' => array(
 			'title' => 'Linkedin',
-			'icon' => 'linkedin',
+			'icon'  => 'linkedin',
+			'fa'    => 'fab fa-linkedin-in'
 		),
 		'youtube' => array(
 			'title' => 'Youtube',
-			'icon' => 'youtube',
+			'icon'  => 'youtube',
+			'fa'    => 'fab fa-youtube'
 		),
 		'rss' => array(
-			'title' => 'Rss',
-			'icon' => 'rss',
+			'title' => 'RSS',
+			'icon'  => 'rss',
+			'fa'    => 'fas fa-rss'
 		),
 		'flickr' => array(
 			'title' => 'Flickr',
-			'icon' => 'flickr',
+			'icon'  => 'flickr',
+			'fa'    => 'fab fa-flickr'
 		),
 		'vimeo' => array(
 			'title' => 'Vimeo',
-			'icon' => 'vimeo',
+			'icon'  => 'vimeo',
+			'fa'    => 'fab fa-vimeo-v'
 		),
 		'pinterest' => array(
 			'title' => 'Pinterest',
-			'icon' => 'pinterest',
+			'icon'  => 'pinterest',
+			'fa'    => 'fab fa-pinterest-p'
 		),
 		'dribbble' => array(
 			'title' => 'Dribbble',
-			'icon' => 'dribbble',
+			'icon'  => 'dribbble',
+			'fa'    => 'fab fa-dribbble'
 		),
 		'tumblr' => array(
 			'title' => 'Tumblr',
-			'icon' => 'tumblr',
+			'icon'  => 'tumblr',
+			'fa'    => 'fab fa-tumblr'
 		),
 		'instagram' => array(
 			'title' => 'Instagram',
-			'icon' => 'instagram',
-		),
-		'vine' => array(
-			'title' => 'Vine',
-			'icon' => 'vine',
+			'icon'  => 'instagram',
+			'fa'    => 'fab fa-instagram'
 		),
 		'VK' => array(
 			'title' => 'VK',
-			'icon' => 'vk',
+			'icon'  => 'vk',
+			'fa'    => 'fab fa-vk'
 		)
     );
 
@@ -115,7 +119,7 @@ class DT_Widget_social extends WP_Widget{
 					if(!empty($instance[$key])){ ?>
 						<li class="dtl">
 							<a class="<?php echo esc_attr($value['icon']); ?>-background icls" target="_blank" href="<?php echo esc_url($instance[$key]); ?>">
-							<i class="dt-icon <?php echo esc_attr($value['icon']); ?>"></i> <?php echo esc_attr($value['title']); ?></a>
+							<i class="<?php echo esc_attr($value['fa']); ?>"></i> <?php echo esc_attr($value['title']); ?></a>
 						</li><?php
 					}
 				} ?>

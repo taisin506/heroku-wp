@@ -6,7 +6,7 @@
 * @aopyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -65,7 +65,7 @@ if(doo_is_true('permits','esst') == true){
 				setup_postdata($post);
                 // The view
 				echo '<article><a href="'. get_the_permalink( $post->ID ). '">';
-				echo '<img src="'.dbmovies_get_poster($post->ID).'" alt="'. get_the_title( $post->ID ). '" />';
+				echo '<img data-src="'.dbmovies_get_poster($post->ID).'" loading="lazy" class="lazyload" alt="'. get_the_title( $post->ID ). '" />';
 				echo '</a></article>';
 			}
 			$post = $temp_post;

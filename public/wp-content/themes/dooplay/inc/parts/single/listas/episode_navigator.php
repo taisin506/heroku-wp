@@ -7,7 +7,7 @@
 * @aopyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 // Main Query
@@ -23,11 +23,11 @@ $link_tvsh = !empty($tvshow_posts) ? 'href="'.$tvshow_posts['permalink'].'" titl
 // View HTML
 $out_html = "<div class='pag_episodes'>";
 $out_html .= "<div class='item'>";
-$out_html .= "<a {$link_prev}><i class='icon-chevron-left'></i> <span>".__d('PREV')."</span></a>";
+$out_html .= "<a {$link_prev}><i class='fas fa-arrow-alt-circle-left'></i> <span>".__d('PREV')."</span></a>";
 $out_html .= "</div><div class='item'>";
-$out_html .= "<a {$link_tvsh}><i class='icon-bars'></i> <span>".__d('ALL')."</span></a>";
+$out_html .= "<a {$link_tvsh}><i class='fas fa-bars'></i> <span>".__d('ALL')."</span></a>";
 $out_html .= "</div><div class='item'>";
-$out_html .= "<a {$link_next}><span>".__d('NEXT')."</span> <i class='icon-chevron-right'></i></a>";
+$out_html .= "<a {$link_next}><span>".__d('NEXT')."</span> <i class='fas fa-arrow-alt-circle-right'></i></a>";
 $out_html .= "</div></div>";
 // Echo And Filter Navigator
 echo apply_filters('doo_episode_navigator', $out_html, $tmdbids.$temporad.$episode);

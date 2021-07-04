@@ -5,13 +5,13 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
 class DDbmoviesTables extends DDbmoviesHelpers{
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -28,7 +28,7 @@ class DDbmoviesTables extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function action_movies($column_name, $post_id){
@@ -61,7 +61,7 @@ class DDbmoviesTables extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function filter_movies($defaults){
@@ -73,7 +73,7 @@ class DDbmoviesTables extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function action_tvshows($column_name, $post_id){
@@ -119,7 +119,7 @@ class DDbmoviesTables extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function filter_tvshows($defaults){
@@ -132,7 +132,7 @@ class DDbmoviesTables extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function action_seasons($column_name, $post_id){
@@ -168,7 +168,7 @@ class DDbmoviesTables extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function filter_seasons($defaults){
@@ -179,7 +179,7 @@ class DDbmoviesTables extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function action_episodes($column_name, $post_id){
@@ -206,7 +206,7 @@ class DDbmoviesTables extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function filter_episodes($defaults){

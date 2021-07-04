@@ -6,7 +6,7 @@
 * @aopyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -32,17 +32,18 @@ $release = doo_isset($postmeta, 'release_date');
 $airdate = doo_isset($postmeta, 'first_air_date');
 $viewsco = doo_isset($postmeta, 'dt_views_count');
 $runtime = doo_isset($postmeta, 'runtime');
-
+$maxwidth = dooplay_get_option('max_width','1200');
+$playicon = dooplay_get_option('play_icon','play1');
 // End PHP
 ?>
 <article id="post-<?php the_ID(); ?>" class="item <?php echo $posttype; ?>">
 	<div class="poster">
-		<img src="<?php echo dbmovies_get_poster($post->ID); ?>" alt="<?php the_title(); ?>">
-		<div class="rating"><span class="icon-star2"></span> <?php echo ( $urating ) ? $urating : $imdbrat; ?></div>
+		<img data-src="<?php echo dbmovies_get_poster($post->ID); ?>" loading="lazy" class="lazyload" alt="<?php the_title(); ?>">
+		<div class="rating"><?php echo ( $urating ) ? $urating : $imdbrat; ?></div>
 		<div class="mepo">
         <?php echo ($quality) ? '<span class="quality">'.strip_tags($quality).'</span>' : false; ?>
 		</div>
-		<a href="<?php the_permalink() ?>"><div class="see"></div></a>
+		<a href="<?php the_permalink() ?>"><div class="see <?php echo $playicon; ?>"></div></a>
 	</div>
 	<div class="data">
 		<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
@@ -51,7 +52,7 @@ $runtime = doo_isset($postmeta, 'runtime');
             if($posttype == 'tvshows') echo ($airdate) ? doo_date_compose($airdate) : '&nbsp;';
         ?></span>
 	</div>
-	<?php if(is_archive() === true) { ?>
+	<?php if(is_archive() === true && $maxwidth < 1400) { ?>
     <div class="animation-1 dtinfo">
     	<div class="title">
     		<h4><?php the_title(); ?></h4>

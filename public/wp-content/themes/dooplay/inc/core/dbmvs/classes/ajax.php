@@ -5,13 +5,13 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 class DDbmoviesAjax extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function __construct(){
@@ -26,7 +26,7 @@ class DDbmoviesAjax extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function cleancaching(){
@@ -40,7 +40,7 @@ class DDbmoviesAjax extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function tmdbseasepis(){
@@ -69,7 +69,7 @@ class DDbmoviesAjax extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function genereditor(){
@@ -97,7 +97,7 @@ class DDbmoviesAjax extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function updatedimdb(){
@@ -118,7 +118,7 @@ class DDbmoviesAjax extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function savesettings(){
@@ -166,7 +166,7 @@ class DDbmoviesAjax extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function tmdbinsert(){
@@ -182,7 +182,7 @@ class DDbmoviesAjax extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function tmdbseasons(){
@@ -210,7 +210,7 @@ class DDbmoviesAjax extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function tmdbepisodes(){

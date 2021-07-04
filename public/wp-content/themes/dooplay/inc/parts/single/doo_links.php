@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <title><?php echo wp_kses_post($titl); ?></title>
         <link rel='stylesheet' id='fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto:400,500' type='text/css' media='all' />
-        <link rel='stylesheet' id='link-single'  href='<?php echo DOO_URI,'/assets/css/front.links.css'; ?>' type='text/css' media='all' />
+        <link rel='stylesheet' id='link-single'  href='<?php echo DOO_URI,'/assets/css/front.links'.doo_devmode().'.css'; ?>' type='text/css' media='all' />
         <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script type='text/javascript'>
             var Link = <?php echo $json; ?>;
@@ -50,5 +50,5 @@
             </div>
         </div>
     </body>
-    <script type='text/javascript' src='<?php echo DOO_URI.'/assets/js/'.doo_devmode().'front.links.js'; ?>'></script>
+    <script type='text/javascript' src='<?php echo DOO_URI.'/assets/js/front.links'.doo_devmode().'.js'; ?>'></script>
 </html>

@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -17,7 +17,7 @@ if(post_password_required()){
 <div id="comments" class="comments-area">
 <?php if ( have_comments() ) : ?>
 <h2 class="comments-title">
-<i class="icon-account_circle"></i>
+<i class="fas fa-user-circle"></i>
 	<?php printf( _n('(1) comment', '(%1$s) comments', get_comments_number(), 'mtms' ),
 			number_format_i18n( get_comments_number() ), get_the_title() );
 	?>

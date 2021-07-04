@@ -6,13 +6,16 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 get_header();
 $sidebar = dooplay_get_option('sidebar_position_archives','right');
-echo '<div class="module"><div class="content '.$sidebar.'">';
-echo '<header><h1>'. __d('Episodes'). '</h1><span>'.doo_total_count('episodes'). '</span></header>';
+$maxwidth = dooplay_get_option('max_width','1200');
+$maxwidth = ($maxwidth >= 1400) ? 'full' : 'normal';
+echo '<div class="module"><div class="content '.$sidebar.' '.$maxwidth.'">';
+echo '<h1 class="heading-archive">'.__d('Episodes').'</h1>';
+echo '<header><h2>'. __d('Recently added'). '</h2><span>'.doo_total_count('episodes'). '</span></header>';
 echo '<div id="archive-content" class="animation-2 items">';
 if (have_posts()) {
     while (have_posts()) {

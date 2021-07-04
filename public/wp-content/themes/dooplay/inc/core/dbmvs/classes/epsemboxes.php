@@ -5,13 +5,13 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 class DDbmoviesEPSEMboxes extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -23,16 +23,25 @@ class DDbmoviesEPSEMboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Register(){
+        //add_meta_box('dbmovies_metabox_quick_publisher', __d('Quick publisher'), array(&$this,'Quick_publisher'), 'tvshows', 'normal', 'low');
         add_meta_box('dbmovies_metabox_tvshows', __d('Seasons'), array(&$this,'TVShows'), 'tvshows', 'normal', 'low');
         add_meta_box('dbmovies_metabox_seasons', __d('Episodes'), array(&$this,'Seasons'), 'seasons', 'normal', 'low');
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
+     * @version 1.0
+     */
+    public function Quick_publisher(){
+        require_once get_parent_theme_file_path('/inc/core/dbmvs/tpl/quick_publisher_form.php');
+    }
+
+    /**
+     * @since 2.5.0
      * @version 1.0
      */
     public function TVShows(){
@@ -50,7 +59,7 @@ class DDbmoviesEPSEMboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     Public function Seasons(){
@@ -69,7 +78,7 @@ class DDbmoviesEPSEMboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function GetSeasons($tmdb = ''){
@@ -95,7 +104,7 @@ class DDbmoviesEPSEMboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function GetEpisodes($tmdb = '', $season = ''){
@@ -124,7 +133,7 @@ class DDbmoviesEPSEMboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function SeasonsView($query = array(), $tmdb = ''){
@@ -160,7 +169,7 @@ class DDbmoviesEPSEMboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function EpisodesViews($query = array(), $tmdb = '', $season = ''){
@@ -194,7 +203,7 @@ class DDbmoviesEPSEMboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function ComposeTMDbImage($path = '', $type = ''){

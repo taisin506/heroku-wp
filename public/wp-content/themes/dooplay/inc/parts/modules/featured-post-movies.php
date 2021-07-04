@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -14,6 +14,7 @@
 $oderby   = dooplay_get_option('featuredmodorderby','modified');
 $oder     = dooplay_get_option('featuredmodorder','DESC');
 $numitems = dooplay_get_option('featureditems','8');
+$playicon = dooplay_get_option('play_icon','play1');
 $slider	  = doo_is_true('featuredcontrol','slider');
 $autoplay = doo_is_true('featuredcontrol','autopl');
 $addIdOWL	= ($slider == true) ? 'id="featured-titles" ' : false;
@@ -35,8 +36,8 @@ if ($featured->have_posts()) {
 	echo '<h2>'. __d('Featured Movies')  .'</h2>';
 	if($slider == 'true') {
 		echo '<div class="nav_items_module">';
-		echo '<a class="btn prevf"><i class="icon-caret-left"></i></a>';
-		echo '<a class="btn nextf"><i class="icon-caret-right"></i></a>';
+		echo '<a class="btn prevf"><i class="fas fa-caret-left"></i></a>';
+		echo '<a class="btn nextf"><i class="fas fa-caret-right"></i></a>';
 		echo '</div>';
 	}
 	echo '</header>';
@@ -52,13 +53,12 @@ if ($featured->have_posts()) {
 		$theYear	= ($mostrar = $terms = strip_tags( $terms = get_the_term_list( $post->ID, 'dtyear') ) ) ? $mostrar : '&nbsp;';
 		echo '<article id="post-featured-'. get_the_ID(). '" class="item '. get_post_type(). '">';
 		echo '<div class="poster">';
-		echo '<img src="'.$thePoster.'" alt="'.get_the_title().'">';
-		echo '<div class="rating"><span class="icon-star2"></span> '.$theRating.'</div>';
+		echo '<img data-src="'.$thePoster.'" loading="lazy" class="lazyload" alt="'.get_the_title().'">';
+		echo '<div class="rating">'.$theRating.'</div>';
 		echo '<div class="featu">'.  __d('Featured'). '</div>';
-		echo '<a href="'.get_the_permalink().'"><div class="see"></div></a>';
+		echo '<a href="'.get_the_permalink().'"><div class="see '.$playicon.'"></div></a>';
 		echo '</div>';
 		echo '<div class="data dfeatur">';
-		echo '<div class="mark"><i class="icon-local_play"></i></div>';
 		echo '<h3>';
 		echo '<a href="'. get_the_permalink(). '">'. get_the_title() .'</a>';
 		echo '</h3>';

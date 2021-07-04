@@ -13,10 +13,13 @@ else:
 	$setion = array('movies','tvshows');
 endif;
 doo_glossary();
+
+$maxwidth = dooplay_get_option('max_width','1200');
+$maxwidth = ($maxwidth >= 1400) ? 'full' : 'normal';
 ?>
 
 <div class="module">
-	<div class="content right">
+	<div class="content right <?php echo $maxwidth; ?>">
 	<header>
 		<h1><?php _d('Ratings'); ?></h1>
 		<span class="s_trending">
@@ -25,7 +28,7 @@ doo_glossary();
 			<a href="<?php the_permalink() ?>?get=tv" class="m_trending <?php echo $dt == 'tv' ? 'active' : ''; ?>"><?php _d('TV Show'); ?></a>
 		</span>
 	</header>
-		<div class="items">
+		<div class="items <?php echo $maxwidth; ?>">
 		<?php
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		query_posts(array(

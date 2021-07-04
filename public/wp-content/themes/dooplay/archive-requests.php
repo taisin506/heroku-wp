@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 get_header(); ?>
@@ -32,7 +32,7 @@ get_header(); ?>
 					<input type="hidden" id="nonce" name="nonce" value="<?php echo wp_create_nonce('dbmovies_requests_users'); ?>">
 					<input type="hidden" id="action" name="action" value="dbmovies_requests_search">
 					<input type="hidden" id="page" name="page" value="1">
-					<button class="filter" id="get_requests" type="submit"><span class="icon-search2"></span></button>
+					<button class="filter" id="get_requests" type="submit"><span class="fas fa-search"></span></button>
 				</form>
 			</div>
 		</div>

@@ -6,16 +6,20 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.2
 *
 */
 get_header();
 doo_glossary('tvshows');
-$sidebar = dooplay_get_option('sidebar_position_archives','right');
-echo '<div class="module"><div class="content '.$sidebar.'">';
+$sidebar  = dooplay_get_option('sidebar_position_archives','right');
+$maxwidth = dooplay_get_option('max_width','1200');
+$maxwidth = ($maxwidth >= 1400) ? 'full' : 'normal';
+echo '<div class="module"><div class="content '.$sidebar.' '.$maxwidth.'">';
+echo '<h1 class="heading-archive">'.__d('TV Shows').'</h1>';
+get_template_part('inc/parts/modules/slider-tvshows');
 get_template_part('inc/parts/modules/featured-post-tvshows');
-echo '<header><h1>'. __d('TV Shows'). '</h1><span>'.doo_total_count('tvshows'). '</span></header>';
-echo '<div id="archive-content" class="animation-2 items">';
+echo '<header><h2>'. __d('Recently added'). '</h2><span>'.doo_total_count('tvshows'). '</span></header>';
+echo '<div id="archive-content" class="animation-2 items '.$maxwidth.'">';
 if (have_posts()) {
     while (have_posts()) {
         the_post();

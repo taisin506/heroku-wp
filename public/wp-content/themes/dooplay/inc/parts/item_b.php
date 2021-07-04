@@ -1,6 +1,8 @@
  <article class="item" id="post-<?php the_id(); ?>">
 	<div class="image">
-		<a href="<?php the_permalink() ?>"><img src="<?php echo dbmovies_get_backdrop($post->ID, 'w780'); ?>" alt="<?php the_title(); ?>" /></a>
+		<a href="<?php the_permalink() ?>">
+            <img src="<?php echo dbmovies_get_backdrop($post->ID,'w780'); ?>" alt="<?php the_title(); ?>" />
+        </a>
 		<a href="<?php the_permalink() ?>">
 		<div class="data">
 			<h3 class="title"><?php the_title(); ?></h3>

@@ -16,6 +16,6 @@ $json = json_encode( $json );
 <script type='text/javascript'>
     var Auth = <?php echo $json; ?>;
 </script>
-<script type='text/javascript' src='<?php echo DOO_URI.'/assets/js/'.doo_devmode().'front.auth.js'; ?>'></script>
+<script type='text/javascript' src='<?php echo DOO_URI.'/assets/js/front.auth'.doo_devmode().'.js'; ?>'></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
     <ul>
         <li id="doodashcont-reported-click" class="dooplay-dashaboard-navigation" data-id="reported"><?php _d('Reports'); ?> <span id="response-count-report-unread-span">(0)</span></li>
         <li id="doodashcont-inbox-click" class="dooplay-dashaboard-navigation" data-id="inbox"><?php _d('Contact'); ?> <span id="response-count-contact-unread-span">(0)</span></li>
-        <li class="dooplay-dashaboard-navigation" data-id="more"><?php _d('Quick access'); ?></li>
+        <li class="dooplay-dashaboard-navigation" data-id="more"><?php _d('More'); ?></li>
     </ul>
 </div>
 <div class="box-content">
@@ -21,7 +21,7 @@
             <div class="hidden">{{REPORTS_TEMPLATE}}</div>
         </div>
         <div id="inboxes-paginator-report" class="paginator hidden">
-            <a id="inboxes-btn-loadmore-report" href="#" class="button button-primary button-small inboxes-loadmore" data-type="report"><?php _d('Load more'); ?></a>
+            <button id="inboxes-btn-loadmore-report" href="#" class="button button-primary button-small inboxes-loadmore" data-type="report"><?php _d('Load more'); ?></button>
             <input id="inboxes-input-report" type="hidden" value="">
         </div>
     </div>
@@ -39,12 +39,20 @@
             <div class="hidden">{{CONTACT_TEMPLATE}}</div>
         </div>
         <div id="inboxes-paginator-contact" class="paginator hidden">
-            <a id="inboxes-btn-loadmore-contact" href="#" class="button button-primary button-small inboxes-loadmore" data-type="contact"><?php _d('Load more'); ?></a>
+            <button id="inboxes-btn-loadmore-contact" href="#" class="button button-primary button-small inboxes-loadmore" data-type="contact"><?php _d('Load more'); ?></button>
             <input id="inboxes-input-contact" type="hidden" value="">
         </div>
     </div>
 
     <div id="doodashcont-more" class="dashcont">
+        <header>
+            <span class="title"><?php _d('Delete all messages'); ?></span>
+            <p>
+                <a href="<?php echo admin_url("admin-ajax.php?action=dbmovies_inboxes_cleaner&type=dooplay_report&nonce=".$nonce); ?>" class="button button-small" onclick="return confirm('<?php _d('Do you really want to continue?'); ?>')"><?php _d('Reports'); ?></a>
+                - <?php _d('or'); ?> -
+                <a href="<?php echo admin_url("admin-ajax.php?action=dbmovies_inboxes_cleaner&type=dooplay_contact&nonce=".$nonce); ?>" class="button button-small" onclick="return confirm('<?php _d('Do you really want to continue?'); ?>')"><?php _d('Contact'); ?></a>
+            </p>
+        </header>
         <header>
             <span class="title"><?php _d('Quick access'); ?></span>
         </header>

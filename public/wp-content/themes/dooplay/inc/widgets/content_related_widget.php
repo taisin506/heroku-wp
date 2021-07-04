@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -22,7 +22,7 @@ class DT_Widget_related extends WP_Widget {
 		extract( $args );
 		//Our variables from the widget settings.
 
-		$title  = apply_filters('widget_title', $instance['title'] );
+		$title  = apply_filters('widget_title', doo_isset($instance,'title'));
 		$num    = doo_isset($instance,'dt_nun');
 		$order  = doo_isset($instance,'dt_order');
 		$layout = doo_isset($instance,'dt_layout');

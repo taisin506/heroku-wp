@@ -5,13 +5,13 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 class DDbmoviesRequests extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -33,7 +33,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function postype(){
@@ -76,7 +76,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function remove_esc_attr_and_count($safe_text = '', $text = '') {
@@ -94,7 +94,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function pending_count_filter() {
@@ -102,7 +102,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
 	}
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function esc_attr_restore() {
@@ -110,7 +110,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
 	}
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function TableHead($defaults){
@@ -121,7 +121,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
 	}
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function TableContent($column_name, $post_id){
@@ -155,7 +155,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function AjaxAction(){
@@ -198,7 +198,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function AjaxSearch(){
@@ -281,7 +281,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function AjaxArchive(){
@@ -312,7 +312,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function AjaxPost(){
@@ -375,7 +375,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function NotifyMessage($status = 'publish', $title = ''){
@@ -393,7 +393,7 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function RPostStatus(){

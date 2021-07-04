@@ -1,7 +1,7 @@
 <?php if(!defined('ABSPATH')) exit;
 /**
  * @author Doothemes (Erick Meza & Brendha Mayuri)
- * @since 2.4.2
+ * @since 2.5.0
  */
 
 class DooGdrive{

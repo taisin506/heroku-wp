@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -54,8 +54,8 @@ get_header(); ?>
 	</header>
 	<nav class="user">
 		<ul class="idTabs">
-			<li><a href="#favorites"><?php echo (!wp_is_mobile() ) ? __d('Favorites') : '<i class="icon-thumb_up"></i>'; ?></a></li>
-			<li><a href="#views"><?php echo (!wp_is_mobile()) ? __d('Seen') : '<i class="icon-eye"></i>'; ?></a></li>
+			<li><a href="#favorites"><?php echo (!wp_is_mobile() ) ? __d('Favorites') : '<i class="far fa-heart"></i>'; ?></a></li>
+			<li><a href="#views"><?php echo (!wp_is_mobile()) ? __d('Seen') : '<i class="far fa-eye"></i>'; ?></a></li>
 			<li><a href="#links"><?php _d('Links'); ?></a></li>
 			<li><a href="#settings"><?php _d('Settings'); ?></a></li>
 		</ul>
@@ -204,10 +204,6 @@ get_header(); ?>
 					<fieldset class="form-url-facebook">
 						<label for="twitter"><?php _d('Twitter url'); ?></label>
 						<input type="text" id="twitter" name="twitter" value="<?php the_author_meta('dt_twitter', $current_user->ID ); ?>" />
-					</fieldset>
-					<fieldset class="form-url-gplus">
-						<label for="gplus"><?php _d('Google+ url'); ?></label>
-						<input type="text" id="gplus" name="gplus" value="<?php the_author_meta('dt_gplus', $current_user->ID ); ?>" />
 					</fieldset>
 				</div>
 				<div id="about">

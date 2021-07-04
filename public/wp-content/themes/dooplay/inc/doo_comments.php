@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -69,16 +69,16 @@ function dt_theme_comments_args(){
 	$commenter = wp_get_current_commenter();
 	$required =  ' <em class="text-red" title="'. __d('Required') .'">*</em>';
 	$comments_args = array(
-		'label_submit' => __d('Post comment'),
-		'title_reply' => __d('Leave a comment'),
-		'logged_in_as' => '',
-		'comment_notes_after' => '',
+		'label_submit'         => __d('Post comment'),
+		'title_reply'          => __d('Leave a comment'),
+		'logged_in_as'         => '',
+		'comment_notes_after'  => '',
 		'comment_notes_before' => '',
 		'comment_field' => '
 			<div class="comment-form-comment">
 				<textarea id="comment" name="comment" required="true" class="normal" placeholder="'. __d('Your comment..') .'"></textarea>
 			</div>
-			',
+		',
 		'fields' => apply_filters('comment_form_default_fields', array(
 			'author' => '
 				<div class="grid-container">
@@ -87,7 +87,8 @@ function dt_theme_comments_args(){
 						<div class="form-description">'. __d('Add a display name') .'</div>
 						<input name="author" type="text" class="fullwidth" value="'.esc_attr($commenter['comment_author']).'" required="true"/>
 					</div>
-				</div>',
+				</div>
+			',
 			'email' => '
 				<div class="grid-container fix-grid">
 					<div class="grid desk-8 alpha">
@@ -95,16 +96,9 @@ function dt_theme_comments_args(){
 						<div class="form-description">'. __d('Your email address will not be published') .'</div>
 						<input name="email" type="text" class="fullwidth" value="'.esc_attr($commenter['comment_author_email']).'" required="true"/>
 					</div>
-				</div>',
-			 'url' => '
-				<div class="grid-container fixedform">
-					<div class="grid desk-8 alpha">
-						<div class="form-label">'. __d('Website') .'</div>
-						<input name="url" type="text" placeholder="http://" class="fullwidth" value="'.esc_attr($commenter['comment_author_url']).'"/>
-					</div>
-				</div>',
-			)
-		),
+				</div>
+			')
+		)
 	);
 	return $comments_args;
 }

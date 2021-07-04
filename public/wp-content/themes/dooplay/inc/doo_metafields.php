@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -22,7 +22,7 @@ if(!class_exists('Doofields')){
 
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.1
          */
         public function __construct($args) {
@@ -36,7 +36,7 @@ if(!class_exists('Doofields')){
 
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.1
          */
         public function meta($meta_key) {
@@ -47,7 +47,7 @@ if(!class_exists('Doofields')){
 
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.1
          */
         public function fields_html($item) {
@@ -87,7 +87,7 @@ if(!class_exists('Doofields')){
 
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.1
          */
         public function text($args){
@@ -121,7 +121,7 @@ if(!class_exists('Doofields')){
 
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.1
          */
         public function textarea($args) {
@@ -146,7 +146,7 @@ if(!class_exists('Doofields')){
 
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.1
          */
         public function tdate($args){
@@ -168,7 +168,7 @@ if(!class_exists('Doofields')){
 
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.1
          */
         public function generator($args) {
@@ -218,7 +218,7 @@ if(!class_exists('Doofields')){
 
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.1
          */
         public function checkbox($args) {
@@ -236,7 +236,7 @@ if(!class_exists('Doofields')){
 
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.1
          */
         public function upload($args){
@@ -266,7 +266,7 @@ if(!class_exists('Doofields')){
 
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 1.1
          */
         public function heading($args) {

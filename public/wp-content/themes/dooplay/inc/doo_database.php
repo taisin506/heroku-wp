@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 **************
-* @since 2.4.0
+* @since 2.5.0
 */
 
 class DooDatabase{
@@ -16,7 +16,7 @@ class DooDatabase{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -35,7 +35,7 @@ class DooDatabase{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __destruct(){
@@ -43,7 +43,7 @@ class DooDatabase{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function menu(){
@@ -58,7 +58,7 @@ class DooDatabase{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function tool_page(){
@@ -72,7 +72,7 @@ class DooDatabase{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function insert_pages_ajax(){
@@ -85,43 +85,36 @@ class DooDatabase{
     public function insert_pages(){
         // Compose pages
 		$pages = array(
-
 			'pagetrending' => array(
 				'title' => __d('Trending'),
                 'name' => false,
 				'tpl' => 'trending'
 			),
-
 			'pageratings' => array(
 				'title' => __d('Ratings'),
                 'name' => false,
 				'tpl' => 'rating'
 			),
-
 			'pageaccount' => array(
 				'title' => __d('Account'),
                 'name' => false,
 				'tpl' => 'account'
 			),
-
 			'pagecontact' => array(
 				'title' => __d('Contact'),
                 'name' => false,
 				'tpl' => 'contact'
 			),
-
 			'pageblog' => array(
 				'title' => __d('Blog'),
                 'name' => false,
 				'tpl' => 'blog'
 			),
-
 			'pagetopimdb' => array(
 				'title' => __d('TOP IMDb'),
 				'name' => 'imdb',
 				'tpl' => 'topimdb'
 			),
-
 			'jwpage' => array(
 				'title' => __d('JW Player'),
 				'name' => 'jwplayer',
@@ -226,7 +219,7 @@ class DooDatabase{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function clean_browser(){
@@ -238,7 +231,7 @@ class DooDatabase{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function set_options(){
@@ -337,13 +330,16 @@ class DooDatabase{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function cleaner(){
 
         global $wpdb;
 
+        // Database 3.0
+        $this->delete('postmeta', 'meta_key', 'dt_cast');
+        $this->delete('postmeta', 'meta_key', 'dt_dir');
         // Clean database
         $this->delete('postmeta', 'meta_key', 'status');
         $this->delete('postmeta', 'meta_key', '_user_liked');
@@ -449,7 +445,7 @@ class DooDatabase{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function delete($table, $row, $key){

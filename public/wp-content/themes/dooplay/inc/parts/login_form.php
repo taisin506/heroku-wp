@@ -1,6 +1,6 @@
 <div class="login_box">
     <div class="box">
-        <a id="c_loginbox"><i class="icon-close2"></i></a>
+        <a id="c_loginbox"><i class="fas fa-times"></i></a>
         <h3><?php _d('Login to your account'); ?></h3>
         <form method="post" id="dooplay_login_user">
             <fieldset class="user"><input type="text" name="log" placeholder="<?php _d('Username'); ?>"></fieldset>

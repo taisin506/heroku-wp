@@ -16,8 +16,11 @@ else:
 	$setion = array('movies','tvshows');
 endif;
 doo_glossary();
+$maxwidth = dooplay_get_option('max_width','1200');
+$maxwidth = ($maxwidth >= 1400) ? 'full' : 'normal';
 echo '<div class="module">';
-echo '<div class="content right">'; ?>
+echo '<div class="content right '.$maxwidth.'">';
+?>
 <header>
 	<h1><?php _d('Trending'); ?></h1>
 	<span class="s_trending">
@@ -28,7 +31,7 @@ echo '<div class="content right">'; ?>
 </header>
 <?php
 // Items
-echo '<div class="items">';
+echo '<div class="items '.$maxwidth.'">';
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 query_posts(array(
 	'post_type'    => $setion,

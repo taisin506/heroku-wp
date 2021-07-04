@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.3
+* @since 2.5.0
 *
 */
 
@@ -29,7 +29,6 @@ if(!function_exists('dt_update_user_page')) {
 		$descr = doo_isset($_POST,'description');
 		$twitt = doo_isset($_POST,'twitter');
 		$faceb = doo_isset($_POST,'facebook');
-		$gplus = doo_isset($_POST,'gplus');
 
 		if( isset($nonce ) and wp_verify_nonce($nonce, 'update-user') ) {
 			$error = array();
@@ -55,7 +54,6 @@ if(!function_exists('dt_update_user_page')) {
 			update_user_meta($current_user->ID,'description', esc_attr($descr));
 			update_user_meta($current_user->ID,'dt_twitter', esc_attr($twitt));
 			update_user_meta($current_user->ID,'dt_facebook', esc_attr($faceb));
-			update_user_meta($current_user->ID,'dt_gplus', esc_attr($gplus));
 
 			if (count($error) == 0) {
 				do_action('edit_user_profile_update', $current_user->ID);

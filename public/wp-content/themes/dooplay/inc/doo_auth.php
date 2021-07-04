@@ -6,13 +6,13 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 **************
-* @since 2.4.2
+* @since 2.5.0
 */
 
 class DooAuth{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -24,7 +24,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __destruct(){
@@ -32,7 +32,7 @@ class DooAuth{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function LoginForm(){
@@ -43,7 +43,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Action_LogoutUser(){
@@ -53,7 +53,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Action_LoginUser(){
@@ -80,7 +80,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Action_RegisterUser(){
@@ -115,7 +115,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function LoginUser($username, $password, $remember = true){
@@ -132,7 +132,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function RegisterUser($data){
@@ -150,7 +150,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function ChangePasswordUser($user_id, $new_password){
@@ -158,7 +158,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function ChangeEmailUser($user_id, $new_email){
@@ -166,7 +166,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function NotifyLogin($user_id){
@@ -174,7 +174,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function NotifyChanges($user_id, $notice_type){
@@ -182,7 +182,7 @@ class DooAuth{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function JsonHeader(){

@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.0
+* @since 2.5.0
 *
 */
 if(!function_exists('header_output')){
@@ -33,7 +33,7 @@ if(!function_exists('header_output')){
 		doo_compose_css('header.main .hbox,#contenedor,footer.main .fbox','max-width',$maxwidth.'px');
 		// color
 		doo_compose_css('a,.home-blog-post .entry-date .date,.top-imdb-item:hover>.title a,.module .content .items .item .data h3 a:hover,.head-main-nav ul.main-header li:hover>a,.login_box .box a.register', 'color', $mcolor);
-		doo_compose_css('.nav_items_module a.btn:hover,.pagination span.current,.w_item_b a:hover>.data span.wextra b i,.comment-respond h3:before,footer.main .fbox .fmenu ul li a:hover','color', $mcolor);
+		doo_compose_css('.nav_items_module a.btn:hover,.pagination span.current,.w_item_b a:hover>.data .wextra b:before,.comment-respond h3:before,footer.main .fbox .fmenu ul li a:hover','color', $mcolor);
 		doo_compose_css('header.main .hbox .search form button[type=submit]:hover,.loading,#seasons .se-c .se-a ul.episodios li .episodiotitle a:hover,.sgeneros a:hover,.page_user nav.user ul li a:hover','color',$mcolor);
 		doo_compose_css('footer.main .fbox .fmenu ul li.current-menu-item a,.posts .meta .autor i,.pag_episodes .item a:hover,a.link_a:hover,ul.smenu li a:hover','color', $mcolor);
 		doo_compose_css('header.responsive .nav a.active:before, header.responsive .search a.active:before,.dtuser a.clicklogin:hover,.menuresp .menu ul.resp li a:hover,.menuresp .menu ul.resp li ul.sub-menu li a:hover','color', $mcolor);
@@ -48,7 +48,7 @@ if(!function_exists('header_output')){
         // Background
 		doo_compose_css('.linktabs ul li a.selected,ul.smenu li a.selected,a.liked,.module .content header span a.see-all,.page_user nav.user ul li a.selected,.dt_mainmeta nav.releases ul li a:hover','background', $mcolor);
 		doo_compose_css('a.see_all,p.form-submit input[type=submit]:hover,.report-video-form fieldset input[type=submit],a.mtoc,.contact .wrapper fieldset input[type=submit],span.item_type,a.main', 'background', $mcolor);
-		doo_compose_css('.head-main-nav ul.main-header li a i,.post-comments .comment-reply-link:hover,#seasons .se-c .se-q span.se-o,#edit_link .box .form_edit .cerrar a:hover','background',$mcolor);
+		doo_compose_css('.post-comments .comment-reply-link:hover,#seasons .se-c .se-q span.se-o,#edit_link .box .form_edit .cerrar a:hover','background',$mcolor);
 		doo_compose_css('.user_edit_control ul li a.selected,form.update_profile fieldset input[type=submit],.page_user .content .paged a.load_more:hover,#edit_link .box .form_edit fieldset input[type="submit"]','background', $mcolor);
 		doo_compose_css('.login_box .box input[type="submit"],.form_post_lik .control .left a.add_row:hover,.form_post_lik .table table tbody tr td a.remove_row:hover,.form_post_lik .control .right input[type="submit"]','background', $mcolor);
 		doo_compose_css('#dt_contenedor','background-color', $bcolor);

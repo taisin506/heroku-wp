@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Doothemes (Erick Meza & Brendha Mayuri)
- * @since 2.4.2
+ * @since 2.5.0
  */
 
 // Main data
@@ -26,7 +26,7 @@ if($query_seasons && is_array($query_seasons) && $ctrl == true){
         $mnseo = $numb == 0 ? ' se-o' : false;
         $dsply = $numb == 0 ? ' style="display:block"' : false;
         $title = $senumb == '0' ? __d('Specials') : sprintf( __d('Season %s %s'), $senumb, '<i>'.doo_date_compose($aidate, false).'</i>');
-        $nseas = $senumb == '0' ? '<i class="icon-star"></i>' : $senumb;
+        $nseas = $senumb == '0' ? '<i class="fas fa-star"></i>' : $senumb;
         // Continue View HTML
         $html_out .="<div class='se-c'>";
         $html_out .="<div class='se-q'>";

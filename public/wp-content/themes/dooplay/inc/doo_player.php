@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -15,7 +15,7 @@ class DooPlayer{
 	public $postmeta;
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
 	public function __construct(){
@@ -36,7 +36,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
 	public function languages(){
@@ -75,7 +75,7 @@ class DooPlayer{
 	}
 
 	/**
-     * @since 2.4.0
+     * @since 2.5.0
      * @version 1.0
      */
 	public function types_player_options(){
@@ -91,7 +91,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
 	public function type_player(){
@@ -104,7 +104,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
 	public function add_metabox(){
@@ -113,7 +113,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
 	public function view_metabox(){
@@ -124,7 +124,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
 	public function save($post_id){
@@ -157,7 +157,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
 	public function ajax(){
@@ -209,7 +209,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
 	public function ajax_isset($data = array(), $n, $k){
@@ -217,7 +217,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function viewer($post, $type, $players, $trailer, $size, $views, $ads = false, $image = false){
@@ -278,18 +278,18 @@ class DooPlayer{
             $html .="</h2><div id='playeroptions' class='{$ulclass}'><ul id='playeroptionsul' class='{$set_mode}'>";
             if($trailer != false){
                 $html .="<li id='player-option-trailer' class='dooplay_player_option' data-post='{$post}' data-type='{$type}' data-nume='trailer'>";
-                $html .="<i class='icon-play3'></i>";
+                $html .="<i class='fas fa-play-circle'></i>";
                 $html .="<span class='title'>".__d('Watch trailer')."</span>";
 				if($source_name == true)
                 	$html .="<span class='server'>youtube.com</span>";
-                $html .="<span class='flag'><i class='yt icon-youtube2'></i></span>";
+                $html .="<span class='flag'><i class='yt fab fa-youtube'></i></span>";
                 $html .="<span class='loader'></span></li>";
             }
             $num = 1;
             if(!empty($players) && is_array($players)){
                 foreach($players as $play){
                     $html .="<li id='player-option-{$num}' class='dooplay_player_option' data-type='{$type}' data-post='{$post}' data-nume='{$num}'>";
-                    $html .="<i class='icon-play3'></i>";
+                    $html .="<i class='fas fa-play-circle'></i>";
                     $html .="<span class='title'>{$play['name']}</span>";
 					if($source_name == true)
                     	$html .="<span class='server'>".doo_compose_servername($play['url'], $play['select'])."</span>";
@@ -307,7 +307,7 @@ class DooPlayer{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function viewer_big($size, $ads = false, $image = false){
@@ -321,7 +321,7 @@ class DooPlayer{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private static function fake($image, $class = 'regular'){
@@ -339,10 +339,10 @@ class DooPlayer{
             $html .="<section>";
             $html .="<div class='progressbar'></div>";
             $html .="<div class='controls'><div class='box'>";
-            $html .="<i class='icon-play3'></i>";
-            if(doo_is_true('fakeoptions','ads')) $html .="<i class='icon-monetization_on flashit'></i> <small>".__d('Advertisement')."</small>";
-            $html .="<i class='icon-zoom_out_map right'></i>";
-            $html .="<i class='icon-wb_sunny right'></i>";
+            $html .="<i class='fas fa-play-circle'></i>";
+            if(doo_is_true('fakeoptions','ads')) $html .="<i class='fas fa-dollar-sign flashit'></i> <small>".__d('Advertisement')."</small>";
+            $html .="<i class='fas fa-expand right'></i>";
+            $html .="<i class='fas fa-lightbulb right'></i>";
             $html .="</div></div></section>";
             $html .="</div></a></div>";
             // Compose Fake Player
@@ -351,7 +351,7 @@ class DooPlayer{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private static function fake_links(){
@@ -366,18 +366,19 @@ class DooPlayer{
     }
 
 	/**
-     * @since 2.4.0
+     * @since 2.5.0
      * @version 1.0
      */
 	public function api_route(){
-		register_rest_route('dooplayer/v1', '/post/(?P<id>\d+)', array(
-			'methods'  => 'GET',
-			'callback' => array($this,'api_action'),
+		register_rest_route('dooplayer/v2','/(?P<id>\d+)/(?P<type>[a-zA-Z0-9-]+)/(?P<source>[a-zA-Z0-9-]+)',array(
+			'methods'  			  => WP_REST_Server::READABLE,
+			'callback'            => array($this,'api_action'),
+			'permission_callback' => '__return_true',
 		));
 	}
 
 	/**
-     * @since 2.4.0
+     * @since 2.5.0
      * @version 1.0
      */
 	public function api_action($data){
@@ -385,8 +386,8 @@ class DooPlayer{
 		if(dooplay_get_option('playajaxmethod') !== 'wp_json') return null;
 		// Compose Data
 		$post_id   = doo_isset($data,'id');
-		$post_type = $data->get_param('type');
-		$post_numb = $data->get_param('source');
+		$post_type = doo_isset($data,'type');
+		$post_numb = doo_isset($data,'source');
 		// Switching post_type
 		switch ($post_type) {
 			case 'movie':
@@ -424,7 +425,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
 	public function __destruct(){

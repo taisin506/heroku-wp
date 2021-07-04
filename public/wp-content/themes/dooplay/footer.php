@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.0
+* @since 2.5.0
 *
 */
 // Options
@@ -18,6 +18,7 @@ $foclm2 = dooplay_get_option('footerc2');
 $foclm3 = dooplay_get_option('footerc3');
 $focopy = dooplay_get_option('footercopyright');
 $fologo = doo_compose_image_option('logofooter');
+$fologo = !empty($fologo) ? $fologo : DOO_URI.'/assets/img/brand/dooplay_logo_gray.svg';
 // Copyright
 $copytext = sprintf( __d('%s %s by %s. All Rights Reserved. Powered by %s'), '&copy;', date('Y'), '<strong>'.get_option('blogname').'</strong>', '<a href="https://doothemes.com/items/dooplay/"><strong>DooPlay</strong></a>' );
 $copyright = isset($focopy) ? str_replace('{year}', date('Y'), $focopy) : $copytext;
@@ -45,14 +46,14 @@ $copyright = isset($focopy) ? str_replace('{year}', date('Y'), $focopy) : $copyt
 				<div class="fotlogo">
 					<?php
 					// Logo And text
-					echo ( $fologo ) ? '<div class="logo"><img src="'. $fologo .'" alt="'.get_option('blogname').'" /></div>' : null;
+					echo '<div class="logo"><img src="'. $fologo .'" alt="'.get_option('blogname').'" /></div>';
 					echo ( $fotext ) ? '<div class="text"><p>'. $fotext. '</p></div>' : null;
 					?>
 				</div>
 			</div>
 			<?php } ?>
 			<div class="copy"><?php echo $copyright; ?></div>
-			<span class="top-page"><a id="top-page"><i class="icon-angle-up"></i></a></span>
+			<span class="top-page"><a id="top-page"><i class="fas fa-angle-up"></i></a></span>
 			<?php wp_nav_menu( array('theme_location' => 'footer','container_class' => 'fmenu', 'fallback_cb' => null ) ); ?>
 		</div>
 	</div>
@@ -70,5 +71,5 @@ $copyright = isset($focopy) ? str_replace('{year}', date('Y'), $focopy) : $copyt
     <a class="play-pause"></a>
     <ol class="indicator"></ol>
 </div>
-<?php } ?>
+<?php }  ?>
 </body>

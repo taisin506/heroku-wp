@@ -6,7 +6,7 @@
 * @aopyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 // Sidebar
@@ -21,7 +21,7 @@ $sidebar = dooplay_get_option('sidebar_position_single','right');
 				<?php if($desc = doo_get_postmeta('dt_post_desc')) { echo '<h2 class="desc">'. $desc .'</h2>'; } ?>
 			</header>
 			<div class="meta">
-				<span class="autor"><i class="icon-account_circle"></i> <?php the_author(); ?></span>
+				<span class="autor"><i class="fas fa-user-circle"></i> <?php the_author(); ?></span>
 				<span class="date"><?php doo_post_date('F j, Y'); ?></span>
 				<?php if($views = doo_get_postmeta('dt_views_count')) { echo '<span class="views">'. __d('Views') .' <strong>'. $views .'</strong></span>'; } ?>
 			</div>

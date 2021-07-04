@@ -3,7 +3,7 @@
 <div id="moda-report-video-error" class="report_modal hidde">
     <div class="box animation-3">
         <div class="form">
-            <h3 id="report-title"><span><?php _d('What\'s happening?'); ?></span> <a class="close-modal-report"><i class="icon-close"></i></a></h3>
+            <h3 id="report-title"><span><?php _d('What\'s happening?'); ?></span> <a class="close-modal-report"><i class="fas fa-times"></i></a></h3>
             <div id="report-response-message"></div>
             <div class="dooplay-report-form">
                 <form id="dooplay-report-form">

@@ -5,14 +5,14 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
 class DDbmoviesTaxonomies extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -32,7 +32,7 @@ class DDbmoviesTaxonomies extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Genres(){
@@ -49,7 +49,7 @@ class DDbmoviesTaxonomies extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Quality(){
@@ -66,7 +66,7 @@ class DDbmoviesTaxonomies extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Cast(){
@@ -95,7 +95,7 @@ class DDbmoviesTaxonomies extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Director(){
@@ -124,7 +124,7 @@ class DDbmoviesTaxonomies extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Creator(){
@@ -153,7 +153,7 @@ class DDbmoviesTaxonomies extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Studio(){
@@ -182,7 +182,7 @@ class DDbmoviesTaxonomies extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Network(){
@@ -211,7 +211,7 @@ class DDbmoviesTaxonomies extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function Year(){
@@ -240,7 +240,7 @@ class DDbmoviesTaxonomies extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function cpttags($query){
@@ -250,7 +250,7 @@ class DDbmoviesTaxonomies extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function SwitchTheme(){

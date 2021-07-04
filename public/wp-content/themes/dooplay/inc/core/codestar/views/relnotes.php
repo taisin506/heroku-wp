@@ -1,5 +1,18 @@
 <?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly. ?>
 
+<h3>v2.2.2</h3>
+<ul>
+  <li>Added: WordPress 5.7 compatible.</li>
+  <li>Fixed: Spinner field unit issue in repeater fields.</li>
+  <li>Fixed: Media field svg preview issue.</li>
+  <li>Updated: Google Web Fonts array.</li>
+  <li>Updated: "Font Awesome 5 Free" package and added new icons.</li>
+  <li>Updated: JS libraries (codemirror, leaflet, etc).</li>
+  <li>Improved: Mobile device styles.</li>
+  <li>Improved: Multiple instances for avoid potential conflicts.</li>
+  <li>Improved: Callback field for class method calls.</li>
+</ul>
+
 <h3>v2.2.1</h3>
 <ul>
   <li>Added: Metabox sections can be show by specific post_type option.</li>

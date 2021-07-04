@@ -513,7 +513,7 @@ a.a_f_sbox i {
 .nav_items_module a.btn {
     padding-left: 0;
     padding-right: 10px;
-    float: right
+    float: left
 }
 .slider {
     float: right
@@ -2562,4 +2562,15 @@ a.report-video-error{
     .user_control {
         margin-left: 0!important
     }
+}
+.w_item_b .data .wextra b{
+    float: right;
+}
+.w_item_b .data .wextra b:before{
+    margin-right: 0;
+    margin-left: 5px;
+}
+.w_item_b .data .wextra span.year{
+    margin-left: 0;
+    margin-right: 5px
 }

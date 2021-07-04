@@ -5,14 +5,14 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.3
+* @since 2.5.0
 */
 
 if(!class_exists('DDbmovies')){
     class DDbmovies{
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 3.0
          */
         public function __construct(){
@@ -20,7 +20,7 @@ if(!class_exists('DDbmovies')){
         }
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 3.0
          */
         public function Init(){
@@ -28,8 +28,8 @@ if(!class_exists('DDbmovies')){
             define('DBMOVIES_VERSION','3.3-RC');
             define('DBMOVIES_OPTIONS','_dbmovies_settings');
             define('DBMOVIES_OPTIMDB','_dbmovies_imdbdata');
-            define('DBMOVIES_DBMVCDN','https://cdn.dbmvs.com');
-            define('DBMOVIES_DBMVAPI','https://api.dbmvs.com');
+            define('DBMOVIES_DBMVCDN','https://dooapp.dongdev.com');
+            define('DBMOVIES_DBMVAPI','https://dooapp.dongdev.com');
             define('DBMOVIES_TMDBAPI','https://api.themoviedb.org/3');
             define('DBMOVIES_TMDBKEY','05902896074695709d7763505bb88b4d');
             // Locale Path
@@ -66,7 +66,7 @@ if(!class_exists('DDbmovies')){
         }
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 3.0
          */
         private function Locale_path(){
@@ -87,7 +87,7 @@ if(!class_exists('DDbmovies')){
         }
 
         /**
-         * @since 2.4.2
+         * @since 2.5.0
          * @version 3.0
          */
         public function AdminFilters(){

@@ -5,13 +5,13 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.3
+* @since 2.5.0
 */
 
 
 class DDbmoviesImporters extends DDbmoviesHelpers{
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     protected $tmdbkey = '';
@@ -20,14 +20,14 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
     protected $repeatd = '';
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     var $type = '';
     var $data = '';
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct($type = '', $data = array()){
@@ -39,7 +39,7 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function App(){
@@ -78,7 +78,7 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function Movies($tmdb = '', $edit = ''){
@@ -331,7 +331,7 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function TVShows($tmdb = '', $edit = ''){
@@ -605,7 +605,7 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function Seasons($tmdb = '', $season = '', $name = '', $edit = ''){
@@ -712,7 +712,7 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function Episodes($tmdb = '', $season = '', $episode = '', $name = '', $edit = ''){

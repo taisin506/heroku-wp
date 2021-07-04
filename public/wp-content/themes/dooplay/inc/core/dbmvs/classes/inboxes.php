@@ -5,24 +5,45 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 class DDbmoviesInboxes extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function __construct(){
         // Front Forms Actions
+        add_action('wp_ajax_dbmovies_inboxes_cleaner', array(&$this,'cleaner'));
         add_action('wp_ajax_dbmovies_inboxes_form', array(&$this,'ajax'));
         add_action('wp_ajax_nopriv_dbmovies_inboxes_form', array(&$this,'ajax'));
         // Actions privates..
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
+     * @version 1.1
+     */
+    public function cleaner(){
+        if(is_user_logged_in() && current_user_can('administrator')){
+            $type = $this->Disset($_GET,'type');
+            $durl = $this->Disset($_SERVER,'HTTP_REFERER');
+            $nonc = $this->Disset($_GET,'nonce');
+            if(!empty($type) && wp_verify_nonce($nonc,'dbmovies_inboxes_cleaner')){
+                global $wpdb;
+                $wpdb->query("DELETE FROM $wpdb->posts WHERE post_type='$type'");
+                $wpdb->query("DELETE FROM $wpdb->postmeta WHERE post_id NOT IN (SELECT id FROM $wpdb->posts)");
+            }
+            // WP Redirection
+            wp_redirect(esc_url($durl),302);
+            exit;
+        }
+    }
+
+    /**
+     * @since 2.5.0
      * @version 1.1
      */
     public function ajax(){
@@ -47,7 +68,7 @@ class DDbmoviesInboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     private function insert_contact(){
@@ -146,7 +167,7 @@ class DDbmoviesInboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     private function insert_report(){
@@ -252,7 +273,7 @@ class DDbmoviesInboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     private function firewall($type = '', $ip = ''){
@@ -274,7 +295,7 @@ class DDbmoviesInboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     private function whitelist($ip = ''){
@@ -289,7 +310,7 @@ class DDbmoviesInboxes extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     private function blacklist($ip = ''){

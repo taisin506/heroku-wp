@@ -46,7 +46,7 @@ if ( ! class_exists( 'CSF_Field_radio' ) ) {
                     echo '<li>';
                     echo '<label>';
                     echo '<input type="radio" name="'. esc_attr( $this->field_name() ) .'" value="'. esc_attr( $sub_key ) .'"'. $this->field_attributes() . esc_attr( $checked ) .'/>';
-                    echo '<span class="csf--text">'.  $sub_value  .'</span>';
+                    echo '<span class="csf--text">'. esc_attr( $sub_value ) .'</span>';
                     echo '</label>';
                     echo '</li>';
                   }
@@ -60,7 +60,7 @@ if ( ! class_exists( 'CSF_Field_radio' ) ) {
               echo '<li>';
               echo '<label>';
               echo '<input type="radio" name="'. esc_attr( $this->field_name() ) .'" value="'. esc_attr( $option_key ) .'"'. $this->field_attributes() . esc_attr( $checked ) .'/>';
-              echo '<span class="csf--text">'. $option_value  .'</span>';
+              echo '<span class="csf--text">'. esc_attr( $option_value ) .'</span>';
               echo '</label>';
               echo '</li>';
 

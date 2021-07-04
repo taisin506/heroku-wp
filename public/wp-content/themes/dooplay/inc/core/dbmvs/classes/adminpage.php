@@ -5,13 +5,13 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.3
+* @since 2.5.0
 */
 
 class DDbmoviesAdminPage extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -20,7 +20,7 @@ class DDbmoviesAdminPage extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 3.0
      */
     public function Setup(){
@@ -48,8 +48,8 @@ class DDbmoviesAdminPage extends DDbmoviesHelpers{
                 'titletvshows'      => '{name}',
                 'titleseasons'      => __d('{name}: Season {season}'),
                 'titlepisodes'      => '{name}: {season}x{episode}',
-                'content-movies'    => '<!-- wp:paragraph -->{synopsis}<!-- /wp:paragraph -->',
-                'content-tvshows'   => '<!-- wp:paragraph -->{synopsis}<!-- /wp:paragraph -->',
+                'content-movies'    => '<!-- wp:paragraph --><p>{synopsis}</p><!-- /wp:paragraph -->',
+                'content-tvshows'   => '<!-- wp:paragraph --><p>{synopsis}</p><!-- /wp:paragraph -->',
                 'updatermethod'     => 'wp-ajax',
                 'updatermovies'     => 1,
                 'updatershows'      => 1,
@@ -93,7 +93,7 @@ class DDbmoviesAdminPage extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 3.0
      */
     public function DbmvMenu(){
@@ -102,7 +102,7 @@ class DDbmoviesAdminPage extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 3.0
      */
     public function DbmvApp(){
@@ -110,7 +110,7 @@ class DDbmoviesAdminPage extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 3.0
      */
     public function DbmvSettings(){
@@ -118,7 +118,7 @@ class DDbmoviesAdminPage extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 3.0
      */
     public function PendingNotice(){

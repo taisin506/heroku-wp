@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -29,7 +29,12 @@ class DT_Widget_genres extends WP_Widget {
 		$speed      = $instance['dt_speed'];
 		$rand       = $instance[ 'dt_rand' ] ? 'rand' : 'false';
 		$autoplay   = $instance[ 'dt_autoplay' ] ? 'true' : 'false';
-        $full_width = ( dooplay_get_option('homefullwidth') == true ) ? "6" : "5";
+		$maxwidth   = dooplay_get_option('max_width','1200');
+		if($maxwidth >= 1400){
+			$full_width = ( dooplay_get_option('homefullwidth') == true ) ? "7" : "6";
+		} else {
+			$full_width = ( dooplay_get_option('homefullwidth') == true ) ? "7" : "5";
+		}
 		echo $before_widget;
 		// Display Widget title
 		if (is_home()) {
@@ -38,8 +43,8 @@ class DT_Widget_genres extends WP_Widget {
 		echo $before_title . $title . $after_title;
 		?>
 		<div class="nav_items_module">
-		  <a class="btn next_<?php echo $genre; ?>"><i class="icon-caret-left"></i></a>
-		  <a class="btn prev_<?php echo $genre; ?>"><i class="icon-caret-right"></i></a>
+		  <a class="btn next_<?php echo $genre; ?>"><i class="fas fa-caret-left"></i></a>
+		  <a class="btn prev_<?php echo $genre; ?>"><i class="fas fa-caret-right"></i></a>
 		</div>
 		<span> <a href="<?php echo get_term_link($genre,'genres'); ?>" class="see-all"><?php _d('See all'); ?></a></span>
 		<?php
@@ -65,8 +70,8 @@ class DT_Widget_genres extends WP_Widget {
 				<?php if($autoplay =='true') { echo 'autoPlay: '.$speed.','; } else { echo 'autoPlay: false,'; } ?>
 				stopOnHover : true,
 				pagination : false,
-				itemsDesktop : [1199,5],
-				itemsDesktopSmall : [980,5],
+				itemsDesktop : [1400,6],
+				itemsDesktopSmall : [1300,5],
 				itemsTablet: [768,4],
 				itemsTabletSmall: false,
 				itemsMobile : [479,3],

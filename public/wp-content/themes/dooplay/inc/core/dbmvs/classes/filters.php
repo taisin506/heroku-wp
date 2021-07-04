@@ -5,14 +5,14 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
 class DDbmoviesFilters extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     protected $tmdbkey = '';
@@ -20,7 +20,7 @@ class DDbmoviesFilters extends DDbmoviesHelpers{
     protected $apilang = '';
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -35,7 +35,7 @@ class DDbmoviesFilters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function upimdb(){
@@ -71,7 +71,7 @@ class DDbmoviesFilters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function filter(){
@@ -131,7 +131,7 @@ class DDbmoviesFilters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.1
      */
     public function search(){
@@ -186,7 +186,7 @@ class DDbmoviesFilters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function results($results = array(), $type =''){
@@ -208,7 +208,7 @@ class DDbmoviesFilters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function verificator($idtmdb = '', $type = ''){
@@ -220,7 +220,7 @@ class DDbmoviesFilters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function datetype($type){
@@ -232,7 +232,7 @@ class DDbmoviesFilters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function datetypeapi($type){
@@ -244,7 +244,7 @@ class DDbmoviesFilters extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function titletype($type){

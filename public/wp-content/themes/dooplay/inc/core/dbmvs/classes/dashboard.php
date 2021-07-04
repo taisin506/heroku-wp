@@ -5,7 +5,7 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
@@ -13,7 +13,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -24,7 +24,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function widget(){
@@ -32,15 +32,16 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function view(){
+        $nonce = wp_create_nonce('dbmovies_inboxes_cleaner');
         require get_parent_theme_file_path('/inc/core/dbmvs/tpl/dashboard_widget.php');
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function ajax_inbox_deleting(){
@@ -76,7 +77,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function ajax_inbox_reading(){
@@ -101,7 +102,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function ajax_inbox(){
@@ -129,7 +130,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function read_report($post_id){
@@ -169,7 +170,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function read_contact($post_id){
@@ -205,7 +206,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function get_reports($page = 1){
@@ -229,7 +230,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function get_contact($page = 1){
@@ -253,7 +254,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function total_by_status($type, $status){
@@ -263,7 +264,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function total_by_type($type){
@@ -273,7 +274,7 @@ class DDbmoviesDashboard extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private function get_posts($post_type, $page){

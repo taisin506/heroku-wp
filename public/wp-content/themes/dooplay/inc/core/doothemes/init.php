@@ -5,7 +5,7 @@
 * @author URI: https://doothemes.com/
 * @aopyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -34,8 +34,9 @@ new Doothemes(
 		'version'		 => DOO_VERSION,
 		'author'		 => DOO_COM,
 		'download_id'	 => DOO_ITEM_ID,
-        'remote_api_url' => 'https://doothemes.com',
-		'renew_url'		 => 'https://doothemes.com/items/dooplay/'
+        'remote_api_url' => 'https://dooapp.dongdev.com',
+		// 'renew_url'		 => 'https://doothemes.com/items/dooplay/'
+		'renew_url'		 => 'https://dooapp.dongdev.com/dooplay'
 	),
 
 	// Texts

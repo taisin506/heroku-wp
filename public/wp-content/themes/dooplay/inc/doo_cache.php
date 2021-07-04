@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 **************
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
@@ -14,7 +14,7 @@ class DooPlayCache{
 
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     private $path;
@@ -24,7 +24,7 @@ class DooPlayCache{
     private $sche;
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -52,7 +52,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __destruct(){
@@ -60,7 +60,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function ajax(){
@@ -93,7 +93,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public static function menu(){
@@ -142,7 +142,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function transient(){
@@ -151,7 +151,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function get($label){
@@ -162,7 +162,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function set($label, $data){
@@ -170,7 +170,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function is($label){
@@ -180,7 +180,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function delete($label){
@@ -190,7 +190,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function delete_expired(){
@@ -200,7 +200,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function delete_all(){
@@ -210,7 +210,7 @@ class DooPlayCache{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function safename($label){

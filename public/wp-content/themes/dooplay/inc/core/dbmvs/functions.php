@@ -5,12 +5,12 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 1.0
  */
 function dbmovies_get_poster($post_id = '', $thumb_size = 'dt_poster_a', $post_meta = 'dt_poster', $size = 'w185'){
@@ -33,7 +33,7 @@ function dbmovies_get_poster($post_id = '', $thumb_size = 'dt_poster_a', $post_m
 }
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 1.0
  */
 function dbmovies_get_backdrop($post_id = '', $size = 'w500'){
@@ -50,7 +50,7 @@ function dbmovies_get_backdrop($post_id = '', $size = 'w500'){
 }
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 1.0
  */
 function dbmovies_get_images($data = ''){
@@ -82,7 +82,7 @@ function dbmovies_get_images($data = ''){
 }
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 1.0
  */
 function dbmovies_get_rand_image($data = ''){
@@ -107,7 +107,7 @@ function dbmovies_get_rand_image($data = ''){
 }
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 1.0
  */
 function dbmovies_title_tags($option, $data){

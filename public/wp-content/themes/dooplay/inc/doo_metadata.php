@@ -6,14 +6,14 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
 
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 1.0
  */
 function doo_meta_isset($data, $meta){
@@ -22,7 +22,7 @@ function doo_meta_isset($data, $meta){
 
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 1.1
  */
 function doo_postmeta_movies($post_id){
@@ -73,7 +73,7 @@ function doo_postmeta_movies($post_id){
 
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 1.0
  */
 function doo_postmeta_tvshows($post_id){
@@ -118,7 +118,7 @@ function doo_postmeta_tvshows($post_id){
 
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 1.0
  */
 function doo_postmeta_seasons($post_id){
@@ -150,7 +150,7 @@ function doo_postmeta_seasons($post_id){
 
 
 /**
- * @since 2.4.2
+ * @since 2.5.0
  * @version 1.1
  */
 function doo_postmeta_episodes($post_id){

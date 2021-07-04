@@ -5,14 +5,14 @@
 * @author URI: https://doothemes.com/
 * @aopyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
 class Doothemes_updater {
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	private $remote_api_url;
@@ -25,12 +25,12 @@ class Doothemes_updater {
 	protected $strings = null;
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function __construct( $args = array(), $strings = array()){
 		$args = wp_parse_args($args, array(
-			'remote_api_url'	=> 'https://doothemes.com',
+			'remote_api_url'	=> 'https://dooapp.dongdev.com',
 			'request_data'		=> array(),
 			'theme_slug'		=> get_template(),
 			'item_name'			=> '',
@@ -54,7 +54,7 @@ class Doothemes_updater {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function theme_update_transient( $value ) {
@@ -66,7 +66,7 @@ class Doothemes_updater {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function delete_theme_update_transient() {
@@ -74,7 +74,7 @@ class Doothemes_updater {
 	}
 
 	/**
-	 * @since 2.4.2
+	 * @since 2.5.0
 	 * @version 1.1
 	 */
 	function check_for_update() {

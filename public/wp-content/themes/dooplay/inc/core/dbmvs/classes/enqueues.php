@@ -5,14 +5,14 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
 class DDbmoviesEnqueues extends DDbmoviesHelpers{
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 1.0
      */
     public function __construct(){
@@ -20,7 +20,7 @@ class DDbmoviesEnqueues extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.2
+     * @since 2.5.0
      * @version 3.1
      */
     public function Enqueues(){
@@ -96,7 +96,7 @@ class DDbmoviesEnqueues extends DDbmoviesHelpers{
     }
 
     /**
-     * @since 2.4.0
+     * @since 2.5.0
      * @version 1.0
      */
     private function Minify(){

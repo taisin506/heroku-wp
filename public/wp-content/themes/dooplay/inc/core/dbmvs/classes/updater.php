@@ -5,7 +5,7 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.4.2
+* @since 2.5.0
 */
 
 
@@ -21,7 +21,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     protected $app_time;
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function __construct(){
@@ -50,7 +50,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function cron_schedules($schedules){
@@ -82,7 +82,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function cron_action(){
@@ -90,7 +90,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     public function ajax_action(){
@@ -150,7 +150,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function calculate_content(){
@@ -169,7 +169,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function calculate_pages($per_page = 1){
@@ -184,7 +184,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function get_content_id($page = 1, $per_page = 1){
@@ -204,7 +204,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function get_content($post_id, $post_type, $page){
@@ -254,7 +254,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function successfully($post_id = '', $post_type = ''){
@@ -271,7 +271,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function arguments(){
@@ -284,7 +284,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function images($tmdb_images = array()){
@@ -304,7 +304,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function movies($post_id = ''){
@@ -443,7 +443,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function tvshows($post_id = ''){
@@ -575,7 +575,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function seasons($post_id = ''){
@@ -621,7 +621,7 @@ class DDbmoviesUpdater extends DDbmoviesHelpers{
     }
 
     /**
-    * @since 2.4.2
+    * @since 2.5.0
     * @version 1.0
     */
     private function episodes($post_id = ''){

@@ -6,7 +6,7 @@
 * @aopyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.4.2
+* @since 2.5.0
 *
 */
 
@@ -20,6 +20,8 @@ $toic = doo_compose_image_option('touchlogo');
 $logg = is_user_logged_in();
 $bnme = get_option('blogname');
 $styl = dooplay_get_option('style');
+$colr = dooplay_get_option('maincolor');
+$colr = ($colr) ? $colr : '#408bea';
 $ilgo = ($styl == 'default') ? 'dooplay_logo_dark' : 'dooplay_logo_white';
 $logo = ($logo) ? "<img src='{$logo}' alt='{$bnme}'/>" : "<img src='".DOO_URI."/assets/img/brand/{$ilgo}.svg' alt='{$bnme}'/>";
 ?>
@@ -32,6 +34,7 @@ $logo = ($logo) ? "<img src='{$logo}' alt='{$bnme}'/>" : "<img src='".DOO_URI."/
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php dooplay_meta_theme_color($styl); ?>
 <?php if($fvic) echo "<link rel='shortcut icon' href='{$fvic}' type='image/x-icon' />\n"; ?>
 <?php get_template_part('inc/doo_seo'); ?>
 <?php if(is_single()) { doo_facebook_image("w780", $post->ID); } ?>
@@ -60,7 +63,7 @@ $logo = ($logo) ? "<img src='{$logo}' alt='{$bnme}'/>" : "<img src='".DOO_URI."/
 			<div id="advc-menu" class="search">
 				<form method="get" id="searchform" action="<?php echo esc_url(home_url()); ?>">
 					<input type="text" placeholder="<?php _d('Search...'); ?>" name="s" id="s" value="<?php echo get_search_query(); ?>" autocomplete="off">
-					<button class="search-button" type="submit"><span class="icon-search2"></span></button>
+					<button class="search-button" type="submit"><span class="fas fa-search"></span></button>
 				</form>
 			</div>
 			<!-- end search -->
@@ -77,7 +80,7 @@ $logo = ($logo) ? "<img src='{$logo}' alt='{$bnme}'/>" : "<img src='".DOO_URI."/
             <?php } else { if($regi == true) { ?>
 			<div class="dtuser">
 				<a href="#" class="clicklogin">
-					<i class="icon-person"></i>
+					<i class="fas fa-user-circle"></i>
 				</a>
 			</div>
 			<?php } } ?>
@@ -97,7 +100,7 @@ $logo = ($logo) ? "<img src='{$logo}' alt='{$bnme}'/>" : "<img src='".DOO_URI."/
 	<div class="search_responsive">
 		<form method="get" id="form-search-resp" class="form-resp-ab" action="<?php echo esc_url(home_url()); ?>">
 			<input type="text" placeholder="<?php _d('Search...'); ?>" name="s" id="ms" value="<?php echo get_search_query(); ?>" autocomplete="off">
-			<button type="submit" class="search-button"><span class="icon-search3"></span></button>
+			<button type="submit" class="search-button"><span class="fas fa-search"></span></button>
 		</form>
 		<div class="live-search"></div>
 	</div>

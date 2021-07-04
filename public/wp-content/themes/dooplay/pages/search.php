@@ -5,7 +5,7 @@
 	<div class="search_page_form">
 		<form method="get" id="searchformpage" action="<?php echo esc_url( home_url() ); ?>">
 			<input type="text" placeholder="<?php _d('Search...'); ?>" name="s" id="s" value="<?php echo get_search_query(); ?>">
-			<button type="submit"><span class="icon-search2"></span></button>
+			<button type="submit"><span class="fas fa-search"></span></button>
 		</form>
 	</div>
 
@@ -45,8 +45,8 @@
 				<?php if($rt = doo_get_postmeta('imdbRating')) { echo '<span class="rating">IMDb '. $rt .'</span>'; } ?>
 				<?php if( get_post_type() == 'episodes') { if($d = $dt_date) { echo '<span class="year">', $d->format(DOO_TIME), '</span>'; } } ?>
 				<?php if($yr = $tms = strip_tags( $tms = get_the_term_list( $post->ID, 'dtyear'))) { echo '<span class="year">'. $yr .'</span>'; } ?>
-				<?php $i=0; if ($dt_player) : foreach ( $dt_player as $field ) { if($i==2) break; if($field['idioma']) { ?>
-				<span class="flag" style="background-image: url(<?php echo DOO_URI, '/assets/img/flags/',$field['idioma'],'.png'; ?>)"></span>
+				<?php $i=0; if ($dt_player) : foreach ( $dt_player as $field ) { if($i==2) break; if(doo_isset($field,'idioma')) { ?>
+				<span class="flag" style="background-image: url(<?php echo DOO_URI, '/assets/img/flags/',doo_isset($field,'idioma'),'.png'; ?>)"></span>
 				<?php } $i++; } endif; ?>
 				</div>
 				<div class="contenido">

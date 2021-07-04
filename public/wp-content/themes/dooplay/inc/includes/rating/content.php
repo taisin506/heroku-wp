@@ -15,7 +15,7 @@
 			</section>
 			<div class="starstruck-rating">
 				<span class="dt_rating_vgs" itemprop="ratingValue"><?php echo $rating; ?></span>
-				<i class="icon-account_circle"></i> <span class="rating-count" itemprop="ratingCount"><?php echo number_format( $votes ); ?></span> <span class="rating-text"><?php echo _n('vote', 'votes', $votes, 'dooplay' ); ?></span>
+				<i class="fas fa-user-circle"></i> <span class="rating-count" itemprop="ratingCount"><?php echo number_format( $votes ); ?></span> <span class="rating-text"><?php echo _n('vote', 'votes', $votes, 'dooplay' ); ?></span>
 			</div>
 		</div>
 	</div>

