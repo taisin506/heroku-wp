@@ -50,6 +50,12 @@
         "wpackagist-plugin/fluid-player": "*",
         "wpackagist-plugin/featured-image-from-url": "*",
 
+        "wpackagist-plugin/display-posts-shortcode": "*",
+
+        "wpackagist-plugin/insert-php-code-snippet": "*",
+
+        "wpackagist-plugin/pods": "*",
+
 
 
         "wpackagist-plugin/wp-scraper": "*",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f78c49601855e1d3d956b25fb38d576",
+    "content-hash": "a61ebfedfb5fdc0f78b0fe89c9de03df",
     "packages": [
         {
             "name": "composer/installers",
@@ -741,6 +741,24 @@
             "homepage": "https://wordpress.org/plugins/disable-comments/"
         },
         {
+            "name": "wpackagist-plugin/display-posts-shortcode",
+            "version": "3.0.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/display-posts-shortcode/",
+                "reference": "tags/3.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/display-posts-shortcode.3.0.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/display-posts-shortcode/"
+        },
+        {
             "name": "wpackagist-plugin/featured-image-from-url",
             "version": "3.6.4",
             "source": {
@@ -811,6 +829,42 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/insert-headers-and-footers/"
+        },
+        {
+            "name": "wpackagist-plugin/insert-php-code-snippet",
+            "version": "1.3.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/insert-php-code-snippet/",
+                "reference": "tags/1.3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/insert-php-code-snippet.1.3.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/insert-php-code-snippet/"
+        },
+        {
+            "name": "wpackagist-plugin/pods",
+            "version": "2.7.28",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/pods/",
+                "reference": "tags/2.7.28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/pods.2.7.28.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/pods/"
         },
         {
             "name": "wpackagist-plugin/pre-party-browser-hints",
