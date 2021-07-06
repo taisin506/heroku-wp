@@ -47,7 +47,7 @@
         "wpackagist-plugin/all-in-one-seo-pack": "*",
         "wpackagist-plugin/search-filter": "*",
         "wpackagist-plugin/recent-posts-widget-with-thumbnails": "*",
-        "wpackagist-plugin/fluid-player": "*",
+        "wpackagist-plugin/bradmax-player": "*",
         "wpackagist-plugin/featured-image-from-url": "*",
 
         "wpackagist-plugin/display-posts-shortcode": "*",

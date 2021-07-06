@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a61ebfedfb5fdc0f78b0fe89c9de03df",
+    "content-hash": "b84c517a938b6e5e190a7f74ebbe77ec",
     "packages": [
         {
             "name": "composer/installers",
@@ -616,15 +616,15 @@
         },
         {
             "name": "wpackagist-plugin/age-gate",
-            "version": "2.16.1",
+            "version": "2.16.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/age-gate/",
-                "reference": "tags/2.16.1"
+                "reference": "tags/2.16.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/age-gate.2.16.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/age-gate.2.16.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -685,6 +685,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/block-bad-queries/"
+        },
+        {
+            "name": "wpackagist-plugin/bradmax-player",
+            "version": "1.1.17",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/bradmax-player/",
+                "reference": "tags/1.1.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/bradmax-player.1.1.17.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/bradmax-player/"
         },
         {
             "name": "wpackagist-plugin/classic-editor",
@@ -775,24 +793,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/featured-image-from-url/"
-        },
-        {
-            "name": "wpackagist-plugin/fluid-player",
-            "version": "2.4.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/fluid-player/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/fluid-player.zip?timestamp=1541437872"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/fluid-player/"
         },
         {
             "name": "wpackagist-plugin/hide-metadata",
