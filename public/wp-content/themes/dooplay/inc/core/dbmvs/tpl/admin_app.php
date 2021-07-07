@@ -4,7 +4,7 @@
         <!-- Type content Selector -->
         <nav class="left" id="dbmovies-types">
             <ul>
-                <li><h3 id="dbmvs-logo-status"><a href="https://bescraper.cf/app/" target="_blank">DBMVS</a> <small><?php echo DBMOVIES_VERSION; ?></small></h3></li>
+                <li><h3 id="dbmvs-logo-status"><a href="https://dbmvs.com" target="_blank">DBMVS</a> <small><?php echo DBMOVIES_VERSION; ?></small></h3></li>
                 <li><a id="dbmvstabapp-movie" href="#" class="dbmvs-tab-content button button-primary" data-type="movie"><?php _d('Movies'); ?></a></li>
                 <li><a id="dbmvstabapp-tv" href="#" class="dbmvs-tab-content button" data-type="tv"><?php _d('Shows'); ?></a></li>
             </ul>
@@ -102,7 +102,7 @@
             </ul>
         </div>
         <div class="hidder">
-            <a id="dbmovies-cleanlog" href="#">Clean</a>
+            <a id="dbmovies-cleanlog" href="#"><?php _d('Clean'); ?></a>
         </div>
     </div>
     <!-- Json Response -->
@@ -111,12 +111,45 @@
             <input type="hidden" id="current-year">
             <input type="hidden" id="current-page">
             <input type="hidden" id="dtotal-items">
+            <!-- Response results data -->
+            <div id="dbmovies-response-data"class="data_results">
+                <section>
+                    <?php echo sprintf(__d('About %s results (%s seconds)'),'<span id="dbmvs-total-results">0</span>','<span id="time-execution-seconds">0</span>'); ?>
+                </section>
+                <section class="right">
+                    <?php echo sprintf(__d('Loaded pages %s'),'<span id="dbmvs-current-page">0</span>'); ?>
+                </section>
+            </div>
+            <!-- Load results items -->
             <div id="dbmovies-response-box" class="items">
                 <i id="response-dbmovies"></i>
             </div>
+            <!-- Paginator -->
             <div class="paginator">
                 <div id="dbmovies-loadmore-spinner"></div>
                 <a href="#" id="dbmovies-loadmore" class="button button-primary dbmvsloadmore"><?php _d('Load More'); ?></a>
+            </div>
+            <!-- Dbmvs Global stats -->
+            <div id="dbmvs_global_stats" class="dbmvstats fadein">
+                <div class="box">
+                    <section data-dbmvs="total_credits">
+                        <span id="dbmvs_total_credits" class="number">0</span>
+                        <span class="text"><?php _d('Globals credits'); ?></span>
+                    </section>
+                    <section data-dbmvs="total_requests">
+                        <span id="dbmvs_total_requests" class="number">0</span>
+                        <span class="text"><?php _d('Delivered queries'); ?></span>
+                    </section>
+                    <section data-dbmvs="total_caching">
+                        <span id="dbmvs_total_caching" class="number">0</span>
+                        <span class="text"><?php _d('Queries stored'); ?></span>
+                    </section>
+                    <section data-dbmvs="total_sites">
+                        <span id="dbmvs_total_sites" class="number">0</span>
+                        <span class="text"><?php _d('Sites actives'); ?></span>
+                    </section>
+
+                </div>
             </div>
         </div>
     </div>

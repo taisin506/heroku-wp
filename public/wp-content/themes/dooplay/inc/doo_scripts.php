@@ -264,11 +264,10 @@ class DooPlayScripts{
             'confirmdbtool'      => __d('Do you really want to delete this register, once completed this action will not recover the data again?'),
             'confirmpublink'     => __d('Do you want to publish the links before continuing?'),
 			'domain'	         => doo_compose_domain( get_site_url() ),
-			'doothemes_server'	 => 'https://cdn.bescraper.cf/api',
+			'doothemes_server'	 => 'https://doothemes.com',
 			'doothemes_license'  => (current_user_can('administrator')) ? get_option(DOO_THEME_SLUG. '_license_key') : '',
 			'doothemes_item'	 => DOO_THEME,
 		));
-        // Coded
     }
 }
 

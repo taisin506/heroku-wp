@@ -6,6 +6,7 @@
             <li id="settab-updater" data-tab="updater" class="nav-tab"><?php _d('Meta Updater'); ?></li>
             <li id="settab-requests" data-tab="requests" class="nav-tab"><?php _d('Requests'); ?></li>
             <li id="settab-advanced" data-tab="advanced" class="nav-tab"><?php _d('Advanced'); ?></li>
+            <li id="settab-stats" data-tab="stats" class="nav-tab"><?php _d('Stats'); ?></li>
         </ul>
     </nav>
     <?php if(empty($this->get_option('dbmovies'))){ ?>
@@ -40,7 +41,7 @@
         <div id="dbmv-setting-advanced" class="tab-content">
             <?php require_once get_parent_theme_file_path('/inc/core/dbmvs/tpl/form_setting_advanced.php'); ?>
         </div>
-        <div id="dbmv-setting-statistics" class="tab-content">
+        <div id="dbmv-setting-stats" class="tab-content">
             <?php require_once get_parent_theme_file_path('/inc/core/dbmvs/tpl/form_setting_statistics.php'); ?>
         </div>
         <hr>

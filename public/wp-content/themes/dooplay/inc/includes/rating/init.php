@@ -165,7 +165,7 @@ function starstruck_return_content( $data, $content, $id, $type ) {
 			$your_rating = $data['users'][$user_info->ID][0];
 		}
 	} else {
-		$rating = rand(5,8);
+		$rating = rand(5,9);
 		$votes  = 1;
 	}
 	ob_start();

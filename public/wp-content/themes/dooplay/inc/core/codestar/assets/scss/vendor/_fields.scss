@@ -975,31 +975,6 @@
 
   .csf--preview{
     position: relative;
-
-    .fa-times{
-      position: absolute;
-      z-index: 1;
-      right: 4px;
-      top: 4px;
-      font-size: 14px;
-      width: 22px;
-      height: 22px;
-      line-height: 22px;
-      text-align: center;
-      text-decoration: none;
-      color: #fff;
-      background-color: #dd3333;
-      opacity: 0.8;
-      transition: all .2s;
-
-      &:hover{
-        opacity: 1;
-      }
-
-      &:focus{
-        box-shadow: none;
-      }
-    }
   }
 }
 
@@ -1678,8 +1653,9 @@
 
   textarea,
   select{
-    min-width: 100%;
     margin: 0;
+    min-width: 100%;
+    max-width: 100%;
   }
 
   .csf--title{
@@ -1699,6 +1675,7 @@
 
   .csf--block{
     flex: 1;
+    max-width: 100%;
     padding-right: 6px;
     padding-bottom: 6px;
   }
@@ -1785,6 +1762,10 @@
 
   .button{
     margin-left: 5px;
+  }
+
+  .csf--preview{
+    position: relative;
   }
 }
 
@@ -2051,20 +2032,54 @@
 }
 
 .csf-image-preview{
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: relative;
-  padding: 4px;
-  min-width: 44px;
-  min-height: 22px;
+  padding: 6px;
+  width: 120px;
+  height: 90px;
+  max-width: 100%;
   margin-bottom: 10px;
+  text-align: center;
+  border-radius: 2px;
   border: 1px solid #ccc;
   background-color: #f9f9f9;
   box-shadow: 0 1px 0 rgba(0,0,0,0.08);
 
   img{
-    max-height: 90px;
-    display: inline-block;
-    vertical-align: middle;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  a{
+    position: absolute;
+    z-index: 1;
+    right: 4px;
+    top: 4px;
+    font-size: 14px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #dd3333;
+    opacity: 0.75;
+    border-radius: 2px;
+    transition: all .2s;
+
+    &:hover{
+      opacity: 1;
+    }
+
+    &:focus{
+      box-shadow: none;
+    }
   }
 }
 

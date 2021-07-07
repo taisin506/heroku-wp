@@ -8,7 +8,7 @@ $imdb = ($a = doo_get_postmeta('imdbRating')) ? $a : '0';
 <?php $dates = doo_get_postmeta("air_date"); ?>
 	<a href="<?php the_permalink() ?>">
 		<div class="image">
-			<img data-src="<?php echo dbmovies_get_poster($post->ID,'dt_poster_b','dt_poster','w92'); ?>" loading="lazy" class="lazyload" alt="<?php the_title(); ?>" />
+			<img src="<?php echo dbmovies_get_poster($post->ID,'dt_poster_b','dt_poster','w92'); ?>" alt="<?php the_title(); ?>" />
 		</div>
 		<div class="data">
 				<h3><?php the_title(); ?></h3>

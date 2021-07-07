@@ -141,6 +141,7 @@ if ( ! class_exists( 'CSF_Taxonomy_Options' ) ) {
           $section_title = ( ! empty( $section['title'] ) ) ? $section['title'] : '';
 
           echo ( $section_title || $section_icon ) ? '<div class="csf-section-title"><h3>'. $section_icon . $section_title .'</h3></div>' : '';
+          echo ( ! empty( $section['description'] ) ) ? '<div class="csf-field csf-section-description">'. $section['description'] .'</div>' : '';
 
           if ( ! empty( $section['fields'] ) ) {
             foreach ( $section['fields'] as $field ) {

@@ -224,6 +224,8 @@ if ( ! class_exists( 'CSF_Shortcoder' ) ) {
 
             echo '<div class="csf-fields">';
 
+            echo ( ! empty( $section['description'] ) ) ? '<div class="csf-field csf-section-description">'. $section['description'] .'</div>' : '';
+
             foreach ( $section['fields'] as $field ) {
 
               if ( in_array( $field['type'], $unallows ) ) { $field['_notice'] = true; }

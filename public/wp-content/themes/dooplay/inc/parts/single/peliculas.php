@@ -3,10 +3,10 @@
 * -------------------------------------------------------------------------------------
 * @author: Doothemes
 * @author URI: https://doothemes.com/
-* @aopyright: (c) 2018 Doothemes. All rights reserved
+* @aopyright: (c) 2021 Doothemes. All rights reserved
 * -------------------------------------------------------------------------------------
 *
-* @since 2.2.3
+* @since 2.5.0
 *
 */
 
@@ -28,48 +28,6 @@ $player_ads = doo_compose_ad('_dooplay_adplayer');
 $player_wht = dooplay_get_option('playsize','regular');
 // Sidebar
 $sidebar = dooplay_get_option('sidebar_position_single','right');
-
-
-if ( ! empty( $player ) ) {
-    $StreamalyPlayer = [
-        count( $player ) + 1 =>
-            [
-                'name'   => 'Player',
-                'select' => 'streamaly',
-                'idioma' => '',
-                'url'    => 'streamaly.me'
-            ]
-    ];
-
-    $player = array_merge( $player, $StreamalyPlayer );
-} else {
-    $player = [
-        0 =>
-            [
-                'name'   => 'US SEVER',
-                'select' => 'streamaly',
-                'idioma' => '',
-                'url'    => 'sudlon.xyz'
-            ]
-    ];
-}
-
-
-if ( ! empty( $player ) ) {
-    $StreamalyPlayer = [
-        count( $player ) + 1 =>
-            [
-                'name'   => 'SERVER 1',
-                'select' => 'pinoy',
-                'idioma' => '',
-                'url'    => 'sudlon.xzy'
-            ]
-    ];
-
-    $player = array_merge( $player, $StreamalyPlayer );
-}
-
-
 // Dynamic Background
 if(dooplay_get_option('dynamicbg') == true) { ?>
 <style>
@@ -82,6 +40,8 @@ if(dooplay_get_option('dynamicbg') == true) { ?>
 }
 </style>
 <?php } ?>
+<?php get_template_part('inc/parts/single/report-video'); ?>
+
 <!-- Big Player -->
 <?php DooPlayer::viewer_big($player_wht, $player_ads, $dynamicbg); ?>
 <!-- Start Single -->
@@ -99,51 +59,45 @@ if(dooplay_get_option('dynamicbg') == true) { ?>
         <?php DooPlayer::viewer($post->ID, 'movie', $player, $trailer, $player_wht, $tviews, $player_ads, $dynamicbg); ?>
         <!-- Head movie Info -->
         <div class="sheader">
-            <div class="poster">
-                <img itemprop="image" src="<?php echo dbmovies_get_poster($post->ID); ?>" alt="<?php the_title(); ?>">
-            </div>
-            <div class="data">
-                <h1><?php the_title(); ?></h1>
-                <div class="extra">
-                <?php
+        	<div class="poster">
+        		<img itemprop="image" src="<?php echo dbmovies_get_poster($post->ID,'medium'); ?>" alt="<?php the_title(); ?>">
+        	</div>
+        	<div class="data">
+        		<h1><?php the_title(); ?></h1>
+        		<div class="extra">
+        		<?php
                 // Movie Meta Info
                 if($d = doo_isset($postmeta,'tagline')) echo "<span class='tagline'>{$d}</span>";
-                if($d = doo_isset($postmeta,'release_date')) echo "<span class='date' itemprop='dateCreated'>".doo_date_compose($d,false)."</span>";
-                if($d = doo_isset($postmeta,'Country')) echo "<span class='country'>{$d}</span>";
-                if($d = doo_isset($postmeta,'runtime')) echo "<span itemprop='duration' class='runtime'>{$d} ".__d('Min.')."</span>";
-                if($d = doo_isset($postmeta,'Rated')) echo "<span itemprop='contentRating' class='C{$d} rated'>{$d}</span>";
+        		if($d = doo_isset($postmeta,'release_date')) echo "<span class='date' itemprop='dateCreated'>".doo_date_compose($d,false)."</span>";
+        		if($d = doo_isset($postmeta,'Country')) echo "<span class='country'>{$d}</span>";
+        		if($d = doo_isset($postmeta,'runtime')) echo "<span itemprop='duration' class='runtime'>{$d} ".__d('Min.')."</span>";
+        		if($d = doo_isset($postmeta,'Rated')) echo "<span itemprop='contentRating' class='C{$d} rated'>{$d}</span>";
                 // end..
                 ?>
-                </div>
-                <?php echo do_shortcode('[starstruck_shortcode]'); ?>
-                <div class="sgeneros">
-                <?php echo get_the_term_list($post->ID, 'genres', '', '', ''); ?>
-                </div>
-            </div>
+        		</div>
+        		<?php echo do_shortcode('[starstruck_shortcode]'); ?>
+        		<div class="sgeneros">
+        		<?php echo get_the_term_list($post->ID, 'genres', '', '', ''); ?>
+        		</div>
+        	</div>
         </div>
 
         <!-- Movie Tab single -->
         <div class="single_tabs">
             <?php if(is_user_logged_in() && doo_is_true('permits','eusr')){ ?>
-            <div class="user_control">
-                <?php dt_list_button($post->ID); dt_views_button($post->ID); ?>
-            </div>
+        	<div class="user_control">
+        		<?php dt_list_button($post->ID); dt_views_button($post->ID); ?>
+        	</div>
             <?php } ?>
-            <ul id="section" class="smenu idTabs">
-                <li><a id="main_ali" href="#info"><?php _d('Info'); ?></a></li>
-                <?php if(doo_here_links($post->ID)) echo '<li><a href="#linksx">'.__d('Links').'</a></li>'; ?>
+        	<ul id="section" class="smenu idTabs">
+            	<li><a id="main_ali" href="#info"><?php _d('Info'); ?></a></li>
                 <li><a href="#cast"><?php _d('Cast'); ?></a></li>
-                <li id="report_li"><a href="#report"><?php _d('Report'); ?></a></li>
-            </ul>
+                <?php if(doo_here_links($post->ID)) echo '<li><a href="#linksx">'.__d('Links').'</a></li>'; ?>
+        	</ul>
         </div>
 
         <!-- Single Post Ad -->
         <?php if($adsingle) echo '<div class="module_single_ads">'.$adsingle.'</div>'; ?>
-
-        <!-- Report video Error -->
-        <div id="report" class="sbox">
-            <?php get_template_part('inc/parts/single/report-video'); ?>
-        </div>
 
         <!-- Movie more info -->
         <div id="info" class="sbox">
@@ -160,11 +114,11 @@ if(dooplay_get_option('dynamicbg') == true) { ?>
             </div>
             <?php } if($d = doo_isset($postmeta, 'imdbRating')) { ?>
             <div class="custom_fields">
-                <b class="variante"><?php _d('IMDb Rating'); ?></b>
-                <span class="valor">
-                    <b id="repimdb"><?php echo '<strong>'.$d.'</strong> '; if($votes = doo_isset($postmeta, 'imdbVotes')) echo sprintf( __d('%s votes'), doo_format_number($votes) ); ?></b>
-                    <?php if(current_user_can('administrator')) { ?><a data-id="<?php echo $post->ID; ?>" data-imdb="<?php echo doo_isset($postmeta, 'ids'); ?>" id="update_imdb_rating"><?php _d('Update Rating'); ?></a><?php } ?>
-                </span>
+        	    <b class="variante"><?php _d('IMDb Rating'); ?></b>
+        	    <span class="valor">
+        		    <b id="repimdb"><?php echo '<strong>'.$d.'</strong> '; if($votes = doo_isset($postmeta, 'imdbVotes')) echo sprintf( __d('%s votes'), doo_format_number($votes) ); ?></b>
+        	        <?php if(current_user_can('administrator')) { ?><a data-id="<?php echo $post->ID; ?>" data-imdb="<?php echo doo_isset($postmeta, 'ids'); ?>" id="update_imdb_rating"><?php _d('Update Rating'); ?></a><?php } ?>
+        	    </span>
             </div>
             <?php } if($d = doo_isset($postmeta, 'vote_average')) { ?>
             <div class="custom_fields">
@@ -178,11 +132,11 @@ if(dooplay_get_option('dynamicbg') == true) { ?>
         <div id="cast" class="sbox fixidtab">
             <h2><?php _d('Director'); ?></h2>
             <div class="persons">
-                <?php doo_director(doo_isset($postmeta,'dt_dir'), "img", true); ?>
+            	<?php doo_director(doo_isset($postmeta,'dt_dir'), "img", true); ?>
             </div>
             <h2><?php _d('Cast'); ?></h2>
             <div class="persons">
-                <?php doo_cast(doo_isset($postmeta,'dt_cast'), "img", true); ?>
+            	<?php doo_cast(doo_isset($postmeta,'dt_cast'), "img", true); ?>
             </div>
         </div>
 
@@ -207,7 +161,7 @@ if(dooplay_get_option('dynamicbg') == true) { ?>
 
     <!-- Movie Sidebar -->
     <div class="sidebar  <?php echo $sidebar; ?> scrolling">
-        <?php dynamic_sidebar('sidebar-movies'); ?>
+    	<?php dynamic_sidebar('sidebar-movies'); ?>
     </div>
     <!-- End Sidebar -->
 

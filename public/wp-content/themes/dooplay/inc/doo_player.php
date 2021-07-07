@@ -3,10 +3,10 @@
 * ----------------------------------------------------
 * @author: Doothemes
 * @author URI: https://doothemes.com/
-* @copyright: (c) 2018 Doothemes. All rights reserved
+* @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.2.3
+* @since 2.5.0
 *
 */
 
@@ -15,7 +15,7 @@ class DooPlayer{
 	public $postmeta;
 
     /**
-     * @since 2.2.1
+     * @since 2.5.0
      * @version 1.0
      */
 	public function __construct(){
@@ -35,9 +35,8 @@ class DooPlayer{
 		add_action('rest_api_init', array($this,'api_route'));
 	}
 
-
     /**
-     * @since 2.2.1
+     * @since 2.5.0
      * @version 1.0
      */
 	public function languages(){
@@ -76,12 +75,12 @@ class DooPlayer{
 	}
 
 	/**
-     * @since 2.4.0
+     * @since 2.5.0
      * @version 1.0
      */
 	public function types_player_options(){
 		// Normal types
-		$types['iframe']   = __d('URL Iframe');
+		$types['iframe']   = __d('URL Embed');
 		$types['mp4']      = __d('URL MP4');
 		//$types['gdrive']   = __d('ID or URL Google Drive');
 		// Special types
@@ -92,7 +91,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.2.1
+     * @since 2.5.0
      * @version 1.0
      */
 	public function type_player(){
@@ -105,7 +104,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.2.1
+     * @since 2.5.0
      * @version 1.0
      */
 	public function add_metabox(){
@@ -114,7 +113,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.2.1
+     * @since 2.5.0
      * @version 1.0
      */
 	public function view_metabox(){
@@ -125,7 +124,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.2.1
+     * @since 2.5.0
      * @version 1.0
      */
 	public function save($post_id){
@@ -158,7 +157,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.2.1
+     * @since 2.5.0
      * @version 1.0
      */
 	public function ajax(){
@@ -169,20 +168,16 @@ class DooPlayer{
         $post_ty = doo_isset($_POST,'type');
         $play_nm = doo_isset($_POST,'nume');
 		// Verify data
-		 if($post_id && $play_nm){
+        if($post_id && $play_nm){
             // Get post meta
             switch ($post_ty) {
                 case 'movie':
                     $postmeta = doo_postmeta_movies($post_id);
-	                $streamalyUrl = $this->checkForMovie( $postmeta );
-	                $streamalyUrl1 = $page_slug = get_post_field( 'post_name', $post_id );
                     break;
                 case 'tv':
                     $postmeta = doo_postmeta_episodes($post_id);
-	                $streamalyUrl = $this->checkTv( $postmeta );
                     break;
             }
-			
             // Compose Player
             $player = doo_isset($postmeta,'players');
             $player = maybe_unserialize($player);
@@ -191,15 +186,7 @@ class DooPlayer{
             $url = ($play_nm != 'trailer') ? $this->ajax_isset($player, ($play_nm-1),'url') : false;
             $typ = ($play_nm == 'trailer') ? 'trailer' : $this->ajax_isset($player, ($play_nm-1),'select');
             // verify data
-			if ( ! empty( $play_nm ) && $play_nm == 'streamaly' ) {
-		        $typ = 'streamaly';
-	        }
-	        	if ( ! empty( $play_nm ) && $play_nm == 'pinoy' ) {
-		        $typ = 'pinoy';
-	        }
-			$ai = "https://www.2embed.ru/".$streamalyUrl;
-			$pinoy = "https://sudlon.xyz/player/".$streamalyUrl1;
-		     if($typ){
+            if($typ){
                 switch($typ){
 					case 'iframe':
 						$url_iframe = $url;
@@ -208,13 +195,7 @@ class DooPlayer{
 					case 'gdrive':
 						$url_iframe = "{$pag}?source=".urlencode($url)."&id={$post_id}&type={$typ}";
 						break;
-					case 'streamaly':
-						$url_iframe = $ai;
-						break;
-							case 'pinoy':
-						$url_iframe = $pinoy;
-						break;
-				  case 'dtshcode':
+					case 'dtshcode':
 						$url_iframe = do_shortcode($url);
 						break;
 					case 'trailer':
@@ -228,7 +209,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.2.1
+     * @since 2.5.0
      * @version 1.0
      */
 	public function ajax_isset($data = array(), $n, $k){
@@ -236,7 +217,7 @@ class DooPlayer{
 	}
 
     /**
-     * @since 2.2.3
+     * @since 2.5.0
      * @version 1.0
      */
     public static function viewer($post, $type, $players, $trailer, $size, $views, $ads = false, $image = false){
@@ -251,8 +232,12 @@ class DooPlayer{
             self::fake($image, 'regular');
         }
         if($players OR $trailer){
-            $ulclass = (!wp_is_mobile()) ? 'options scrolling' : 'options';
-            $html ="<div class='dooplay_player'>";
+			if(dooplay_get_option('playsourcescrolling') == true){
+				$ulclass = (!wp_is_mobile()) ? 'options scrolling' : 'options';
+			}else{
+				$ulclass = 'options';
+			}
+			$html ="<div class='dooplay_player'>";
             $html .="<div id='playcontainer' class='play{$class_size}'>";
             if(!empty($ads) && $ajax_player){
                 $html .="<div class='asgdc'>{$ads}</div>";
@@ -263,54 +248,52 @@ class DooPlayer{
 				$html .="<div id='dooplay_player_content'>";
 				$html .="<div id='source-player-trailer' class='source-box'><div class='pframe'>".doo_trailer_iframe($trailer)."</div></div>";
 				$num = 1;
-			
+				if(!empty($players) && is_array($players)){
+	                foreach($players as $play){
+						// Set Source
+						$source = doo_isset($play,'url');
+						// HTML Player
+						$html .="<div id='source-player-{$num}' class='source-box'>";
+						switch (doo_isset($play,'select')) {
+							case 'mp4':
+								$html .="<div class='pframe'><if"."rame class='metaframe rptss' src='{$play_pager}?source=".urlencode($source)."&id={$post}&type=mp4' frameborder='0' scrolling='no' allow='autoplay; encrypted-media' allowfullscreen></ifr"."ame></div>";
+								break;
+							case 'iframe':
+								$html .="<div class='pframe'><if"."rame class='metaframe rptss' src='{$source}' frameborder='0' scrolling='no' allow='autoplay; encrypted-media' allowfullscreen></ifr"."ame></div>";
+								break;
+							case 'dtshcode':
+								$html .= "<div class='pframe'>".do_shortcode($source)."</div>";
+								break;
+						}
+						$html .="</div>";
+						$num++;
+					}
+				}
 				$html .="</div>";
 			}
             $html .="</div>";
-            $html .="<h2>".__d('Video Sources')." <span id='playernotice' data-text='{$views}'>{$views}</span></h2>";
-            $html .="<div id='playeroptions' class='{$ulclass}'><ul id='playeroptionsul' class='{$set_mode}'>";
+            $html .="<h2>".__d('Video Sources')." <span id='playernotice' data-text='{$views}'>{$views}</span> ";
+			if(dooplay_get_option('report_form') == true)
+				$html .="<a href='#' class='report-video-error'>".__d('Report Error')."</a>";
+            $html .="</h2><div id='playeroptions' class='{$ulclass}'><ul id='playeroptionsul' class='{$set_mode}'>";
             if($trailer != false){
                 $html .="<li id='player-option-trailer' class='dooplay_player_option' data-post='{$post}' data-type='{$type}' data-nume='trailer'>";
-                $html .="<i class='icon-play3'></i>";
+                $html .="<i class='fas fa-play-circle'></i>";
                 $html .="<span class='title'>".__d('Watch trailer')."</span>";
 				if($source_name == true)
                 	$html .="<span class='server'>youtube.com</span>";
-                $html .="<span class='flag'><i class='yt icon-youtube2'></i></span>";
+                $html .="<span class='flag'><i class='yt fab fa-youtube'></i></span>";
                 $html .="<span class='loader'></span></li>";
             }
             $num = 1;
-           if(isset($players) && is_array($players)){
+            if(!empty($players) && is_array($players)){
                 foreach($players as $play){
-                	//streamaly begins here
-	                if($play['select'] == "streamaly"){
-		                $html .="<li id='player-option-{$num}' class='dooplay_player_option' data-type='{$type}' data-post='{$post}' data-nume='streamaly'>";
-		                $html .="<i class='icon-play3'></i>";
-		                $html .="<span class='title'>{$play['name']}</span>";
-		                $html .="<span class='server'>".doo_compose_servername($play['url'], $play['select'])."</span>";
-		                if(isset($play['idioma'])) {
-			                $html .="<span class='flag'><img src='".DOO_URI."/assets/img/flags/en.png'></span>";
-		                }
-		                $html .="<span class='loader'></span></li>";continue;
-	                }
-
-
-                     if($play['select'] == "pinoy"){
-		                $html .="<li id='player-option-{$num}' class='dooplay_player_option' data-type='{$type}' data-post='{$post}' data-nume='pinoy'>";
-		                $html .="<i class='icon-play3'></i>";
-		                $html .="<span class='title'>{$play['name']}</span>";
-		                $html .="<span class='server'>".doo_compose_servername($play['url'], $play['select'])."</span>";
-		                if(isset($play['idioma'])) {
-			                $html .="<span class='flag'><img src='".DOO_URI."/assets/img/flags/en.png'></span>";
-		                }
-		                $html .="<span class='loader'></span></li>";continue;
-	                }
-
-
                     $html .="<li id='player-option-{$num}' class='dooplay_player_option' data-type='{$type}' data-post='{$post}' data-nume='{$num}'>";
-                    $html .="<i class='icon-play3'></i>";
+                    $html .="<i class='fas fa-play-circle'></i>";
                     $html .="<span class='title'>{$play['name']}</span>";
-                    $html .="<span class='server'>".doo_compose_servername($play['url'], $play['select'])."</span>";
-                    if(isset($play['idioma'])) {
+					if($source_name == true)
+                    	$html .="<span class='server'>".doo_compose_servername($play['url'], $play['select'])."</span>";
+                    if(!empty($play['idioma'])){
                         $html .="<span class='flag'><img src='".DOO_URI."/assets/img/flags/{$play['idioma']}.png'></span>";
                     }
                     $html .="<span class='loader'></span></li>";
@@ -319,12 +302,12 @@ class DooPlayer{
             }
             $html .="</ul></div>";
             $html .="</div>";
-            echo apply_filters('doo_player_html', $html);
+            echo $html;
         }
     }
 
     /**
-     * @since 2.2.3
+     * @since 2.5.0
      * @version 1.0
      */
     public static function viewer_big($size, $ads = false, $image = false){
@@ -338,7 +321,7 @@ class DooPlayer{
     }
 
     /**
-     * @since 2.2.3
+     * @since 2.5.0
      * @version 1.0
      */
     private static function fake($image, $class = 'regular'){
@@ -356,10 +339,10 @@ class DooPlayer{
             $html .="<section>";
             $html .="<div class='progressbar'></div>";
             $html .="<div class='controls'><div class='box'>";
-            $html .="<i class='icon-play3'></i>";
-            if(doo_is_true('fakeoptions','ads')) $html .="<i class='icon-monetization_on flashit'></i> <small>".__d('Advertisement')."</small>";
-            $html .="<i class='icon-zoom_out_map right'></i>";
-            $html .="<i class='icon-wb_sunny right'></i>";
+            $html .="<i class='fas fa-play-circle'></i>";
+            if(doo_is_true('fakeoptions','ads')) $html .="<i class='fas fa-dollar-sign flashit'></i> <small>".__d('Advertisement')."</small>";
+            $html .="<i class='fas fa-expand right'></i>";
+            $html .="<i class='fas fa-lightbulb right'></i>";
             $html .="</div></div></section>";
             $html .="</div></a></div>";
             // Compose Fake Player
@@ -368,7 +351,7 @@ class DooPlayer{
     }
 
     /**
-     * @since 2.2.3
+     * @since 2.5.0
      * @version 1.0
      */
     private static function fake_links(){
@@ -383,51 +366,71 @@ class DooPlayer{
     }
 
 	/**
-     * @since 2.4.0
+     * @since 2.5.0
      * @version 1.0
      */
 	public function api_route(){
-		register_rest_route('dooplayer/v1', '/post/(?P<id>\d+)', array(
-			'methods' => 'GET',
-			'callback' => array($this,'api_action'),
+		register_rest_route('dooplayer/v2','/(?P<id>\d+)/(?P<type>[a-zA-Z0-9-]+)/(?P<source>[a-zA-Z0-9-]+)',array(
+			'methods'  			  => WP_REST_Server::READABLE,
+			'callback'            => array($this,'api_action'),
+			'permission_callback' => '__return_true',
 		));
 	}
 
 	/**
-     * @since 2.4.0
+     * @since 2.5.0
      * @version 1.0
      */
-
+	public function api_action($data){
+		// Verify Method
+		if(dooplay_get_option('playajaxmethod') !== 'wp_json') return null;
+		// Compose Data
+		$post_id   = doo_isset($data,'id');
+		$post_type = doo_isset($data,'type');
+		$post_numb = doo_isset($data,'source');
+		// Switching post_type
+		switch ($post_type) {
+			case 'movie':
+				$postmeta = doo_postmeta_movies($post_id);
+				break;
+			case 'tv':
+				$postmeta = doo_postmeta_episodes($post_id);
+				break;
+		}
+		// Compose Player
+		$player = doo_isset($postmeta,'players');
+		$player = maybe_unserialize($player);
+		// Compose more data
+		$pag = doo_compose_pagelink('jwpage');
+		$url = ($post_numb != 'trailer') ? $this->ajax_isset($player, ($post_numb-1),'url') : false;
+		$typ = ($post_numb == 'trailer') ? 'trailer' : $this->ajax_isset($player, ($post_numb-1),'select');
+		// Filter types
+		switch($typ) {
+			case 'iframe':
+				$url_iframe = $url;
+				break;
+			case 'mp4':
+			case 'gdrive':
+				$url_iframe = "{$pag}?source=".urlencode($url)."&id={$post_id}&type={$typ}";
+				break;
+			case 'dtshcode':
+				$url_iframe = do_shortcode($url);
+				break;
+			case 'trailer':
+				$url_iframe = doo_trailer_iframe_url_embed(doo_isset($postmeta,'youtube_id'), 1);
+				break;
+		}
+		// The Response
+		return array('embed_url' => $url_iframe, 'type' => $typ);
+	}
 
     /**
-     * @since 2.2.1
+     * @since 2.5.0
      * @version 1.0
      */
 	public function __destruct(){
 		return false;
 	}
-	
-		public function checkTv( $post ) {
-
-		if ( ! empty( $post['temporada'] ) ) {
-			$ids          = $post['ids'];
-		$streamaly = 'embed/tmdb/'.'tv?id='.$ids.'&s='.$post['temporada'].'&e='.$post['episodio'] ;
-		}
-
-		return $streamaly;
-	}
-
-	public function checkForMovie( $post ) {
-
-
-	return 'embed/imdb/movie?id='.$post['ids'];
-
-
-	}
-	
-
-	
-	
 }
 
 new DooPlayer;

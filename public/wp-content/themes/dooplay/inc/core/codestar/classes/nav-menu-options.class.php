@@ -112,6 +112,7 @@ if ( ! class_exists( 'CSF_Nav_Menu_Options' ) ) {
           echo '<div class="csf-fields">';
 
           echo ( $section_title || $section_icon ) ? '<div class="csf-nav-menu-title"><h4>'. $section_icon . $section_title .'</h4></div>' : '';
+          echo ( ! empty( $section['description'] ) ) ? '<div class="csf-field csf-section-description">'. $section['description'] .'</div>' : '';
 
           if ( ! empty( $section['fields'] ) ) {
 

@@ -238,8 +238,10 @@ class DDbmoviesRequests extends DDbmoviesHelpers{
     			}
                 // Results
     			$ctd = array();
+                $maxwidth = dooplay_get_option('max_width','1200');
+                $maxwidth = ($maxwidth >= 1400) ? 'full' : 'normal';
     			$results = $this->Disset($tmdb,'results');
-    			$out_html .= '<div class="items">';
+    			$out_html .= '<div class="items '.$maxwidth.'">';
                 if($results){
                     foreach($results as $ci) {
         				$ctd_id		= $ctd[] = $ci['id'];

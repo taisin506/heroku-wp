@@ -54,7 +54,7 @@ if ($featured->have_posts()) {
 		$theYear	= ($mostrar = $terms = strip_tags( $terms = get_the_term_list( $post->ID, 'dtyear') ) ) ? $mostrar : '&nbsp;';
 		echo '<article id="post-featured-'. get_the_ID(). '" class="item '. get_post_type(). '">';
 		echo '<div class="poster">';
-		echo '<img data-src="'.$thePoster.'" loading="lazy" class="lazyload" alt="'.get_the_title().'">';
+		echo '<img src="'.$thePoster.'" alt="'.get_the_title().'">';
 		echo '<div class="rating">'.$theRating.'</div>';
 		echo '<div class="featu">'.__d('Featured').'</div>';
 		echo '<a href="'.get_the_permalink().'"><div class="see '.$playicon.'"></div></a>';

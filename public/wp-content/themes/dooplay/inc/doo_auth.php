@@ -21,6 +21,8 @@ class DooAuth{
         // Login / signup
 		add_action('wp_ajax_nopriv_dooplay_login', array($this, 'Action_LoginUser'));
 		add_action('wp_ajax_nopriv_dooplay_register', array($this, 'Action_RegisterUser'));
+        // Action delete transient
+        add_action('init', array($this, 'clean_SiteTransient'));
     }
 
     /**
@@ -188,6 +190,16 @@ class DooAuth{
     private function JsonHeader(){
         header('Access-Control-Allow-Origin:*');
         header('Content-type: application/json');
+    }
+
+    /**
+     * @since 2.5.5
+     * @version 1.0
+     */
+    public function clean_SiteTransient(){
+        if(doo_isset($_GET,'doo_transient') == 'delete'){
+            delete_transient('dooplay_website');
+        }
     }
 }
 

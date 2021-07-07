@@ -5,7 +5,7 @@
 * @author URI: https://doothemes.com/
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
-* @since 2.5.0
+* @since 3.4
 */
 
 
@@ -98,7 +98,7 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
                 if(!$this->VeryTMDb($skey,$tmdb,'movies') || $this->repeatd == true){
                     // Api Parameters TMDb
                     $tmdb_args = array(
-                        'append_to_response'     => 'images,trailers',
+                        'append_to_response'     => 'images,trailers,credits',
                         'include_image_language' => $this->apilang.',null',
                         'language'               => $this->apilang,
                         'api_key'                => $this->tmdbkey
@@ -124,11 +124,11 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
                     // Remote Data IMDb
                     $json_imdb = $this->RemoteJson($imdb_args, DBMOVIES_DBMVAPI);
                     // Compose IMDb Data
-                    $imdb_rating  = $this->Disset($json_imdb,'rating');
+                    $imdb_rdata   = $this->Disset($json_imdb,'imdb_rating');
             		$imdb_rated   = $this->Disset($json_imdb,'rated');
             		$imdb_country = $this->Disset($json_imdb,'country');
-                    $imdb_votes   = $this->Disset($json_imdb,'votes');
-                    $imdb_votes   = str_replace(',','',$imdb_votes);
+                    $imdb_votes   = $this->Disset($imdb_rdata,'count');
+                    $imdb_rating  = $this->Disset($imdb_rdata,'value');
                     // Compose TMDb Data
                     $tmdb_id             = $this->Disset($json_tmdb,'id');
                     $tmdb_runtime		 = $this->Disset($json_tmdb,'runtime');
@@ -168,10 +168,10 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
                         }
                     }
                     // API TMDb Credits
-                    $json_tmdb_credits = $this->RemoteJson($tmdb_args, DBMOVIES_TMDBAPI.'/movie/'.$tmdb.'/credits');
+                    $tmdb_credits = $this->Disset($json_tmdb,'credits');
                     // TMDb Credits Data
-                    $tmdb_cast = $this->Disset($json_tmdb_credits,'cast');
-                    $tmdb_crew = $this->Disset($json_tmdb_credits,'crew');
+                    $tmdb_cast = $this->Disset($tmdb_credits,'cast');
+                    $tmdb_crew = $this->Disset($tmdb_credits,'crew');
                     // Compose Cast
                     $taxn_cast = '';
                     $meta_cast = '';
@@ -347,7 +347,7 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
                 if(!$this->VeryTMDb('ids',$tmdb,'tvshows') || $this->repeatd == true){
                     // Dbmvs Parameters
                     $dbmv_args = array(
-                        'check' => $this->dbmvkey
+                        'authkey' => $this->dbmvkey
                     );
                     // Remote Data
                     $json_dbmv = $this->RemoteJson($dbmv_args,DBMOVIES_DBMVAPI);
@@ -355,7 +355,7 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
                     if($this->Disset($json_dbmv,'response')){
                         // Api Parameters TMDb
                         $tmdb_args = array(
-                            'append_to_response'     => 'images,trailers',
+                            'append_to_response'     => 'images,videos,credits',
                             'include_image_language' => $this->apilang.',null',
                             'language'               => $this->apilang,
                             'api_key'                => $this->tmdbkey
@@ -442,9 +442,9 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
                             }
                         }
                         // Remote Data TMDb Credits
-                        $json_tmdb_credits = $this->RemoteJson($tmdb_args, DBMOVIES_TMDBAPI.'/tv/'.$tmdb.'/credits');
+                        $tmdb_credits = $this->Disset($json_tmdb,'credits');
                         // All Cast
-                        $tmdb_cast = $this->Disset($json_tmdb_credits,'cast');
+                        $tmdb_cast = $this->Disset($tmdb_credits,'cast');
                         // Compose Cast
                         $taxn_cast = '';
                         $meta_cast = '';
@@ -464,9 +464,9 @@ class DDbmoviesImporters extends DDbmoviesHelpers{
                             }
                         }
                         // Remote Data TMDb Credits
-                        $json_tmdb_videos = $this->RemoteJson($tmdb_args, DBMOVIES_TMDBAPI.'/tv/'.$tmdb.'/videos');
+                        $tmdb_videos = $this->Disset($json_tmdb,'videos');
                         // All Videos
-                        $tmdb_videos = $this->Disset($json_tmdb_videos,'results');
+                        $tmdb_videos = $this->Disset($tmdb_videos,'results');
                         // Compose Video YouTube
                         $youtube = '';
                         if($tmdb_videos){

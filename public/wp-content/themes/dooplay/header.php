@@ -53,38 +53,40 @@ $logo = ($logo) ? "<img src='{$logo}' alt='{$bnme}'/>" : "<img src='".DOO_URI."/
 <div id="dt_contenedor">
 <header id="header" class="main">
 	<div class="hbox">
-		<div class="logo">
-			<a href="<?php echo esc_url(home_url()); ?>"><?php echo $logo; ?></a>
-		</div>
-		<div class="head-main-nav">
-			<?php wp_nav_menu(array('theme_location'=>'header','menu_class'=>'main-header','menu_id'=>'main_header','fallback_cb'=>false)); ?>
-		</div>
-		<div class="headitems <?php if($regi OR $logg) { echo 'register_active'; } ?>">
-			<div id="advc-menu" class="search">
-				<form method="get" id="searchform" action="<?php echo esc_url(home_url()); ?>">
-					<input type="text" placeholder="<?php _d('Search...'); ?>" name="s" id="s" value="<?php echo get_search_query(); ?>" autocomplete="off">
-					<button class="search-button" type="submit"><span class="fas fa-search"></span></button>
-				</form>
+		<div class="fix-hidden">
+			<div class="logo">
+				<a href="<?php echo esc_url(home_url()); ?>"><?php echo $logo; ?></a>
 			</div>
-			<!-- end search -->
-			<?php if($logg) { ?>
-			<div class="dtuser">
-				<div class="gravatar">
-                    <div class="image">
-                        <a href="<?php echo $acpg; ?>"><?php doo_email_avatar_header(); ?></a>
-                        <?php if (current_user_can('administrator')) { $total = doo_total_count('dt_links','pending'); if($total >= 1) { ?><span><?php echo $total; ?></span><?php } } ?>
-                    </div>
-					<a href="#" id="dooplay_signout"><?php _d('Sign out'); ?></a>
+			<div class="head-main-nav">
+				<?php wp_nav_menu(array('theme_location'=>'header','menu_class'=>'main-header','menu_id'=>'main_header','fallback_cb'=>false)); ?>
+			</div>
+			<div class="headitems <?php if($regi OR $logg) { echo 'register_active'; } ?>">
+				<div id="advc-menu" class="search">
+					<form method="get" id="searchform" action="<?php echo esc_url(home_url()); ?>">
+						<input type="text" placeholder="<?php _d('Search...'); ?>" name="s" id="s" value="<?php echo get_search_query(); ?>" autocomplete="off">
+						<button class="search-button" type="submit"><span class="fas fa-search"></span></button>
+					</form>
 				</div>
+				<!-- end search -->
+				<?php if($logg) { ?>
+				<div class="dtuser">
+					<div class="gravatar">
+	                    <div class="image">
+	                        <a href="<?php echo $acpg; ?>"><?php doo_email_avatar_header(); ?></a>
+	                        <?php if (current_user_can('administrator')) { $total = doo_total_count('dt_links','pending'); if($total >= 1) { ?><span><?php echo $total; ?></span><?php } } ?>
+	                    </div>
+						<a href="#" id="dooplay_signout"><?php _d('Sign out'); ?></a>
+					</div>
+				</div>
+	            <?php } else { if($regi == true) { ?>
+				<div class="dtuser">
+					<a href="#" class="clicklogin">
+						<i class="fas fa-user-circle"></i>
+					</a>
+				</div>
+				<?php } } ?>
+				<!-- end dt_user -->
 			</div>
-            <?php } else { if($regi == true) { ?>
-			<div class="dtuser">
-				<a href="#" class="clicklogin">
-					<i class="fas fa-user-circle"></i>
-				</a>
-			</div>
-			<?php } } ?>
-			<!-- end dt_user -->
 		</div>
 		<div class="live-search <?php echo (is_rtl()) ? 'rtl' : 'ltr'; ?>"></div>
 	</div>

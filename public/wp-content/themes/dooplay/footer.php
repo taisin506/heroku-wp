@@ -71,5 +71,5 @@ $copyright = isset($focopy) ? str_replace('{year}', date('Y'), $focopy) : $copyt
     <a class="play-pause"></a>
     <ol class="indicator"></ol>
 </div>
-<?php }  ?>
+<?php } ?>
 </body>

@@ -30,7 +30,7 @@ class Doothemes_updater {
 	 */
 	function __construct( $args = array(), $strings = array()){
 		$args = wp_parse_args($args, array(
-			'remote_api_url'	=> 'https://cdn.bescraper.cf/api',
+			'remote_api_url'	=> 'https://doothemes.com',
 			'request_data'		=> array(),
 			'theme_slug'		=> get_template(),
 			'item_name'			=> '',
@@ -41,7 +41,7 @@ class Doothemes_updater {
 		extract( $args );
 		$this->license	      = $license;
 		$this->item_name	  = $item_name;
-		$this->version		  = Bes_VERSION;
+		$this->version		  = $version;
 		$this->theme_slug	  = sanitize_key( $theme_slug );
 		$this->author		  = $author;
 		$this->remote_api_url = $remote_api_url;
@@ -88,7 +88,7 @@ class Doothemes_updater {
 				'slug' 			=> $this->theme_slug,
 				'author'		=> $this->author
 			);
-			$response = wp_remote_get($this->remote_api_url, array('timeout' => 15, 'body' => $api_params));
+			$response = wp_remote_post($this->remote_api_url, array('timeout' => 15, 'body' => $api_params));
 			if(is_wp_error($response) || 200 != wp_remote_retrieve_response_code($response)){
 				$failed = true;
 			}

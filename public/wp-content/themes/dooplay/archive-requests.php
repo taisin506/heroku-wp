@@ -9,7 +9,10 @@
 * @since 2.5.0
 *
 */
-get_header(); ?>
+get_header();
+$maxwidth = dooplay_get_option('max_width','1200');
+$maxwidth = ($maxwidth >= 1400) ? 'full' : 'normal';
+ ?>
 <div class="requests">
 	<nav class="requests_main_nav">
 		<h1><?php _d('Requests List'); ?> <span><?php echo doo_total_count('requests'); ?></span></h1>
@@ -45,7 +48,7 @@ get_header(); ?>
 	</div>
 	<div id="requests" class="content">
 		<div class="tabox current" id="listrequests">
-			<div class="items">
+			<div class="items <?php echo $maxwidth;?>">
             <?php if (have_posts()) { while (have_posts()) { the_post(); $meta = doo_get_postmeta('_dbmv_requests_post'); ?>
                     <article id="post-<?php the_ID(); ?>" class="item animation-1">
     					<div class="box">

@@ -34,8 +34,8 @@ new Doothemes(
 		'version'		 => DOO_VERSION,
 		'author'		 => DOO_COM,
 		'download_id'	 => DOO_ITEM_ID,
-        'remote_api_url' => 'https://cdn.bescraper.cf/api',
-		'renew_url'		 => 'https://cdn.bescraper.cf/api'
+        'remote_api_url' => 'https://doothemes.com',
+		'renew_url'		 => 'https://doothemes.com/items/dooplay/'
 	),
 
 	// Texts

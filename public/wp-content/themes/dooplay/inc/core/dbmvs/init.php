@@ -25,13 +25,12 @@ if(!class_exists('DDbmovies')){
          */
         public function Init(){
             // Defined Constants
-            define('DBMOVIES_VERSION','3.3-RC');
+            define('DBMOVIES_VERSION','3.5.1');
             define('DBMOVIES_OPTIONS','_dbmovies_settings');
             define('DBMOVIES_OPTIMDB','_dbmovies_imdbdata');
-            define('DBMOVIES_DBMVCDN','https://cdn.bescraper.cf/api');
-			// Bescraper accept only GET requests : 09/03/2021
-            define('DBMOVIES_DBMVAPI','https://cdn.bescraper.cf/api'); 
-			define('DBMOVIES_TMDBAPI','https://api.themoviedb.org/3');
+            define('DBMOVIES_DBMVCDN','https://cdn.dbmvs.com');
+            define('DBMOVIES_DBMVAPI','https://api.dbmvs.com');
+            define('DBMOVIES_TMDBAPI','https://api.themoviedb.org/3');
             define('DBMOVIES_TMDBKEY','05902896074695709d7763505bb88b4d');
             // Locale Path
             define('DBMOVIES_URI', get_template_directory_uri().'/inc/core/dbmvs');

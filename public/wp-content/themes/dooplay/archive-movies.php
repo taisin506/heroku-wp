@@ -6,7 +6,7 @@
 * @copyright: (c) 2021 Doothemes. All rights reserved
 * ----------------------------------------------------
 *
-* @since 2.5.0
+* @since 2.5.2
 *
 */
 get_header();
@@ -15,8 +15,10 @@ $sidebar = dooplay_get_option('sidebar_position_archives','right');
 $maxwidth = dooplay_get_option('max_width','1200');
 $maxwidth = ($maxwidth >= 1400) ? 'full' : 'normal';
 echo '<div class="module"><div class="content '.$sidebar.' '.$maxwidth.'">';
+echo '<h1 class="heading-archive">'.__d('Movies').'</h1>';
+get_template_part('inc/parts/modules/slider-movies');
 get_template_part('inc/parts/modules/featured-post-movies');
-echo '<header class="archive_post"><h1>'. __d('Movies').'</h1><span>'.doo_total_count('movies').'</span></header>';
+echo '<header class="archive_post"><h2>'. __d('Recently added').'</h2><span>'.doo_total_count('movies').'</span></header>';
 echo '<div id="archive-content" class="animation-2 items '.$maxwidth.'">';
 if(have_posts()){
     while(have_posts()){
